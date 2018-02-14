@@ -12,7 +12,7 @@
 </head>
 <body>
 <div style="background-color:#a5cded;text-align:center;width:500px;margin: auto;border-radius:3px;">
-    <form>
+    <form method="get" action="SearchResults.jsp">
         <input type="text" name="area" placeholder="حداقل متراژ" style="margin: 5px">
         <input type="text" name="buildingType" placeholder="نوع ملک" style="margin: 5px"><br>
         <input type="text" name="dealType" placeholder="نوع قرارداد (خرید/اجاره)" style="margin: 5px">

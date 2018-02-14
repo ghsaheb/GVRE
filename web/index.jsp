@@ -1,4 +1,7 @@
 <%@ page import="main.java.RealEstate.*" %>
+<%@ page import="java.io.*" %>
+<%@ page import="java.net.*" %>
+
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
 <html>
@@ -6,8 +9,7 @@
     <title>Ghazal</title>
   </head>
   <body style="direction: rtl">
-  <%--<% House s = new House(10); %>--%>
-  <%--<%= s.id %>--%>
+
   <jsp:include page="UserNameCredit.jsp"/>
   <jsp:include page="SearchForm.jsp"/>
   <jsp:include page="AddPropertyForm.jsp"/>
