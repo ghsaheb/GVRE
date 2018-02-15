@@ -3,7 +3,7 @@ package main.java.RealEstate;
 import java.util.Date;
 
 public class House {
-    private int id;
+    private String id;
     private int area;
     private boolean buildingType;
     private String address;
@@ -16,7 +16,7 @@ public class House {
     private String description;
     private Date expireTime;
 
-    public House(int id, int area, boolean buildingType, String address, boolean dealType, int price, String phone, String description) {
+    public House(String id, int area, boolean buildingType, String address, boolean dealType, int price, String phone, String description) {
         this.id = id;
         this.area = area;
         this.buildingType = buildingType;
@@ -27,7 +27,7 @@ public class House {
         this.description = description;
     }
 
-    public int getId() {
+    public String getId() {
         return id;
     }
 
@@ -75,7 +75,7 @@ public class House {
         return expireTime;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
 

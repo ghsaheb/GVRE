@@ -27,9 +27,10 @@
     ArrayList<House> temp = s.getFiltered();
     for (int i=0;i<temp.size();i++){
 %>
-<jsp:include page="HouseDetails.jsp" flush="true">
+<jsp:include page="HouseItem.jsp" flush="true">
     <jsp:param name="area" value="<%=temp.get(i).getArea()%>" />
     <jsp:param name="basePrice" value="<%=temp.get(i).getBasePrice()%>" />
+    <jsp:param name="id" value="<%=temp.get(i).getId()%>" />
 </jsp:include>
 <%
     }
