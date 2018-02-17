@@ -4,25 +4,26 @@ import java.util.Date;
 
 public class House {
     private String id;
-    private int area;
-    private boolean buildingType;
+    private long area;
+    private String buildingType;
     private String address;
     private String imageURL;
     private boolean dealType;
-    private int basePrice;
-    private int rentPrice;
-    private int sellPrice;
+    private Price price;
     private String phone;
     private String description;
     private Date expireTime;
 
-    public House(String id, int area, boolean buildingType, String address, boolean dealType, int price, String phone, String description) {
+    public House() {
+    }
+
+    public House(String id, int area, String buildingType, String address, boolean dealType, Price price, String phone, String description) {
         this.id = id;
         this.area = area;
         this.buildingType = buildingType;
         this.address = address;
         this.dealType = dealType;
-        this.basePrice = price;
+        this.price = price;
         this.phone = phone;
         this.description = description;
     }
@@ -31,11 +32,11 @@ public class House {
         return id;
     }
 
-    public int getArea() {
+    public long getArea() {
         return area;
     }
 
-    public boolean isBuildingType() {
+    public String getBuildingType() {
         return buildingType;
     }
 
@@ -51,16 +52,8 @@ public class House {
         return dealType;
     }
 
-    public int getBasePrice() {
-        return basePrice;
-    }
-
-    public int getRentPrice() {
-        return rentPrice;
-    }
-
-    public int getSellPrice() {
-        return sellPrice;
+    public Price getPrice() {
+        return price;
     }
 
     public String getPhone() {
@@ -79,11 +72,11 @@ public class House {
         this.id = id;
     }
 
-    public void setArea(int area) {
+    public void setArea(long area) {
         this.area = area;
     }
 
-    public void setBuildingType(boolean buildingType) {
+    public void setBuildingType(String buildingType) {
         this.buildingType = buildingType;
     }
 
@@ -99,16 +92,8 @@ public class House {
         this.dealType = dealType;
     }
 
-    public void setBasePrice(int basePrice) {
-        this.basePrice = basePrice;
-    }
-
-    public void setRentPrice(int rentPrice) {
-        this.rentPrice = rentPrice;
-    }
-
-    public void setSellPrice(int sellPrice) {
-        this.sellPrice = sellPrice;
+    public void setPrice(Price price) {
+        this.price = price;
     }
 
     public void setPhone(String phone) {

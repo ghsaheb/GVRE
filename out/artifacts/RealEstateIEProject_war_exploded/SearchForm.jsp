@@ -16,7 +16,7 @@
         <input type="text" name="area" placeholder="حداقل متراژ" style="margin: 5px">
         <input type="text" name="buildingType" placeholder="نوع ملک" style="margin: 5px"><br>
         <input type="text" name="dealType" placeholder="نوع قرارداد (خرید/اجاره)" style="margin: 5px">
-        <input type="text" name="lastname" placeholder="حداکثر قیمت" style="margin: 5px"><br>
+        <input type="text" name="maxPrice" placeholder="حداکثر قیمت" style="margin: 5px"><br>
         <input type="submit" value="جست‌وجو" style="background-color: #2b69cb;color:white;border-radius:3px;">
     </form>
 </div>

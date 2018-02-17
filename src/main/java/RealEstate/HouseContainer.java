@@ -1,5 +1,6 @@
 package main.java.RealEstate;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
 import org.json.simple.JSONObject;
 import org.json.*;
 import org.json.simple.JSONArray;
@@ -32,9 +33,6 @@ public class HouseContainer {
         HttpURLConnection con = (HttpURLConnection) obj.openConnection();
         con.setRequestMethod("GET");
 
-        //add request header
-        //con.setRequestProperty("User-Agent", USER_AGENT);
-
         int responseCode = con.getResponseCode();
         System.out.println("\nSending 'GET' request to URL : " + url);
         System.out.println("Response Code : " + responseCode);
@@ -42,43 +40,34 @@ public class HouseContainer {
         BufferedReader in = new BufferedReader(
                 new InputStreamReader(con.getInputStream()));
         String inputLine;
-        StringBuffer response2 = new StringBuffer();
+        StringBuffer response = new StringBuffer();
 
         while ((inputLine = in.readLine()) != null) {
-            response2.append(inputLine);
+            response.append(inputLine);
         }
         in.close();
-        //print result
-        System.out.println(response2.toString());
-        //JSON
-        JSONParser parser = new JSONParser();
-        Object ghaz = parser.parse(response2.toString());
-        JSONObject jsonObject = (JSONObject) ghaz;
-        System.out.println("JSON OBJECT IS :"+jsonObject);
-        String result = (String) jsonObject.get("result");
-        System.out.println(result);
-        JSONArray housesData = (JSONArray) jsonObject.get("data");
-        System.out.println("TEST: " + housesData.get(1));
-        houses.clear();
+        JSONArray housesData = getJsonArray(response);
 
+
+        houses.clear();
         for (int i=0;i<housesData.size();i++) {
             JSONObject temp = (JSONObject)housesData.get(i);
-            String idTemp = (String)temp.get("id");
-            System.out.println((long)temp.get("area"));
-            this.houses.add(new House(idTemp, 100,true, "تهران", true, 100, "09124", "alaki"));
+            House s = readJsonWithObjectMapper(temp.toString());
+            this.houses.add(s);
         }
-            //JSON
-//        this.houses.add(new House("1", 155, true, "تهران", true, 100, "09124", "alaki"));
-//        this.houses.add(new House("2", 144, false, "Tehran2", true, 122, "09123", "kheili alaki"));
-//        this.houses.add(new House("3", 123, true, "Tehran3", false, 111, "09122", "الکی"));
-//        this.houses.add(new House("4", 100, false, "Tehra4n", false, 144, "09121", "الکیییی"));
+    }
+
+    private JSONArray getJsonArray(StringBuffer response) throws ParseException {
+        JSONParser parser = new JSONParser();
+        JSONObject jsonObject = (JSONObject) parser.parse(response.toString());
+        JSONArray housesData = (JSONArray) jsonObject.get("data");
+        return housesData;
     }
 
     public ArrayList<House> getFiltered(){
         ArrayList<House> temp = new ArrayList<House>();
         for (int i = 0; i<houses.size();i++){
             temp.add(houses.get(i));
-//            System.out.println(temp.get(i).getId());
         }
         return temp;
     }
@@ -89,5 +78,11 @@ public class HouseContainer {
                 return houses.get(i);
         }
         throw new HouseNotFindException();
+    }
+
+    public House readJsonWithObjectMapper(String s) throws IOException {
+        ObjectMapper objectMapper = new ObjectMapper();
+        House h = objectMapper.readValue(s, House.class);
+        return h;
     }
 }
