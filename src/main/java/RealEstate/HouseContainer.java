@@ -76,11 +76,20 @@ public class HouseContainer {
         System.out.println(dealType);
         System.out.println(buildingType);
         System.out.println("P: " + maxPrice);
-        ArrayList<House> temp = new ArrayList<House>();
+        ArrayList<House> filtered = new ArrayList<House>();
         for (int i = 0; i<houses.size();i++){
-            temp.add(houses.get(i));
+            House temp = houses.get(i);
+            if (temp.getArea() <= area && temp.isDealType() == dealType && temp.getBuildingType().equals(buildingType)){
+                if (!temp.isDealType() && temp.getPrice().getSellPrice() <= maxPrice){
+                    filtered.add(temp);
+
+                }
+                else if (temp.isDealType() && temp.getPrice().getRentPrice() <= maxPrice){
+                    filtered.add(temp);
+                }
+            }
         }
-        return temp;
+        return filtered;
     }
 
     public House findHouse(String id) throws HouseNotFindException, IOException, ParseException {
