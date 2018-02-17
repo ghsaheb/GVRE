@@ -13,9 +13,21 @@
 <body>
 <div style="background-color:#a5cded;text-align:center;width:500px;margin: auto;border-radius:3px;">
     <form method="get" action="SearchResults.jsp">
+        <label>
+            <select name="buildingType">
+                <option value="ویلایی">ویلایی</option>
+                <option value="آپارتمان">آپارتمان</option>
+            </select>
+        </label>
+        نوع قرارداد (خرید/اجاره):
+        <label>
+            <select name="dealType">
+                <option value="false">خرید</option>
+                <option value="true">اجاره</option>
+            </select>
+        </label>
+
         <input type="text" name="area" placeholder="حداقل متراژ" style="margin: 5px">
-        <input type="text" name="buildingType" placeholder="نوع ملک" style="margin: 5px"><br>
-        <input type="text" name="dealType" placeholder="نوع قرارداد (خرید/اجاره)" style="margin: 5px">
         <input type="text" name="maxPrice" placeholder="حداکثر قیمت" style="margin: 5px"><br>
         <input type="submit" value="جست‌وجو" style="background-color: #2b69cb;color:white;border-radius:3px;">
     </form>

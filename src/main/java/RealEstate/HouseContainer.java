@@ -64,7 +64,18 @@ public class HouseContainer {
         return housesData;
     }
 
-    public ArrayList<House> getFiltered(){
+    private JSONObject getJsonObject(StringBuffer response) throws ParseException {
+        JSONParser parser = new JSONParser();
+        JSONObject jsonObject = (JSONObject) parser.parse(response.toString());
+        JSONObject house = (JSONObject) jsonObject.get("data");
+        return house;
+    }
+
+    public ArrayList<House> getFiltered(long area, boolean dealType, String buildingType, int maxPrice){
+        System.out.println("L: " + area);
+        System.out.println(dealType);
+        System.out.println(buildingType);
+        System.out.println("P: " + maxPrice);
         ArrayList<House> temp = new ArrayList<House>();
         for (int i = 0; i<houses.size();i++){
             temp.add(houses.get(i));
@@ -72,10 +83,31 @@ public class HouseContainer {
         return temp;
     }
 
-    public House findHouse(String id) throws HouseNotFindException {
+    public House findHouse(String id) throws HouseNotFindException, IOException, ParseException {
         for (int i=0;i<houses.size();i++){
-            if (houses.get(i).getId().equals(id))
-                return houses.get(i);
+            if (houses.get(i).getId().equals(id)) {
+                String url = "http://acm.ut.ac.ir/khaneBeDoosh/house/" + houses.get(i).getId();
+                URL obj = new URL(url);
+                HttpURLConnection con = (HttpURLConnection) obj.openConnection();
+                con.setRequestMethod("GET");
+
+                int responseCode = con.getResponseCode();
+                System.out.println("\nSending 'GET' request to URL : " + url);
+                System.out.println("Response Code : " + responseCode);
+
+                BufferedReader in = new BufferedReader(
+                        new InputStreamReader(con.getInputStream()));
+                String inputLine;
+                StringBuffer response = new StringBuffer();
+
+                while ((inputLine = in.readLine()) != null) {
+                    response.append(inputLine);
+                }
+                in.close();
+                JSONObject temp = getJsonObject(response);
+                House s = readJsonWithObjectMapper(temp.toString());
+                return s;
+            }
         }
         throw new HouseNotFindException();
     }

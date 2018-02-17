@@ -1,4 +1,4 @@
-<%--
+<%@ page import="main.java.RealEstate.House" %><%--
   Created by IntelliJ IDEA.
   User: ghazals
   Date: 2/14/18
@@ -8,22 +8,36 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <div>
  <%
-  if (request.getAttribute("sellPrice") != null){
-      %>
- قیمت: <%= request.getAttribute("sellPrice") %> تومان<br>
+  House s = (House) request.getAttribute("house");
+  if (!s.isDealType()){
+ %>
+ قیمت: <%= s.getPrice().getSellPrice() %> تومان<br>
 
  <%
-  }
-  else {
-      %>
- قیمت پایه: <%= request.getAttribute("basePrice") %> تومان<br>
- مبلغ اجاره: <%= request.getAttribute("rentPrice") %> تومان<br>
+ }
+ else {
+ %>
+ قیمت پایه: <%= s.getPrice().getBasePrice() %> تومان<br>
+ مبلغ اجاره: <%= s.getPrice().getRentPrice() %> تومان<br>
  <%
   }
  %>
- متراژ: <%= request.getAttribute("area") %><br>
- نوع: <%= request.getAttribute("dealType") %><br>
+ متراژ: <%= s.getArea() %><br>
+ <%
+  if(!s.isDealType()){
+ %>
+نوع: فروش<br>
+ <%
+ }
+ else {
+      %>
+ نوع: رهن و اجاره<br>
 
- <a href="<%= request.getAttribute("imageURL") %>" style="text-decoration: none;">لینک عکس</a><br>
- <a href="HouseDetails.jsp?id=<%=request.getAttribute("id")%>"><input type="submit" value="اطلاعات بیشتر" style="background-color: #2b69cb;color:white;border-radius:3px;"></a>
+ <%
+ }
+ %>
+
+
+ <a href="<%= s.getImageURL() %>" style="text-decoration: none;">لینک عکس</a><br>
+ <a href="HouseDetails.jsp?id=<%=s.getId()%>"><input type="submit" value="اطلاعات بیشتر" style="background-color: #2b69cb;color:white;border-radius:3px;"></a>
 </div>

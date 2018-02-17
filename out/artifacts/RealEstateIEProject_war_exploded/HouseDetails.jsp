@@ -14,15 +14,31 @@
 </head>
 <body>
 <jsp:include page="UserNameCredit.jsp"/>
+<div style="direction: rtl">
 <%
     HouseContainer houses = HouseContainer.getHouseContainer();
     House foundedHouse;
     try {
         foundedHouse = houses.findHouse(request.getParameter("id"));
 %>
-<%=
-    foundedHouse.getArea()
+نوع ساختمان: <%= foundedHouse.getBuildingType()%><br>
+متراژ: <%= foundedHouse.getArea()%> متر <br>
+<%
+    if (!foundedHouse.isDealType()){
+        %>
+نوع قرارداد: فروش<br>
+<%
+    }
+    else {
 %>
+نوع قرارداد: رهن و اجاره<br>
+<%
+    }
+%>
+
+آدرس: <%= foundedHouse.getAddress()%><br>
+    <a href="<%= foundedHouse.getImageURL()%>" style="text-decoration: none;">لینک عکس</a><br>
+توضیحات: <%= foundedHouse.getDescription()%><br>
 <%
     }
 
@@ -32,6 +48,6 @@
 <%
     }
 %>
-
+</div>
 </body>
 </html>
