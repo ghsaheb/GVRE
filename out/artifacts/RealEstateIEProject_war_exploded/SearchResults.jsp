@@ -26,7 +26,8 @@
 <div style="display: flex;flex-wrap: wrap;justify-content: space-between;width: 90%;margin: auto;text-align: center;">
 <%
     int maxPrice = Integer.MAX_VALUE;
-    long area =  Long.MAX_VALUE;
+    //long area =  Long.MAX_VALUE;
+    long area = 0;
     try {
         maxPrice = Integer.parseInt(request.getParameter("maxPrice"));
     } catch (Exception e) {}
@@ -36,6 +37,7 @@
     try {
     ArrayList<House> housesList = s.getFiltered(area, Boolean.parseBoolean(request.getParameter("dealType"))
             ,request.getParameter("buildingType"), maxPrice);
+        System.out.println("OOPS: " + housesList.size());
     for (int i = 0; i< housesList.size(); i++){
         House house = housesList.get(i);
         request.setAttribute("house", house);

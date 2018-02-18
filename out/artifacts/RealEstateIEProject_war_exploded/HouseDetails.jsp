@@ -25,11 +25,11 @@
 متراژ: <%= foundedHouse.getArea()%> متر <br>
 <%
     if (!foundedHouse.isDealType()){
-        %>
+%>
 نوع قرارداد: فروش<br>
 <%
-    }
-    else {
+}
+else {
 %>
 نوع قرارداد: رهن و اجاره<br>
 <%
@@ -37,18 +37,28 @@
 %>
 
 آدرس: <%= foundedHouse.getAddress()%><br>
-    <a href="<%= foundedHouse.getImageURL()%>" style="text-decoration: none;">لینک عکس</a><br>
 توضیحات: <%= foundedHouse.getDescription()%><br>
-    <a href="index.jsp"><button type="button">دریافت شماره مالک / مشاور </button></a>
-<%
+<a href="HouseDetails.jsp"><button type="button">دریافت شماره مالک / مشاور </button></a>
+    <%
+
+        if (foundedHouse.getImageURL() == null){
+    %>
+    <img src="images/no-pic.jpg" width="200px" height="200px">
+    <%
+            }
+            else {
+            %>
+    <a href="<%= foundedHouse.getImageURL()%>" style="text-decoration: none;">لینک عکس</a><br>
+    <%
+            }
     }
 
     catch (HouseNotFindException e) {
-%>
+    %>
     <h1>House not Found</h1>
-<%
-    }
-%>
-</div>
-</body>
-</html>
+    <%
+        }
+    %>
+    </div>
+    </body>
+    </html>

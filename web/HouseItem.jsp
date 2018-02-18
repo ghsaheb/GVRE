@@ -35,9 +35,13 @@
 
  <%
   }
+  if (s.getImageURL() != null){
  %>
 
 
  <a href="<%= s.getImageURL() %>" style="text-decoration: none;">لینک عکس</a><br>
+ <%
+  }
+ %>
  <a href="HouseDetails.jsp?id=<%=s.getId()%>"><input type="submit" value="اطلاعات بیشتر" style="background-color: #2b69cb;color:white;border-radius:3px;"></a>
 </div>

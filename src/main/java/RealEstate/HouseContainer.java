@@ -14,10 +14,12 @@ import java.io.*;
 
 public class HouseContainer {
     private ArrayList<House> houses;
+    private ArrayList<House> localHouses;
     private static HouseContainer houseContainer = null;
 
     private HouseContainer() {
         houses = new ArrayList<House>();
+        localHouses = new ArrayList<House>();
     }
 
     public static HouseContainer getHouseContainer(){
@@ -79,7 +81,21 @@ public class HouseContainer {
         ArrayList<House> filtered = new ArrayList<House>();
         for (int i = 0; i<houses.size();i++){
             House temp = houses.get(i);
-            if (temp.getArea() <= area && temp.isDealType() == dealType && temp.getBuildingType().equals(buildingType)){
+            if (temp.getArea() >= area && temp.isDealType() == dealType && temp.getBuildingType().equals(buildingType)){
+                if (!temp.isDealType() && temp.getPrice().getSellPrice() <= maxPrice){
+                    filtered.add(temp);
+
+                }
+                else if (temp.isDealType() && temp.getPrice().getRentPrice() <= maxPrice){
+                    filtered.add(temp);
+                }
+            }
+        }
+        System.out.println("YOOHOO: " + localHouses.size());
+        for (int i = 0; i<localHouses.size();i++){
+            House temp = localHouses.get(i);
+            System.out.println("HERE: " + temp.getBuildingType() + " " + buildingType);
+            if (temp.getArea() >= area && temp.isDealType() == dealType && temp.getBuildingType().equals(buildingType)){
                 if (!temp.isDealType() && temp.getPrice().getSellPrice() <= maxPrice){
                     filtered.add(temp);
 
@@ -118,6 +134,11 @@ public class HouseContainer {
                 return s;
             }
         }
+        for (int i=0;i<localHouses.size();i++){
+            if (localHouses.get(i).getId().equals(id)){
+                return localHouses.get(i);
+            }
+        }
         throw new HouseNotFindException();
     }
 
@@ -125,5 +146,10 @@ public class HouseContainer {
         ObjectMapper objectMapper = new ObjectMapper();
         House h = objectMapper.readValue(s, House.class);
         return h;
+    }
+
+    public void addNewHouse(House h){
+        System.out.println("Khoone jadid: "+h.getId()+h.getArea());
+        this.localHouses.add(h);
     }
 }
