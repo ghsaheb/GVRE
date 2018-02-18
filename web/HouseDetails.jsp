@@ -39,6 +39,7 @@
 آدرس: <%= foundedHouse.getAddress()%><br>
     <a href="<%= foundedHouse.getImageURL()%>" style="text-decoration: none;">لینک عکس</a><br>
 توضیحات: <%= foundedHouse.getDescription()%><br>
+    <a href="index.jsp"><button type="button">دریافت شماره مالک / مشاور </button></a>
 <%
     }
 

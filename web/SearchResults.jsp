@@ -47,7 +47,7 @@
     }
     catch (Exception e){
         %>
-    Avazi
+    Exception
     <%
     }
 %>

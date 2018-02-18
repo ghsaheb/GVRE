@@ -19,7 +19,6 @@
                 <option value="آپارتمان">آپارتمان</option>
             </select>
         </label>
-        نوع قرارداد (خرید/اجاره):
         <label>
             <select name="dealType">
                 <option value="false">خرید</option>

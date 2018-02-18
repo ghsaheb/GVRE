@@ -6,8 +6,8 @@ public class Individual extends User {
     private String username;
     private String password;
 
-    public Individual(String name, String phone, int balance, String username, String password) {
-        super(name);
+    public Individual(String name, int id, String phone, int balance, String username, String password) {
+        super(name, id);
         this.phone = phone;
         this.balance = balance;
         this.username = username;
@@ -44,5 +44,13 @@ public class Individual extends User {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public void increaseBalance(int inc){
+        this.balance += inc;
+    }
+
+    public void decreaseBalance(int dec){
+        this.balance -= dec;
     }
 }
