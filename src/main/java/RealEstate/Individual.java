@@ -1,5 +1,7 @@
 package main.java.RealEstate;
 
+import java.util.ArrayList;
+
 public class Individual extends User {
     private String phone;
     private int balance;
