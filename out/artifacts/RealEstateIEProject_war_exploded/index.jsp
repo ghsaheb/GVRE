@@ -27,10 +27,11 @@ else if (request.getAttribute("creditResult") == (Boolean)false){
 %>
 <h3 style="background-color: #991d1c;color: white;text-align:center;border-radius:3px;width:500px;margin:auto;height:30px;"><%=request.getAttribute("InvalidArea")%></h3>
 <%
-    }
+    }if (request.getAttribute("InvalidCredit") != null){
 %>
+<h3 style="background-color: #991d1c;color: white;text-align:center;border-radius:3px;width:500px;margin:auto;height:30px;"><%=request.getAttribute("InvalidCredit")%></h3>
 <%
-    if (request.getAttribute("houseAdded") != null) {
+    }if (request.getAttribute("houseAdded") != null) {
 %>
 <h3 style="background-color: #339966;color: white;text-align:center;border-radius:3px;width:500px;margin:auto;height:30px;">
     <%=request.getAttribute("houseAdded")%>

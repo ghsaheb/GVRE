@@ -22,8 +22,15 @@
 
         JSONObject data = new JSONObject();
         data.put("userId",1);
-        data.put("value",Integer.parseInt(request.getParameter("credit")));
-        OutputStreamWriter wr= new OutputStreamWriter(con.getOutputStream());
+        try {
+                data.put("value", Integer.parseInt(request.getParameter("credit")));
+        }
+        catch (Exception e){
+            request.setAttribute("InvalidCredit","مقدار درستی برای اعتبار وارد نشده است.");
+%>
+<jsp:forward page="index.jsp"/>
+<%
+        }OutputStreamWriter wr= new OutputStreamWriter(con.getOutputStream());
         wr.write(data.toString());
         wr.flush ();
         wr.close ();
@@ -36,7 +43,7 @@
             request.setAttribute("creditResult", true);
         }
         else {
-                request.setAttribute("creditResult", false);
+            request.setAttribute("creditResult", false);
         }
     } catch (Exception e){
         e.printStackTrace();

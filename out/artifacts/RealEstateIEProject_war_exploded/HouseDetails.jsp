@@ -82,7 +82,7 @@ else {
 
     catch (HouseNotFindException e) {
     %>
-    <h1>House not Found</h1>
+    <h1>خانه موردنظر یافت نشد. </h1>
     <%
         }
     %>
