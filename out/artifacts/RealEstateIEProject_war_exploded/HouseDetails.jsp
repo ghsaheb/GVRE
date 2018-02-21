@@ -62,7 +62,7 @@ else {
         }
         else {
             %>
-    <h1><%=foundedHouse.getPhone()%> بگیر شمارشو حیوون: </h1>
+    <h3><%=foundedHouse.getPhone()%> شماره تلفن: </h3>
     <%
         }
     %>

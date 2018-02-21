@@ -31,6 +31,22 @@ public class HouseContainer {
 
     public void getHouses() throws Exception {
         String url = "http://acm.ut.ac.ir/khaneBeDoosh/house";
+        HttpURLConnection con = getHttpURLConnection(url);
+        StringBuffer response = getStringBuffer(con);
+        JSONArray housesData = getJsonArray(response);
+        addHousesToContainer(housesData);
+    }
+
+    private void addHousesToContainer(JSONArray housesData) throws IOException {
+        houses.clear();
+        for (int i=0;i<housesData.size();i++) {
+            JSONObject temp = (JSONObject)housesData.get(i);
+            House s = readJsonWithObjectMapper(temp.toString());
+            this.houses.add(s);
+        }
+    }
+
+    private HttpURLConnection getHttpURLConnection(String url) throws IOException {
         URL obj = new URL(url);
         HttpURLConnection con = (HttpURLConnection) obj.openConnection();
         con.setRequestMethod("GET");
@@ -38,7 +54,10 @@ public class HouseContainer {
         int responseCode = con.getResponseCode();
         System.out.println("\nSending 'GET' request to URL : " + url);
         System.out.println("Response Code : " + responseCode);
+        return con;
+    }
 
+    private StringBuffer getStringBuffer(HttpURLConnection con) throws IOException {
         BufferedReader in = new BufferedReader(
                 new InputStreamReader(con.getInputStream()));
         String inputLine;
@@ -48,15 +67,7 @@ public class HouseContainer {
             response.append(inputLine);
         }
         in.close();
-        JSONArray housesData = getJsonArray(response);
-
-
-        houses.clear();
-        for (int i=0;i<housesData.size();i++) {
-            JSONObject temp = (JSONObject)housesData.get(i);
-            House s = readJsonWithObjectMapper(temp.toString());
-            this.houses.add(s);
-        }
+        return response;
     }
 
     private JSONArray getJsonArray(StringBuffer response) throws ParseException {
@@ -74,61 +85,36 @@ public class HouseContainer {
     }
 
     public ArrayList<House> getFiltered(long area, boolean dealType, String buildingType, int maxPrice){
-        System.out.println("L: " + area);
-        System.out.println(dealType);
-        System.out.println(buildingType);
-        System.out.println("P: " + maxPrice);
         ArrayList<House> filtered = new ArrayList<House>();
         for (int i = 0; i<houses.size();i++){
             House temp = houses.get(i);
-            if (temp.getArea() >= area && temp.isDealType() == dealType && temp.getBuildingType().equals(buildingType)){
-                if (!temp.isDealType() && temp.getPrice().getSellPrice() <= maxPrice){
-                    filtered.add(temp);
-
-                }
-                else if (temp.isDealType() && temp.getPrice().getRentPrice() <= maxPrice){
-                    filtered.add(temp);
-                }
-            }
+            applyFilter(area, dealType, buildingType, maxPrice, filtered, temp);
         }
-        System.out.println("YOOHOO: " + localHouses.size());
         for (int i = 0; i<localHouses.size();i++){
             House temp = localHouses.get(i);
-            System.out.println("HERE: " + temp.getBuildingType() + " " + buildingType);
-            if (temp.getArea() >= area && temp.isDealType() == dealType && temp.getBuildingType().equals(buildingType)){
-                if (!temp.isDealType() && temp.getPrice().getSellPrice() <= maxPrice){
-                    filtered.add(temp);
-
-                }
-                else if (temp.isDealType() && temp.getPrice().getRentPrice() <= maxPrice){
-                    filtered.add(temp);
-                }
-            }
+            applyFilter(area, dealType, buildingType, maxPrice, filtered, temp);
         }
         return filtered;
+    }
+
+    private void applyFilter(long area, boolean dealType, String buildingType, int maxPrice, ArrayList<House> filtered, House temp) {
+        if (temp.getArea() >= area && temp.isDealType() == dealType && temp.getBuildingType().equals(buildingType)){
+            if (!temp.isDealType() && temp.getPrice().getSellPrice() <= maxPrice){
+                filtered.add(temp);
+
+            }
+            else if (temp.isDealType() && temp.getPrice().getRentPrice() <= maxPrice){
+                filtered.add(temp);
+            }
+        }
     }
 
     public House findHouse(String id) throws HouseNotFindException, IOException, ParseException {
         for (int i=0;i<houses.size();i++){
             if (houses.get(i).getId().equals(id)) {
                 String url = "http://acm.ut.ac.ir/khaneBeDoosh/house/" + houses.get(i).getId();
-                URL obj = new URL(url);
-                HttpURLConnection con = (HttpURLConnection) obj.openConnection();
-                con.setRequestMethod("GET");
-
-                int responseCode = con.getResponseCode();
-                System.out.println("\nSending 'GET' request to URL : " + url);
-                System.out.println("Response Code : " + responseCode);
-
-                BufferedReader in = new BufferedReader(
-                        new InputStreamReader(con.getInputStream()));
-                String inputLine;
-                StringBuffer response = new StringBuffer();
-
-                while ((inputLine = in.readLine()) != null) {
-                    response.append(inputLine);
-                }
-                in.close();
+                HttpURLConnection con = getHttpURLConnection(url);
+                StringBuffer response = getStringBuffer(con);
                 JSONObject temp = getJsonObject(response);
                 House s = readJsonWithObjectMapper(temp.toString());
                 return s;

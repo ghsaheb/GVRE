@@ -6,7 +6,6 @@
 
 <html>
 <head>
-  <title>Ghazal</title>
 </head>
 <body style="direction: rtl">
 <%

@@ -14,6 +14,7 @@ public class House {
     private String description;
     private Date expireTime;
 
+
     public House() {
     }
 
@@ -26,6 +27,7 @@ public class House {
         this.price = price;
         this.phone = phone;
         this.description = description;
+
     }
 
     public String getId() {

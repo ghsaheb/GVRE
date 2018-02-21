@@ -13,7 +13,7 @@
         IndividualContainer.getIndividualContainer().getIndividual().decreaseBalance(1000);
         try {
             House house = HouseContainer.getHouseContainer().findHouse(request.getParameter("id"));
-            IndividualContainer.getIndividualContainer().getIndividual().addHouse(house);
+            IndividualContainer.getIndividualContainer().getIndividual().addPaidHouse(house);
             request.setAttribute("addcredit", "successfully added");
 
         }
