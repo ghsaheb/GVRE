@@ -8,8 +8,9 @@
 <head>
 </head>
 <body style="direction: rtl">
+<jsp:include page="UserNameCredit.jsp"/>
 <%
-  if (request.getAttribute("creditResult") == (Boolean)true){
+    if (request.getAttribute("creditResult") == (Boolean)true){
 %>
 <h3 style="background-color: #339966;color: white;text-align:center;border-radius:3px;width:500px;margin:auto;height:30px;">افزایش اعتبار به زیبایی انجام شد</h3>
 <%
@@ -18,20 +19,25 @@ else if (request.getAttribute("creditResult") == (Boolean)false){
 %>
 <h3 style="background-color: #991d1c;color: white;text-align:center;border-radius:3px;width:500px;margin:auto;height:30px;">افزایش اعتبار به دیوار برخورد کرد</h3>
 <%
-
-  }
+}if (request.getAttribute("InvalidMaxPrice") != null){
 %>
-
+<h3 style="background-color: #991d1c;color: white;text-align:center;border-radius:3px;width:500px;margin:auto;height:30px;"><%=request.getAttribute("InvalidMaxPrice")%></h3>
 <%
-  if (request.getAttribute("houseAdded") != null) {
+}if (request.getAttribute("InvalidArea") != null){
+%>
+<h3 style="background-color: #991d1c;color: white;text-align:center;border-radius:3px;width:500px;margin:auto;height:30px;"><%=request.getAttribute("InvalidArea")%></h3>
+<%
+    }
+%>
+<%
+    if (request.getAttribute("houseAdded") != null) {
 %>
 <h3 style="background-color: #339966;color: white;text-align:center;border-radius:3px;width:500px;margin:auto;height:30px;">
     <%=request.getAttribute("houseAdded")%>
 </h3>
 <%
-  }
+    }
 %>
-<jsp:include page="UserNameCredit.jsp"/>
 <jsp:include page="SearchForm.jsp"/>
 <jsp:include page="AddPropertyForm.jsp"/>
 <jsp:include page="AddCreditForm.jsp"/>

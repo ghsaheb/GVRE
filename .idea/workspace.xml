@@ -7,28 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cd6febd8-616b-4b46-b954-be47c2a30054" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/RealEstate/InvalidHouseParameterException.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/RealEstateIEProject_war_exploded/WEB-INF/classes/main/java/RealEstate/House.class" afterPath="$PROJECT_DIR$/out/artifacts/RealEstateIEProject_war_exploded/WEB-INF/classes/main/java/RealEstate/House.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/RealEstateIEProject_war_exploded/WEB-INF/classes/main/java/RealEstate/HouseContainer.class" afterPath="$PROJECT_DIR$/out/artifacts/RealEstateIEProject_war_exploded/WEB-INF/classes/main/java/RealEstate/HouseContainer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/RealEstateIEProject_war_exploded/WEB-INF/classes/main/java/RealEstate/User.class" afterPath="$PROJECT_DIR$/out/artifacts/RealEstateIEProject_war_exploded/WEB-INF/classes/main/java/RealEstate/User.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/RealEstateIEProject/main/java/RealEstate/House.class" afterPath="$PROJECT_DIR$/out/production/RealEstateIEProject/main/java/RealEstate/House.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/RealEstateIEProject/main/java/RealEstate/HouseContainer.class" afterPath="$PROJECT_DIR$/out/production/RealEstateIEProject/main/java/RealEstate/HouseContainer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/RealEstateIEProject/main/java/RealEstate/User.class" afterPath="$PROJECT_DIR$/out/production/RealEstateIEProject/main/java/RealEstate/User.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/RealEstateIEProject_war_exploded/AddHouse.jsp" afterPath="$PROJECT_DIR$/out/artifacts/RealEstateIEProject_war_exploded/AddHouse.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/RealEstateIEProject_war_exploded/AddPropertyForm.jsp" afterPath="$PROJECT_DIR$/out/artifacts/RealEstateIEProject_war_exploded/AddPropertyForm.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/RealEstateIEProject_war_exploded/CheckCredit.jsp" afterPath="$PROJECT_DIR$/out/artifacts/RealEstateIEProject_war_exploded/CheckCredit.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/RealEstateIEProject_war_exploded/HouseDetails.jsp" afterPath="$PROJECT_DIR$/out/artifacts/RealEstateIEProject_war_exploded/HouseDetails.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/RealEstateIEProject_war_exploded/UserNameCredit.jsp" afterPath="$PROJECT_DIR$/out/artifacts/RealEstateIEProject_war_exploded/UserNameCredit.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/RealEstateIEProject_war_exploded/index.jsp" afterPath="$PROJECT_DIR$/out/artifacts/RealEstateIEProject_war_exploded/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/RealEstate/House.java" afterPath="$PROJECT_DIR$/src/main/java/RealEstate/House.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/RealEstate/HouseContainer.java" afterPath="$PROJECT_DIR$/src/main/java/RealEstate/HouseContainer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/RealEstate/User.java" afterPath="$PROJECT_DIR$/src/main/java/RealEstate/User.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/AddHouse.jsp" afterPath="$PROJECT_DIR$/web/AddHouse.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/AddPropertyForm.jsp" afterPath="$PROJECT_DIR$/web/AddPropertyForm.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/CheckCredit.jsp" afterPath="$PROJECT_DIR$/web/CheckCredit.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/HouseDetails.jsp" afterPath="$PROJECT_DIR$/web/HouseDetails.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/UserNameCredit.jsp" afterPath="$PROJECT_DIR$/web/UserNameCredit.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/SearchResults.jsp" afterPath="$PROJECT_DIR$/web/SearchResults.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/index.jsp" afterPath="$PROJECT_DIR$/web/index.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -42,57 +22,36 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="AddHouse.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/AddHouse.jsp">
+      <file leaf-file-name="SearchForm.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/SearchForm.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="65" lean-forward="true" selection-start-line="9" selection-start-column="65" selection-end-line="9" selection-end-column="65" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AddPropertyForm.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/AddPropertyForm.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="32" column="67" lean-forward="false" selection-start-line="32" selection-start-column="67" selection-end-line="32" selection-end-column="67" />
+            <state relative-caret-position="465">
+              <caret line="31" column="11" lean-forward="true" selection-start-line="31" selection-start-column="11" selection-end-line="31" selection-end-column="11" />
               <folding>
                 <element signature="n#style#0;n#input#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#input#4;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserNameCredit.jsp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SearchResults.jsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/SearchResults.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="224">
+              <caret line="49" column="6" lean-forward="true" selection-start-line="49" selection-start-column="6" selection-end-line="49" selection-end-column="6" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserNameCredit.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/UserNameCredit.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="54" lean-forward="false" selection-start-line="3" selection-start-column="54" selection-end-line="3" selection-end-column="54" />
+            <state relative-caret-position="180">
+              <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AddCredit.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/AddCredit.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HouseContainer.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/RealEstate/HouseContainer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="122" column="36" lean-forward="true" selection-start-line="122" selection-start-column="36" selection-end-line="122" selection-end-column="36" />
-              <folding>
-                <element signature="e#3099#3106#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -100,23 +59,12 @@
       <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="124">
-              <caret line="16" column="27" lean-forward="false" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
+            <state relative-caret-position="150">
+              <caret line="10" column="40" lean-forward="false" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
               <folding>
                 <element signature="n#style#0;n#h3#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/RealEstate/User.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="39" column="9" lean-forward="true" selection-start-line="39" selection-start-column="9" selection-end-line="39" selection-end-column="9" />
-              <folding>
-                <element signature="e#916#917#0" expanded="true" />
-                <element signature="e#954#955#0" expanded="true" />
+                <element signature="n#style#0;n#h3#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h3#3;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -156,6 +104,8 @@
       <find>بگی</find>
       <find>GHAZAL</find>
       <find>خانه به</find>
+      <find>حداقل</find>
+      <find>OOps</find>
     </findStrings>
     <replaceStrings>
       <replace>Individual</replace>
@@ -184,7 +134,6 @@
         <option value="$PROJECT_DIR$/web/AddCreditForm.jsp" />
         <option value="$PROJECT_DIR$/web/AddCredit.jsp" />
         <option value="$PROJECT_DIR$/web/SearchForm.jsp" />
-        <option value="$PROJECT_DIR$/web/SearchResults.jsp" />
         <option value="$PROJECT_DIR$/web/HouseItem.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/RealEstate/Individual.java" />
         <option value="$PROJECT_DIR$/web/CheckCredit.jsp" />
@@ -192,11 +141,12 @@
         <option value="$PROJECT_DIR$/src/main/java/RealEstate/House.java" />
         <option value="$PROJECT_DIR$/src/main/java/RealEstate/User.java" />
         <option value="$PROJECT_DIR$/src/main/java/RealEstate/HouseContainer.java" />
-        <option value="$PROJECT_DIR$/web/index.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/RealEstate/InvalidHouseParameterException.java" />
         <option value="$PROJECT_DIR$/web/AddHouse.jsp" />
         <option value="$PROJECT_DIR$/web/AddPropertyForm.jsp" />
         <option value="$PROJECT_DIR$/web/UserNameCredit.jsp" />
+        <option value="$PROJECT_DIR$/web/index.jsp" />
+        <option value="$PROJECT_DIR$/web/SearchResults.jsp" />
       </list>
     </option>
   </component>
@@ -495,12 +445,12 @@
       <option name="presentableId" value="Default" />
       <updated>1518537047874</updated>
       <workItem from="1518537049602" duration="69722000" />
-      <workItem from="1518964069035" duration="13609000" />
+      <workItem from="1518964069035" duration="17665000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="83331000" />
+    <option name="totallyTimeSpent" value="87387000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -525,7 +475,7 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28295043" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28295043" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32889965" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19670959" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -615,10 +565,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
           <caret line="32" column="22" lean-forward="false" selection-start-line="32" selection-start-column="22" selection-end-line="32" selection-end-column="22" />
-          <folding>
-            <element signature="e#916#917#0" expanded="true" />
-            <element signature="e#954#955#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -687,26 +634,10 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/HouseItem.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="3" lean-forward="true" selection-start-line="22" selection-start-column="3" selection-end-line="22" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/HouseDetails.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="13" column="31" lean-forward="true" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/SearchForm.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="4" lean-forward="true" selection-start-line="0" selection-start-column="4" selection-end-line="0" selection-end-column="4" />
           <folding />
         </state>
       </provider>
@@ -723,14 +654,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="15" column="87" lean-forward="false" selection-start-line="15" selection-start-column="87" selection-end-line="15" selection-end-column="87" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/SearchResults.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="16" column="2" lean-forward="true" selection-start-line="16" selection-start-column="2" selection-end-line="16" selection-end-column="2" />
           <folding />
         </state>
       </provider>
@@ -761,10 +684,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="495">
           <caret line="39" column="9" lean-forward="true" selection-start-line="39" selection-start-column="9" selection-end-line="39" selection-end-column="9" />
-          <folding>
-            <element signature="e#916#917#0" expanded="true" />
-            <element signature="e#954#955#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -786,28 +706,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="16" column="27" lean-forward="false" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
-          <folding>
-            <element signature="n#style#0;n#h3#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/RealEstate/InvalidHouseParameterException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/AddHouse.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="65" lean-forward="true" selection-start-line="9" selection-start-column="65" selection-end-line="9" selection-end-column="65" />
           <folding />
         </state>
       </provider>
@@ -823,11 +725,59 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/web/AddHouse.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="35" lean-forward="true" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/SearchForm.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="31" column="11" lean-forward="true" selection-start-line="31" selection-start-column="11" selection-end-line="31" selection-end-column="11" />
+          <folding>
+            <element signature="n#style#0;n#input#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/HouseItem.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="3" lean-forward="true" selection-start-line="22" selection-start-column="3" selection-end-line="22" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="40" lean-forward="false" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
+          <folding>
+            <element signature="n#style#0;n#h3#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h3#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h3#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/web/UserNameCredit.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="54" lean-forward="false" selection-start-line="3" selection-start-column="54" selection-end-line="3" selection-end-column="54" />
+        <state relative-caret-position="180">
+          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/SearchResults.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="49" column="6" lean-forward="true" selection-start-line="49" selection-start-column="6" selection-end-line="49" selection-end-column="6" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
