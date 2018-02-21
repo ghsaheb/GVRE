@@ -44,6 +44,7 @@
         }
         request.setAttribute("houseAdded","House added successfully");
     } catch (Exception e){
+        request.setAttribute("InvalidHouseParameter","مقادیر فیلد‌های خانه به درستی وارد نشده است.");
         e.printStackTrace();
     }
 %>

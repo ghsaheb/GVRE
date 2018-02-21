@@ -44,7 +44,7 @@
         }
         request.setAttribute("houseAdded","House added successfully");
     } catch (Exception e){
-        e.printStackTrace();
+        request.setAttribute("InvalidHouseParameter","مقادیر فیلد‌های خانه به درستی وارد نشده است.");
     }
 %>
 <jsp:forward page="index.jsp"/>
