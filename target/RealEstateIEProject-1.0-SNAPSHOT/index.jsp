@@ -1,4 +1,4 @@
-<%@ page import="main.java.RealEstate.*" %>
+<%@ page import="RealEstate.*" %>
 <%@ page import="java.io.*" %>
 <%@ page import="java.net.*" %>
 
@@ -6,7 +6,7 @@
 
 <html>
 <head>
-    <title>Khaneh Be Doosh|Real Estate</title>
+    <title>Khaneh Be Doosh | GVRE</title>
     <meta charset="UTF-8">
 
 </head>

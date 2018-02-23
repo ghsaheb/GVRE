@@ -1,5 +1,5 @@
-<%@ page import="main.java.RealEstate.*" %>
-<%@ page import="RealEstate.*" %><%--
+<%@ page import="RealEstate.*" %>
+<%--
   Created by IntelliJ IDEA.
   User: ghazals
   Date: 2/18/18

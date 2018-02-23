@@ -1,7 +1,8 @@
 <%@ page import="RealEstate.HouseContainer" %>
 <%@ page import="RealEstate.House" %>
 <%@ page import="RealEstate.HouseNotFindException" %>
-<%@ page import="RealEstate.IndividualContainer" %><%--
+<%@ page import="RealEstate.IndividualContainer" %>
+<%--
   Created by IntelliJ IDEA.
   User: ghazals
   Date: 2/14/18
@@ -11,7 +12,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Khaneh Be Doosh|HouseDetails</title>
+    <title>Khaneh Be Doosh | HouseDetails</title>
 </head>
 <body>
 <jsp:include page="UserNameCredit.jsp"/>

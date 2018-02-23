@@ -10,7 +10,6 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta http-equiv="Content-Language" content="fa" />
-    <title>Title</title>
 </head>
 <body>
 <div style="background-color: #ffd96b;text-align:center;width:500px;margin:auto;border-radius:3px;">

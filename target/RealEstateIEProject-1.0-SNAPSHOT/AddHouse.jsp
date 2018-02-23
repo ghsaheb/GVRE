@@ -1,5 +1,4 @@
 <%@ page import="java.util.UUID" %>
-<%@ page import="main.java.RealEstate.*" %>
 <%@ page import="RealEstate.*" %>
 <%--
   Created by IntelliJ IDEA.
@@ -26,7 +25,7 @@
         }
         Boolean dealType = Boolean.parseBoolean(request.getParameter("dealType"));
         String phone = request.getParameter("phone");
-        if (phone.length() == 0){
+        if (phone.length() < 4 || phone.length() > 20 || !(phone.matches("[0-9]+"))){
             throw new InvalidHouseParameterException();
         }
         String description = request.getParameter("description");
