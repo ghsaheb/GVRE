@@ -1,4 +1,4 @@
-package main.java.RealEstate;
+package RealEstate;
 
 public class Price {
     private int basePrice;

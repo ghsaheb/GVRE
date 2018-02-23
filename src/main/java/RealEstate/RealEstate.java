@@ -1,4 +1,4 @@
-package main.java.RealEstate;
+package RealEstate;
 
 public class RealEstate extends User {
     public RealEstate(String name, int id) {

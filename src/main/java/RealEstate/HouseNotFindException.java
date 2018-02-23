@@ -1,4 +1,4 @@
-package main.java.RealEstate;
+package RealEstate;
 
 public class HouseNotFindException extends Exception{
 }

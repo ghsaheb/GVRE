@@ -2,5 +2,8 @@
 /Library/apache-tomcat-9.0.4/webapps/RealEstateIEProject/src/main/java/RealEstate/HouseContainer.java
 /Library/apache-tomcat-9.0.4/webapps/RealEstateIEProject/src/main/java/RealEstate/User.java
 /Library/apache-tomcat-9.0.4/webapps/RealEstateIEProject/src/main/java/RealEstate/HouseNotFindException.java
+/Library/apache-tomcat-9.0.4/webapps/RealEstateIEProject/src/main/java/RealEstate/IndividualContainer.java
+/Library/apache-tomcat-9.0.4/webapps/RealEstateIEProject/src/main/java/RealEstate/InvalidHouseParameterException.java
 /Library/apache-tomcat-9.0.4/webapps/RealEstateIEProject/src/main/java/RealEstate/Individual.java
+/Library/apache-tomcat-9.0.4/webapps/RealEstateIEProject/src/main/java/RealEstate/Price.java
 /Library/apache-tomcat-9.0.4/webapps/RealEstateIEProject/src/main/java/RealEstate/House.java

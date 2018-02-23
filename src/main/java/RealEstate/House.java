@@ -1,4 +1,4 @@
-package main.java.RealEstate;
+package RealEstate;
 
 import java.util.Date;
 

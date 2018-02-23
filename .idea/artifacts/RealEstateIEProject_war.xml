@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="RealEstateIEProject:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="GVRE.war">
+      <element id="artifact" artifact-name="RealEstateIEProject:war exploded" />
+    </root>
+  </artifact>
+</component>

@@ -1,6 +1,4 @@
-package main.java.RealEstate;
-
-import java.util.ArrayList;
+package RealEstate;
 
 public class Individual extends User {
     private String phone;

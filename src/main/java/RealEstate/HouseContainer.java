@@ -1,16 +1,17 @@
-package main.java.RealEstate;
+package RealEstate;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import org.json.simple.JSONObject;
-import org.json.*;
 import org.json.simple.JSONArray;
-import org.json.simple.parser.ParseException;
+import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
+import org.json.simple.parser.ParseException;
 
-
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.net.HttpURLConnection;
+import java.net.URL;
 import java.util.ArrayList;
-import java.net.*;
-import java.io.*;
 
 public class HouseContainer {
     private ArrayList<House> houses;

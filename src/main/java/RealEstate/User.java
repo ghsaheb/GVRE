@@ -1,4 +1,4 @@
-package main.java.RealEstate;
+package RealEstate;
 
 import java.util.ArrayList;
 
@@ -12,8 +12,8 @@ public abstract class User {
     public User(String name, int id) {
         this.name = name;
         this.id = id;
-        this.paidHouses = new ArrayList<>();
-        this.ownedHouses = new ArrayList<>();
+        this.paidHouses = new ArrayList<House>();
+        this.ownedHouses = new ArrayList<House>();
     }
 
     public int getId() {
