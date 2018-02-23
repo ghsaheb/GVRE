@@ -8,9 +8,9 @@ Internet Engineering Project Winter and Spring 2018
 
 ### Prerequisites
 
-Apache Tomcat 9.0.4
-Maven 4.0.0
-JDK 1.8
+* Apache Tomcat 9.0.4
+* Maven 4.0.0
+* JDK 1.8
 
 ## Authors
 
