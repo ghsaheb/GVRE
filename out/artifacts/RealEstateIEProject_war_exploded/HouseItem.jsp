@@ -15,15 +15,15 @@
     <h3>خانه موردنظر یافت نشد. </h3>
     <%
 
-        }
-        else {
+    }
+    else {
         if (!house.isDealType()){
     %>
     قیمت: <%= house.getPrice().getSellPrice() %> تومان<br>
 
     <%
-        }
-        else {
+    }
+    else {
     %>
     قیمت پایه: <%= house.getPrice().getBasePrice() %> تومان<br>
     مبلغ اجاره: <%= house.getPrice().getRentPrice() %> تومان<br>
@@ -36,8 +36,8 @@
     %>
     نوع: فروش<br>
     <%
-        }
-        else {
+    }
+    else {
     %>
     نوع: رهن و اجاره<br>
 

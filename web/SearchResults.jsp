@@ -11,7 +11,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Search Results</title>
+    <title>Khaneh Be Doosh|Search Results</title>
 </head>
 <body>
 <%
@@ -52,7 +52,6 @@
         try {
             ArrayList<House> housesList = s.getFiltered(area, Boolean.parseBoolean(request.getParameter("dealType"))
                     ,request.getParameter("buildingType"), maxPrice);
-            System.out.println("OOPS: " + housesList.size());
             for (int i = 0; i< housesList.size(); i++){
                 House house = housesList.get(i);
                 request.setAttribute("house", house);

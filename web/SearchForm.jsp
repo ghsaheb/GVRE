@@ -6,11 +6,6 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<html>
-<head>
-    <title>Title</title>
-</head>
-<body>
 <div style="background-color:#a5cded;text-align:center;width:500px;margin: auto;border-radius:3px;">
     <form method="get" action="SearchResults.jsp">
         <label>
@@ -31,5 +26,3 @@
         <input type="submit" value="جست‌وجو" style="background-color: #2b69cb;color:white;border-radius:3px;">
     </form>
 </div>
-</body>
-</html>

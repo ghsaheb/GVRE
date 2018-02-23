@@ -15,7 +15,7 @@
     try {
         String id = UUID.randomUUID().toString();
         int area = Integer.parseInt(request.getParameter("area"));
-        String buildingType = request.getParameter("buildingType");
+        String buildingType = new String(request.getParameter("buildingType").getBytes("UTF-8"));
         if (!(buildingType.equals("ویلایی") || buildingType.equals("آپارتمان"))){
             throw new InvalidHouseParameterException();
         }
@@ -32,20 +32,21 @@
         if(!dealType) //kharid
         {
             House newHouse = new House(id,area,buildingType,address,dealType,
-                    new Price(Integer.parseInt(request.getParameter("price")),0,0),phone,description);
+                    new Price(0, 0, Integer.parseInt(request.getParameter("price"))),phone,description);
             HouseContainer.getHouseContainer().addNewHouse(newHouse);
             IndividualContainer.getIndividualContainer().getIndividual().addHouse(newHouse);
         }
         else { //ejare
             House newHouse = new House(id,area,buildingType,address,dealType,
-                    new Price(0, 0, Integer.parseInt(request.getParameter("price"))),phone,description);
+                    new Price(Integer.parseInt(request.getParameter("price")),0,0),phone,description);
             HouseContainer.getHouseContainer().addNewHouse(newHouse);
             IndividualContainer.getIndividualContainer().getIndividual().addHouse(newHouse);
         }
         request.setAttribute("houseAdded","House added successfully");
     } catch (Exception e){
-        request.setAttribute("InvalidHouseParameter","مقادیر فیلد‌های خانه به درستی وارد نشده است.");
+        System.out.println("in:"+ new String(request.getParameter("buildingType").getBytes("UTF-8")));
         e.printStackTrace();
+        request.setAttribute("InvalidHouseParameter","مقادیر فیلد‌های خانه به درستی وارد نشده است.");
     }
 %>
 <jsp:forward page="index.jsp"/>

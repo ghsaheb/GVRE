@@ -135,7 +135,6 @@ public class HouseContainer {
     }
 
     public void addNewHouse(House h){
-        System.out.println("Khoone jadid: "+h.getId()+h.getArea());
         this.localHouses.add(h);
     }
 }

@@ -6,6 +6,9 @@
 
 <html>
 <head>
+    <title>Khaneh Be Doosh|Real Estate</title>
+    <meta charset="UTF-8">
+
 </head>
 <body style="direction: rtl">
 <jsp:include page="UserNameCredit.jsp"/>
