@@ -27,7 +27,6 @@ public class House {
         this.price = price;
         this.phone = phone;
         this.description = description;
-
     }
 
     public String getId() {
