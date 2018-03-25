@@ -7,61 +7,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cd6febd8-616b-4b46-b954-be47c2a30054" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/RealEstateIEProject-1.0-SNAPSHOT/META-INF/MANIFEST.MF" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/RealEstateIEProject-1.0-SNAPSHOT/WEB-INF/classes/AddCredit.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/RealEstateIEProject-1.0-SNAPSHOT/WEB-INF/classes/AddHouse.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/RealEstateIEProject-1.0-SNAPSHOT/WEB-INF/classes/CheckCredit.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/RealEstateIEProject-1.0-SNAPSHOT/WEB-INF/classes/HouseDetails.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/RealEstateIEProject-1.0-SNAPSHOT/WEB-INF/classes/HouseItem.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/RealEstateIEProject-1.0-SNAPSHOT/WEB-INF/classes/SearchResults.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/RealEstateIEProject-1.0-SNAPSHOT/WEB-INF/classes/UserNameCredit.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/AddCredit.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/AddHouse.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/CheckCredit.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/HouseDetails.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/HouseItem.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/SearchResults.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/UserNameCredit.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/css/maven-base.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/css/maven-theme.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/css/print.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/css/site.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/dependencies.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/dependency-convergence.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/dependency-info.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/images/close.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/images/collapsed.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/images/expanded.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/images/external.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/images/icon_error_sml.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/images/icon_info_sml.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/images/icon_success_sml.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/images/icon_warning_sml.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/images/logos/build-by-maven-black.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/images/logos/build-by-maven-white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/images/logos/maven-feather.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/images/newwindow.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/plugin-management.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/plugins.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/project-info.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/project-summary.html" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/deploy.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shutdown.sh" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/GVRE.war" afterPath="$PROJECT_DIR$/target/GVRE.war" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/RealEstateIEProject-1.0-SNAPSHOT/static/images/no-pic.jpg" afterPath="$PROJECT_DIR$/target/RealEstateIEProject-1.0-SNAPSHOT/static/images/no-pic.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/RealEstateIEProject-1.0-SNAPSHOT/AddHouse.jsp" afterPath="$PROJECT_DIR$/target/RealEstateIEProject-1.0-SNAPSHOT/AddHouse.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/RealEstateIEProject-1.0-SNAPSHOT/CheckCredit.jsp" afterPath="$PROJECT_DIR$/target/RealEstateIEProject-1.0-SNAPSHOT/CheckCredit.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/RealEstateIEProject-1.0-SNAPSHOT/index.jsp" afterPath="$PROJECT_DIR$/target/RealEstateIEProject-1.0-SNAPSHOT/index.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/AddHouse.jsp" afterPath="$PROJECT_DIR$/web/AddHouse.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/AddPropertyForm.jsp" afterPath="$PROJECT_DIR$/web/AddPropertyForm.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/CheckCredit.jsp" afterPath="$PROJECT_DIR$/web/CheckCredit.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/HouseDetails.jsp" afterPath="$PROJECT_DIR$/web/HouseDetails.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/SearchResults.jsp" afterPath="$PROJECT_DIR$/web/SearchResults.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/index.jsp" afterPath="$PROJECT_DIR$/web/index.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -85,103 +37,51 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="AddHouse.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/AddHouse.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="25" column="51" lean-forward="false" selection-start-line="25" selection-start-column="51" selection-end-line="25" selection-end-column="51" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HouseContainer.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/RealEstate/HouseContainer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="36" column="23" lean-forward="false" selection-start-line="36" selection-start-column="23" selection-end-line="36" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AddPropertyForm.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/AddPropertyForm.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="25" lean-forward="false" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/index.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="26" lean-forward="false" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="26" column="18" lean-forward="false" selection-start-line="26" selection-start-column="18" selection-end-line="26" selection-end-column="18" />
+            <state relative-caret-position="285">
+              <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="21" selection-end-column="35" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserNameCredit.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/UserNameCredit.jsp">
+      <file leaf-file-name="web.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="26" lean-forward="false" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
+            <state relative-caret-position="60">
+              <caret line="4" column="23" lean-forward="false" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CheckCredit.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/CheckCredit.jsp">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="15">
-              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+              <caret line="1" column="8" lean-forward="false" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="8" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SearchForm.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/SearchForm.jsp">
+      <file leaf-file-name="deploy.sh" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/deploy.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="15" lean-forward="false" selection-start-line="21" selection-start-column="15" selection-end-line="21" selection-end-column="15" />
+            <state relative-caret-position="90">
+              <caret line="6" column="11" lean-forward="true" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SearchResults.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/SearchResults.jsp">
+      <file leaf-file-name="shutdown.sh" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/shutdown.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="186">
-              <caret line="13" column="29" lean-forward="false" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
-              <folding>
-                <marker date="1519385742118" expanded="true" signature="1802:1968" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HouseDetails.jsp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/HouseDetails.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="68" column="6" lean-forward="true" selection-start-line="68" selection-start-column="6" selection-end-line="68" selection-end-column="6" />
+            <state relative-caret-position="30">
+              <caret line="2" column="15" lean-forward="false" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
               <folding />
             </state>
           </provider>
@@ -262,11 +162,17 @@
         <option value="$PROJECT_DIR$/src/main/java/RealEstate/User.java" />
         <option value="$PROJECT_DIR$/web/CheckCredit.jsp" />
         <option value="$PROJECT_DIR$/web/AddHouse.jsp" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/web/index.jsp" />
         <option value="$PROJECT_DIR$/web/AddPropertyForm.jsp" />
         <option value="$PROJECT_DIR$/web/SearchResults.jsp" />
         <option value="$PROJECT_DIR$/web/HouseDetails.jsp" />
+        <option value="$PROJECT_DIR$/web/ServletTest.java" />
+        <option value="$PROJECT_DIR$/web/ServletAlaki.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/deploy.sh" />
+        <option value="$PROJECT_DIR$/shutdown.sh" />
       </list>
     </option>
   </component>
@@ -311,9 +217,30 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="width" value="718" />
-    <option name="height" value="900" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="67" />
+    <option name="y" value="88" />
+    <option name="width" value="708" />
+    <option name="height" value="555" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>BashSupport</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>BashSimpleVarUsage</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -332,6 +259,9 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="AndroidView" />
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -342,41 +272,12 @@
             <path>
               <item name="GVRE" type="b2602c69:ProjectViewProjectNode" />
               <item name="GVRE" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GVRE" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GVRE" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GVRE" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GVRE" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GVRE" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GVRE" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="RealEstate" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GVRE" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GVRE" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -389,6 +290,7 @@
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Library/apache-tomcat-9.0.4/webapps/RealEstateIEProject/web/SearchResults.jsp" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="settings.editor.selected.configurable" value="copyright" />
+    <property name="ChangesBrowser.SHOW_FLATTEN" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -401,231 +303,6 @@
       <recent name="$PROJECT_DIR$/web" />
       <recent name="$PROJECT_DIR$/web/WEB-INF" />
     </key>
-  </component>
-  <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
-    <UpdatedFiles>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Updated from server" />
-        <option name="myStatusName" value="Changed on server" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="CHANGED_ON_SERVER" />
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Updated" />
-          <option name="myStatusName" value="Changed" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="UPDATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.DS_Store</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/workspace.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/.DS_Store</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/.DS_Store</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/RealEstate/House.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/RealEstate/HouseContainer.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/RealEstate/HouseNotFindException.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/RealEstate/Individual.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/RealEstate/IndividualContainer.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/RealEstate/InvalidHouseParameterException.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/RealEstate/Price.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/RealEstate/RealEstate.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/RealEstate/User.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/GVRE.war</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/RealEstateIEProject-1.0-SNAPSHOT/AddCredit.jsp</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/RealEstateIEProject-1.0-SNAPSHOT/AddCreditForm.jsp</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/RealEstateIEProject-1.0-SNAPSHOT/AddHouse.jsp</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/RealEstateIEProject-1.0-SNAPSHOT/CheckCredit.jsp</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/RealEstateIEProject-1.0-SNAPSHOT/HouseDetails.jsp</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/RealEstateIEProject-1.0-SNAPSHOT/HouseItem.jsp</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/RealEstateIEProject-1.0-SNAPSHOT/META-INF/MANIFEST.MF</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/RealEstateIEProject-1.0-SNAPSHOT/SearchForm.jsp</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/RealEstateIEProject-1.0-SNAPSHOT/SearchResults.jsp</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/RealEstateIEProject-1.0-SNAPSHOT/UserNameCredit.jsp</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/RealEstateIEProject-1.0-SNAPSHOT/WEB-INF/classes/HouseDetails.jsp</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/RealEstateIEProject-1.0-SNAPSHOT/index.jsp</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/HouseDetails.jsp</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/maven-archiver/pom.properties</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/AddCredit.jsp</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/AddCreditForm.jsp</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/AddHouse.jsp</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/CheckCredit.jsp</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/HouseDetails.jsp</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/HouseItem.jsp</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/SearchForm.jsp</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/SearchResults.jsp</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/UserNameCredit.jsp</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/index.jsp</PATH>
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Created" />
-          <option name="myStatusName" value="Created" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="CREATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/RealEstateIEProject-1.0-SNAPSHOT/WEB-INF/classes/AddCredit.jsp</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/RealEstateIEProject-1.0-SNAPSHOT/WEB-INF/classes/AddHouse.jsp</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/RealEstateIEProject-1.0-SNAPSHOT/WEB-INF/classes/CheckCredit.jsp</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/RealEstateIEProject-1.0-SNAPSHOT/WEB-INF/classes/HouseItem.jsp</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/RealEstateIEProject-1.0-SNAPSHOT/WEB-INF/classes/RealEstate/House.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/RealEstateIEProject-1.0-SNAPSHOT/WEB-INF/classes/RealEstate/HouseContainer.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/RealEstateIEProject-1.0-SNAPSHOT/WEB-INF/classes/RealEstate/HouseNotFindException.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/RealEstateIEProject-1.0-SNAPSHOT/WEB-INF/classes/RealEstate/Individual.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/RealEstateIEProject-1.0-SNAPSHOT/WEB-INF/classes/RealEstate/IndividualContainer.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/RealEstateIEProject-1.0-SNAPSHOT/WEB-INF/classes/RealEstate/InvalidHouseParameterException.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/RealEstateIEProject-1.0-SNAPSHOT/WEB-INF/classes/RealEstate/Price.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/RealEstateIEProject-1.0-SNAPSHOT/WEB-INF/classes/RealEstate/RealEstate.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/RealEstateIEProject-1.0-SNAPSHOT/WEB-INF/classes/RealEstate/User.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/RealEstateIEProject-1.0-SNAPSHOT/WEB-INF/classes/SearchResults.jsp</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/RealEstateIEProject-1.0-SNAPSHOT/WEB-INF/classes/UserNameCredit.jsp</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/AddCredit.jsp</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/AddHouse.jsp</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/CheckCredit.jsp</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/HouseItem.jsp</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/RealEstate/House.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/RealEstate/HouseContainer.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/RealEstate/HouseNotFindException.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/RealEstate/Individual.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/RealEstate/IndividualContainer.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/RealEstate/InvalidHouseParameterException.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/RealEstate/Price.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/RealEstate/RealEstate.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/RealEstate/User.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/SearchResults.jsp</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/UserNameCredit.jsp</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/site/css/maven-base.css</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/site/css/maven-theme.css</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/site/css/print.css</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/site/css/site.css</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/site/dependencies.html</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/site/dependency-convergence.html</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/site/dependency-info.html</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/site/images/close.gif</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/site/images/collapsed.gif</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/site/images/expanded.gif</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/site/images/external.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/site/images/icon_error_sml.gif</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/site/images/icon_info_sml.gif</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/site/images/icon_success_sml.gif</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/site/images/icon_warning_sml.gif</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/site/images/logos/build-by-maven-black.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/site/images/logos/build-by-maven-white.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/site/images/logos/maven-feather.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/site/images/newwindow.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/site/index.html</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/site/plugin-management.html</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/site/plugins.html</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/site/project-info.html</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/site/project-summary.html</PATH>
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Deleted" />
-          <option name="myStatusName" value="Deleted" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="true" />
-          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/RealEstateIEProject-1.0-SNAPSHOT/WEB-INF/classes/main/java/RealEstate/House.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/RealEstateIEProject-1.0-SNAPSHOT/WEB-INF/classes/main/java/RealEstate/HouseContainer.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/RealEstateIEProject-1.0-SNAPSHOT/WEB-INF/classes/main/java/RealEstate/HouseNotFindException.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/RealEstateIEProject-1.0-SNAPSHOT/WEB-INF/classes/main/java/RealEstate/Individual.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/RealEstateIEProject-1.0-SNAPSHOT/WEB-INF/classes/main/java/RealEstate/IndividualContainer.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/RealEstateIEProject-1.0-SNAPSHOT/WEB-INF/classes/main/java/RealEstate/InvalidHouseParameterException.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/RealEstateIEProject-1.0-SNAPSHOT/WEB-INF/classes/main/java/RealEstate/Price.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/RealEstateIEProject-1.0-SNAPSHOT/WEB-INF/classes/main/java/RealEstate/RealEstate.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/RealEstateIEProject-1.0-SNAPSHOT/WEB-INF/classes/main/java/RealEstate/User.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/RealEstateIEProject-1.0-SNAPSHOT/WEB-INF/classes/static/images/no-pic.jpg</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/main/java/RealEstate/House.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/main/java/RealEstate/HouseContainer.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/main/java/RealEstate/HouseNotFindException.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/main/java/RealEstate/Individual.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/main/java/RealEstate/IndividualContainer.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/main/java/RealEstate/InvalidHouseParameterException.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/main/java/RealEstate/Price.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/main/java/RealEstate/RealEstate.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/main/java/RealEstate/User.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/static/images/no-pic.jpg</PATH>
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Restored" />
-          <option name="myStatusName" value="Will be restored" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="RESTORED" />
-        </FILE-GROUP>
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Modified" />
-        <option name="myStatusName" value="Modified" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MODIFIED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Skipped" />
-        <option name="myStatusName" value="Skipped" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="SKIPPED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with conflicts" />
-        <option name="myStatusName" value="Will be merged with conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_CONFLICTS" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with tree conflicts" />
-        <option name="myStatusName" value="Merged with tree conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with property conflicts" />
-        <option name="myStatusName" value="Will be merged with property conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged" />
-        <option name="myStatusName" value="Will be merged" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Not in repository" />
-        <option name="myStatusName" value="Not in repository" />
-        <option name="mySupportsDeletion" value="true" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="UNKNOWN" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Locally added" />
-        <option name="myStatusName" value="Locally added" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="LOCALLY_ADDED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Locally removed" />
-        <option name="myStatusName" value="Locally removed" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="LOCALLY_REMOVED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Switched" />
-        <option name="myStatusName" value="Switched" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="SWITCHED" />
-      </FILE-GROUP>
-    </UpdatedFiles>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -808,21 +485,25 @@
       <workItem from="1519303502018" duration="11704000" />
       <workItem from="1519381320596" duration="245000" />
       <workItem from="1519381570491" duration="1201000" />
+      <workItem from="1521964242158" duration="534000" />
+      <workItem from="1521966060693" duration="1075000" />
+      <workItem from="1521968016457" duration="322000" />
+      <workItem from="1521968365553" duration="1430000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="105601000" />
+    <option name="totallyTimeSpent" value="111399000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="67" y="25" width="1299" height="743" extended-state="6" />
+    <frame x="67" y="88" width="1299" height="743" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Tool Output" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2585794" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19957082" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960895" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -832,51 +513,24 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38071895" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21069433" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32889965" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32889965" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34150326" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3267974" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.207502" sideWeight="0.72712415" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20430966" sideWeight="0.27287582" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Tool Output" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19957082" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960895" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="ANTLR Preview" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24980047" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32769045" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3796856" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32889965" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32769045" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1981402" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32889965" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -930,48 +584,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/AddPropertyForm.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="21" lean-forward="false" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/RealEstate/Price.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="35" lean-forward="false" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/RealEstate/HouseContainer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="18" lean-forward="true" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
-          <folding>
-            <element signature="e#3181#3188#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/RealEstate/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="22" lean-forward="false" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/HouseDetails.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="6" lean-forward="true" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/HouseItem.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
@@ -1020,7 +632,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="9" column="35" lean-forward="false" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1028,7 +639,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="22" lean-forward="false" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1108,7 +718,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
           <caret line="32" column="22" lean-forward="false" selection-start-line="32" selection-start-column="22" selection-end-line="32" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1118,19 +727,10 @@
     <entry file="file://$PROJECT_DIR$/web/images/no-pic.jpg" />
     <entry file="file:///private/var/folders/40/m1l1vg2542j11hnly70glgb40000gn/T/modules.uml" />
     <entry file="jar://$PROJECT_DIR$/../../../Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home/src.zip!/java/lang/NumberFormatException.java" />
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/RealEstate/House.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
           <caret line="26" column="27" lean-forward="true" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1138,7 +738,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1146,7 +745,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1154,7 +752,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1162,7 +759,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1170,7 +766,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="9" column="35" lean-forward="false" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1178,7 +773,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1186,15 +780,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="22" lean-forward="false" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1211,16 +796,6 @@
         <state relative-caret-position="225">
           <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/HouseItem.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="6" lean-forward="false" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="6" />
-          <folding>
-            <marker date="1519383417848" expanded="true" signature="826:841" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1252,7 +827,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="36" column="23" lean-forward="false" selection-start-line="36" selection-start-column="23" selection-end-line="36" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1260,14 +834,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="25" column="51" lean-forward="false" selection-start-line="25" selection-start-column="51" selection-end-line="25" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="26" column="18" lean-forward="false" selection-start-line="26" selection-start-column="18" selection-end-line="26" selection-end-column="18" />
           <folding />
         </state>
       </provider>
@@ -1288,6 +854,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/HouseItem.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="6" lean-forward="false" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="6" />
+          <folding>
+            <marker date="1519383417848" expanded="true" signature="826:841" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/web/SearchResults.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="186">
@@ -1300,8 +886,50 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/HouseDetails.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="68" column="6" lean-forward="true" selection-start-line="68" selection-start-column="6" selection-end-line="68" selection-end-column="6" />
+        <state relative-caret-position="45">
+          <caret line="63" column="14" lean-forward="true" selection-start-line="63" selection-start-column="14" selection-end-line="63" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/ServletTest.java" />
+    <entry file="file://$PROJECT_DIR$/web/ServletAlaki.java" />
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="21" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="23" lean-forward="false" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="8" lean-forward="false" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deploy.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="11" lean-forward="true" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shutdown.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="15" lean-forward="false" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
           <folding />
         </state>
       </provider>
