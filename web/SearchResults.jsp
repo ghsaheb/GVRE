@@ -1,6 +1,5 @@
-<%@ page import="RealEstate.HouseContainer" %>
 <%@ page import="java.util.ArrayList" %>
-<%@ page import="RealEstate.House" %>
+<%@ page import="RealEstatePackage.House" %>
 <%--
   Created by IntelliJ IDEA.
   User: ghazals
@@ -14,14 +13,6 @@
     <title>Khaneh Be Doosh | Search Results</title>
 </head>
 <body>
-<%
-    HouseContainer s = HouseContainer.getHouseContainer();
-    try {
-        s.getHouses();
-    } catch (Exception e) {
-        e.printStackTrace();
-    }
-%>
 <jsp:include page="UserNameCredit.jsp"/>
 <div style="display: flex;flex-wrap: wrap;justify-content: space-between;width: 90%;margin: auto;text-align: center;">
     <%
@@ -50,7 +41,7 @@
     <%
         }
         try {
-            ArrayList<House> housesList = s.getFiltered(area, Boolean.parseBoolean(request.getParameter("dealType"))
+            ArrayList<House> housesList = House.getFiltered(area, Boolean.parseBoolean(request.getParameter("dealType"))
                     ,request.getParameter("buildingType"), maxPrice);
             for (int i = 0; i< housesList.size(); i++){
                 House house = housesList.get(i);

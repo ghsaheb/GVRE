@@ -1,4 +1,4 @@
-package RealEstate;
+package RealEstatePackage;
 
 import java.util.ArrayList;
 

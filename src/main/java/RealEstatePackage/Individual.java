@@ -1,5 +1,8 @@
-package RealEstate;
+package RealEstatePackage;
 
+import org.json.simple.parser.ParseException;
+
+import java.io.IOException;
 import java.util.ArrayList;
 
 public class Individual extends User {
@@ -11,7 +14,7 @@ public class Individual extends User {
     private ArrayList<House> paidHouses;
 
 
-    public Individual(String name, int id, String phone, int balance, String username, String password) {
+    Individual(String name, int id, String phone, int balance, String username, String password) {
         super(name);
         this.id = id;
         this.phone = phone;
@@ -70,18 +73,28 @@ public class Individual extends User {
     }
 
     public void addPaidHouse(House house){
-        for (int i = 0; i < paidHouses.size();i++){
-            if (paidHouses.get(i).getId().equals(house.getId()))
+        for (House paidHouse : paidHouses) {
+            if (paidHouse.getId().equals(house.getId()))
                 return;
         }
         paidHouses.add(house);
     }
 
     public boolean searchForHouse(House house){
-        for (int i = 0; i < paidHouses.size();i++){
-            if (paidHouses.get(i).getId().equals(house.getId()))
+        for (House paidHouse : paidHouses) {
+            if (paidHouse.getId().equals(house.getId()))
                 return true;
         }
         return false;
     }
+
+    public House findHouse(String id) throws IOException, ParseException {
+        for (House ownedHouse : ownedHouses) {
+            if (ownedHouse.getId().equals(id)) {
+                return ownedHouse;
+            }
+        }
+        return null;
+    }
+
 }

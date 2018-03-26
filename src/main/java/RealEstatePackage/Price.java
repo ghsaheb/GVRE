@@ -1,4 +1,4 @@
-package RealEstate;
+package RealEstatePackage;
 
 public class Price {
     private int basePrice;

@@ -1,5 +1,5 @@
 <%@ page import="java.util.UUID" %>
-<%@ page import="RealEstate.*" %>
+<%@ page import="RealEstatePackage.*" %>
 <%--
   Created by IntelliJ IDEA.
   User: ghazals
@@ -33,13 +33,11 @@
         {
             House newHouse = new House(id,area,buildingType,address,dealType,
                     new Price(0, 0, Integer.parseInt(request.getParameter("price"))),phone,description);
-            HouseContainer.getHouseContainer().addNewHouse(newHouse);
             IndividualContainer.getIndividualContainer().getIndividual().addHouse(newHouse);
         }
         else { //ejare
             House newHouse = new House(id,area,buildingType,address,dealType,
                     new Price(0, Integer.parseInt(request.getParameter("price")), 0),phone,description);
-            HouseContainer.getHouseContainer().addNewHouse(newHouse);
             IndividualContainer.getIndividualContainer().getIndividual().addHouse(newHouse);
         }
         request.setAttribute("houseAdded","House added successfully");

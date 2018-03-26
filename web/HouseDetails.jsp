@@ -1,7 +1,6 @@
-<%@ page import="RealEstate.HouseContainer" %>
-<%@ page import="RealEstate.House" %>
-<%@ page import="RealEstate.HouseNotFindException" %>
-<%@ page import="RealEstate.IndividualContainer" %>
+<%@ page import="RealEstatePackage.House" %>
+<%@ page import="RealEstatePackage.HouseNotFindException" %>
+<%@ page import="RealEstatePackage.IndividualContainer" %>
 <%--
   Created by IntelliJ IDEA.
   User: ghazals
@@ -32,10 +31,9 @@
     <%
     }
         }
-    HouseContainer houses = HouseContainer.getHouseContainer();
     House foundedHouse;
     try {
-        foundedHouse = houses.findHouse(request.getParameter("id"));
+        foundedHouse = House.findHouse(request.getParameter("id"));
 %>
 نوع ساختمان: <%= foundedHouse.getBuildingType()%><br>
 متراژ: <%= foundedHouse.getArea()%> متر <br>

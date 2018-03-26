@@ -1,4 +1,4 @@
-<%@ page import="RealEstate.*" %>
+<%@ page import="RealEstatePackage.*" %>
 <%--
   Created by IntelliJ IDEA.
   User: ghazals
@@ -11,7 +11,7 @@
     if(IndividualContainer.getIndividualContainer().getIndividual().getBalance() >= 1000){
         IndividualContainer.getIndividualContainer().getIndividual().decreaseBalance(1000);
         try {
-            House house = HouseContainer.getHouseContainer().findHouse(request.getParameter("id"));
+            House house = House.findHouse(request.getParameter("id"));
             IndividualContainer.getIndividualContainer().getIndividual().addPaidHouse(house);
             request.setAttribute("addcredit", "successfully added");
 

@@ -1,5 +1,5 @@
-<%@ page import="RealEstate.Individual" %>
-<%@ page import="RealEstate.IndividualContainer" %>
+<%@ page import="RealEstatePackage.Individual" %>
+<%@ page import="RealEstatePackage.IndividualContainer" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <h2 style="border-radius: 3px;background-color: #112503;color: white;text-align: center;"> خانه به دوش</h2>
 <div style="height: 70px;

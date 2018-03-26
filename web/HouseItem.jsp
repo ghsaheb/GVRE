@@ -1,4 +1,4 @@
-<%@ page import="RealEstate.House" %>
+<%@ page import="RealEstatePackage.House" %>
 <%--
   Created by IntelliJ IDEA.
   User: ghazals

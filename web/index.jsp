@@ -1,4 +1,4 @@
-<%@ page import="RealEstate.*" %>
+<%@ page import="RealEstatePackage.*" %>
 <%@ page import="java.io.*" %>
 <%@ page import="java.net.*" %>
 

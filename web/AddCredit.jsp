@@ -2,7 +2,7 @@
 <%@ page import="java.net.HttpURLConnection" %>
 <%@ page import="org.json.simple.JSONObject" %>
 <%@ page import="java.io.OutputStreamWriter" %>
-<%@ page import="RealEstate.IndividualContainer" %><%--
+<%@ page import="RealEstatePackage.IndividualContainer" %><%--
   Created by IntelliJ IDEA.
   User: ghazals
   Date: 2/17/18
