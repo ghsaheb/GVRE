@@ -39,7 +39,7 @@
         System.out.println("\nSending 'POST' request to URL : " + url);
         System.out.println("Response Code : " + responseCode);
         if(responseCode == 200) {
-            IndividualContainer.getIndividualContainer().getIndividual().increaseBalance(Integer.parseInt(request.getParameter("credit")));
+            IndividualContainer.getIndividualContainer().getIndividual().increaseCredit(Integer.parseInt(request.getParameter("credit")));
             request.setAttribute("creditResult", true);
         }
         else {

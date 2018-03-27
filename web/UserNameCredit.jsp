@@ -11,5 +11,5 @@
         Individual user = ic.getIndividual();
     %>
     <p style="direction: rtl;float: right">نام کاربری: <%=user.getName()%></p>
-    <p style="direction: rtl;float: left">اعتبار شما: <%=user.getBalance()%></p>
+    <p style="direction: rtl;float: left">اعتبار شما: <%=user.getCredit()%></p>
 </div>

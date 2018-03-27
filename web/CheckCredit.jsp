@@ -8,8 +8,8 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%
-    if(IndividualContainer.getIndividualContainer().getIndividual().getBalance() >= 1000){
-        IndividualContainer.getIndividualContainer().getIndividual().decreaseBalance(1000);
+    if(IndividualContainer.getIndividualContainer().getIndividual().getCredit() >= 1000){
+        IndividualContainer.getIndividualContainer().getIndividual().decreaseCredit(1000);
         try {
             House house = House.findHouse(request.getParameter("id"));
             IndividualContainer.getIndividualContainer().getIndividual().addPaidHouse(house);

@@ -1,24 +1,32 @@
 package RealEstatePackage;
 
+import org.json.simple.JSONObject;
 import org.json.simple.parser.ParseException;
 
+import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.io.OutputStreamWriter;
+import java.net.MalformedURLException;
+import java.net.ProtocolException;
+import java.net.URL;
+import java.net.HttpURLConnection;
 import java.util.ArrayList;
 
 public class Individual extends User {
     private int id;
     private String phone;
-    private int balance;
+    private int credit;
     private String username;
     private String password;
     private ArrayList<House> paidHouses;
+    private static final String bankURL = "http://acm.ut.ac.ir/ieBank/pay";
+    private static final String apiKey = "4e4d47e0-13c6-11e8-87b4-496f79ef1988";
 
-
-    Individual(String name, int id, String phone, int balance, String username, String password) {
+    Individual(String name, int id, String phone, int credit, String username, String password) {
         super(name);
         this.id = id;
         this.phone = phone;
-        this.balance = balance;
+        this.credit = credit;
         this.username = username;
         this.password = password;
         this.paidHouses = new ArrayList<House>();
@@ -40,12 +48,12 @@ public class Individual extends User {
         this.phone = phone;
     }
 
-    public int getBalance() {
-        return balance;
+    public int getCredit() {
+        return credit;
     }
 
-    public void setBalance(int balance) {
-        this.balance = balance;
+    public void setCredit(int credit) {
+        this.credit = credit;
     }
 
     public String getUsername() {
@@ -64,12 +72,12 @@ public class Individual extends User {
         this.password = password;
     }
 
-    public void increaseBalance(int inc){
-        this.balance += inc;
+    private void increaseCredit(int inc){
+        this.credit += inc;
     }
 
-    public void decreaseBalance(int dec){
-        this.balance -= dec;
+    public void decreaseCredit(int dec){
+        this.credit -= dec;
     }
 
     public void addPaidHouse(House house){
@@ -97,4 +105,36 @@ public class Individual extends User {
         return null;
     }
 
+    public int addCredit(int amount) {
+        try {
+            URL obj = new URL(bankURL);
+            HttpURLConnection con = (HttpURLConnection) obj.openConnection();
+            con.setDoOutput(true);
+            con.setRequestMethod("POST");
+            con.setRequestProperty("apiKey", apiKey);
+            con.setRequestProperty("Content-Type", "application/json");
+
+            JSONObject data = new JSONObject();
+            data.put("userId", this.id);
+            data.put("value", amount);
+            OutputStreamWriter wr = new OutputStreamWriter(con.getOutputStream());
+            wr.write(data.toString());
+            wr.flush();
+            wr.close();
+
+            int responseCode = con.getResponseCode();
+            System.out.println("\nSending 'POST' request to URL : " + bankURL);
+            System.out.println("Response Code : " + responseCode);
+            if (responseCode == 200) {
+                this.increaseCredit(amount);
+            }
+            return responseCode;
+        } catch (ProtocolException e) {
+            return HttpServletResponse.SC_INTERNAL_SERVER_ERROR;
+        } catch (MalformedURLException e) {
+            return HttpServletResponse.SC_INTERNAL_SERVER_ERROR;
+        } catch (IOException e) {
+            return HttpServletResponse.SC_INTERNAL_SERVER_ERROR;
+        }
+    }
 }
