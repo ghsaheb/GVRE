@@ -113,7 +113,7 @@ public class House {
         this.expireTime = expireTime;
     }
 
-    public static ArrayList<House> getFiltered(long area, boolean dealType, String buildingType, int maxPrice){
+    public static ArrayList<House> getFiltered(long area, String dealType, String buildingType, int maxPrice){
         try {
             RealEstateContainer.getRealEstateContainer().updateHouses();
         } catch (ParseException e) {
@@ -133,16 +133,17 @@ public class House {
         return filtered;
     }
 
-    private static void applyFilter(long area, boolean dealType, String buildingType, int maxPrice, ArrayList<House> filtered, House temp) {
-        if (temp.getArea() >= area && temp.isDealType() == dealType && temp.getBuildingType().equals(buildingType)){
-            if (!temp.isDealType() && temp.getPrice().getSellPrice() <= maxPrice){
-                filtered.add(temp);
-
-            }
-            else if (temp.isDealType() && temp.getPrice().getRentPrice() <= maxPrice){
-                filtered.add(temp);
-            }
+    private static void applyFilter(long area, String dealType, String buildingType, int maxPrice, ArrayList<House> filtered, House temp) {
+        if (temp.getArea() < area) return;
+        if (buildingType != null){
+            if (!(temp.getBuildingType().equals(buildingType))) return;
         }
+        if (dealType != null){
+            if (temp.isDealType() != Boolean.parseBoolean(dealType)) return;
+        }
+        if (temp.isDealType() && temp.getPrice().getRentPrice() > maxPrice) return;
+        if (!temp.isDealType() && temp.getPrice().getSellPrice() > maxPrice) return;
+        filtered.add(temp);
     }
 
     public static House findHouse(String id) throws HouseNotFindException {

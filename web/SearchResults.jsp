@@ -41,7 +41,7 @@
     <%
         }
         try {
-            ArrayList<House> housesList = House.getFiltered(area, Boolean.parseBoolean(request.getParameter("dealType"))
+            ArrayList<House> housesList = House.getFiltered(area, request.getParameter("dealType")
                     ,request.getParameter("buildingType"), maxPrice);
             for (int i = 0; i< housesList.size(); i++){
                 House house = housesList.get(i);
