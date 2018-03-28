@@ -29,7 +29,9 @@ public class Credit extends HttpServlet {
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        response.setCharacterEncoding("UTF-8");
         response.setContentType("application/json");
+
         Map<String, Object> payload = new HashMap<String, Object>();
         payload.put("userId", IndividualContainer.getIndividualContainer().getIndividual().getId());
         payload.put("credit", IndividualContainer.getIndividualContainer().getIndividual().getCredit());

@@ -17,6 +17,8 @@ public class Houses extends HttpServlet {
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         response.setCharacterEncoding("UTF-8");
+        response.setContentType("application/json");
+
         int maxPrice = Integer.MAX_VALUE;
         long minArea = 0;
         try {
@@ -43,9 +45,9 @@ public class Houses extends HttpServlet {
             response.setStatus(HttpServletResponse.SC_BAD_REQUEST);
             return;
         }
-        ArrayList<House> housesList = House.getFiltered(minArea, request.getParameter("deal")
+        ArrayList<House> payload = House.getFiltered(minArea, request.getParameter("deal")
                 ,request.getParameter("type"), maxPrice);
-        String payloadString = new ObjectMapper().writerWithDefaultPrettyPrinter().writeValueAsString(housesList);
+        String payloadString = new ObjectMapper().writerWithDefaultPrettyPrinter().writeValueAsString(payload);
         response.getWriter().write(payloadString);
     }
 }
