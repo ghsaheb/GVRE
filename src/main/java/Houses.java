@@ -73,7 +73,7 @@ public class Houses extends HttpServlet {
                     new Price(0, price, 0), phone, description);
             IndividualContainer.getIndividualContainer().getIndividual().addHouse(newHouse);
         }
-        response.setStatus(HttpServletResponse.SC_OK);
+        response.setStatus(HttpServletResponse.SC_CREATED);
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

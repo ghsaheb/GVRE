@@ -53,7 +53,7 @@ else {
 آدرس: <%= foundedHouse.getAddress()%><br>
 توضیحات: <%= foundedHouse.getDescription()%><br>
     <%
-        if (!IndividualContainer.getIndividualContainer().getIndividual().searchForHouse(foundedHouse)){
+        if (!IndividualContainer.getIndividualContainer().getIndividual().searchForHouse(foundedHouse.getId())){
     %>
 <a href="CheckCredit.jsp?id=<%=foundedHouse.getId()%>"><button type="button">دریافت شماره مالک / مشاور </button></a>
 

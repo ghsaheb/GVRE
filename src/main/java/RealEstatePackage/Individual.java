@@ -76,21 +76,28 @@ public class Individual extends User {
         this.credit += inc;
     }
 
-    public void decreaseCredit(int dec){
+    private void decreaseCredit(int dec){
         this.credit -= dec;
     }
 
-    public void addPaidHouse(House house){
+    public boolean addPaidHouse(String id) throws HouseNotFindException {
+        House house = House.findHouse(id);
         for (House paidHouse : paidHouses) {
             if (paidHouse.getId().equals(house.getId()))
-                return;
+                return true;
         }
-        paidHouses.add(house);
+        if (this.credit >= 1000){
+            this.decreaseCredit(1000);
+            this.paidHouses.add(house);
+            return true;
+        }
+        return false;
     }
 
-    public boolean searchForHouse(House house){
+    public boolean searchForHouse(String id) throws HouseNotFindException {
+        House house = House.findHouse(id);
         for (House paidHouse : paidHouses) {
-            if (paidHouse.getId().equals(house.getId()))
+            if (paidHouse.getId().equals(id))
                 return true;
         }
         return false;
