@@ -22,7 +22,7 @@ public class House {
     public House() {
     }
 
-    public House(String id, int area, String buildingType, String address, boolean dealType, Price price, String phone, String description) {
+    public House(String id, long area, String buildingType, String address, boolean dealType, Price price, String phone, String description) {
         this.id = id;
         this.area = area;
         this.buildingType = buildingType;
