@@ -79,6 +79,7 @@ public class Houses extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         response.setCharacterEncoding("UTF-8");
         response.setContentType("application/json");
+        response.setHeader("Access-Control-Allow-Origin", "*");
 
         int maxPrice = Integer.MAX_VALUE;
         long minArea = 0;

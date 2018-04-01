@@ -14,6 +14,7 @@ public class HouseDetails extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         response.setCharacterEncoding("UTF-8");
         response.setContentType("application/json");
+        response.setHeader("Access-Control-Allow-Origin", "*");
 
         String[] pathInfo = request.getPathInfo().split("/");
         String id;
