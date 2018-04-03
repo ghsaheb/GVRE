@@ -27,15 +27,15 @@ public class Houses extends HttpServlet {
                     || request.getParameter("area") == null
                     || request.getParameter("address") == null
                     || request.getParameter("phone") == null
-                    || request.getParameter("deal") == null
-                    || request.getParameter("type") == null) {
+                    || request.getParameter("dealType") == null
+                    || request.getParameter("buildingType") == null) {
                 throw new InvalidHouseParameterException();
             }
 
-            if (!(request.getParameter("type").equals("آپارتمان") || request.getParameter("type").equals("ویلایی"))){
+            if (!(request.getParameter("buildingType").equals("آپارتمان") || request.getParameter("buildingType").equals("ویلایی"))){
                 throw new InvalidHouseParameterException();
             }
-            if (!(request.getParameter("deal").equals("0") || request.getParameter("deal").equals("1"))){
+            if (!(request.getParameter("dealType").equals("true") || request.getParameter("dealType").equals("false"))){
                 throw new InvalidHouseParameterException();
             }
             if (request.getParameter("address").length() == 0){
@@ -50,8 +50,8 @@ public class Houses extends HttpServlet {
             area = Long.parseLong(request.getParameter("area"));
             address = request.getParameter("address");
             phone = request.getParameter("phone");
-            dealType = Boolean.parseBoolean(request.getParameter("deal"));
-            buildingType = request.getParameter("type");
+            dealType = Boolean.parseBoolean(request.getParameter("dealType"));
+            buildingType = request.getParameter("buildingType");
             description = request.getParameter("description");
 
         } catch (InvalidHouseParameterException e) {
