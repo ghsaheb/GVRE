@@ -13,6 +13,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 @WebServlet(name = "Houses", urlPatterns = "/houses")
 public class Houses extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        response.setHeader("Access-Control-Allow-Origin", "*");
         long area;
         int price;
         String address;
@@ -111,5 +112,14 @@ public class Houses extends HttpServlet {
                 ,request.getParameter("type"), maxPrice);
         String payloadString = new ObjectMapper().writerWithDefaultPrettyPrinter().writeValueAsString(payload);
         response.getWriter().write(payloadString);
+    }
+
+    @Override
+    protected void doOptions(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        super.doOptions(req, resp);
+        resp.addHeader("Access-Control-Allow-Origin", "*");
+        resp.addHeader("Access-Control-Allow-Methods", "POST, GET, OPTIONS, HEAD");
+        resp.addHeader("Access-Control-Allow-Headers", "X-PINGOTHER, Origin, X-Requested-With, Content-Type, Accept");
+        resp.addHeader("Access-Control-Max-Age", "1728000");;
     }
 }
