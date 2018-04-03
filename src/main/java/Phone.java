@@ -11,6 +11,7 @@ import java.io.IOException;
 @WebServlet(name = "Phone", urlPatterns = "/phone")
 public class Phone extends HttpServlet {
     protected void doPut(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        response.setHeader("Access-Control-Allow-Origin", "*");
         if (request.getParameter("id") == null || request.getParameter("userId") == null){
             response.setStatus(HttpServletResponse.SC_BAD_REQUEST);
             return;
@@ -31,6 +32,7 @@ public class Phone extends HttpServlet {
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        response.setHeader("Access-Control-Allow-Origin", "*");
         if (request.getParameter("id") == null || request.getParameter("userId") == null){
             response.setStatus(HttpServletResponse.SC_BAD_REQUEST);
             return;
