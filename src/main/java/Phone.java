@@ -1,26 +1,51 @@
 import RealEstatePackage.HouseNotFindException;
 import RealEstatePackage.IndividualContainer;
+import com.fasterxml.jackson.core.JsonGenerationException;
+import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.databind.JsonMappingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.io.BufferedReader;
 import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
 
 @WebServlet(name = "Phone", urlPatterns = "/phone")
 public class Phone extends HttpServlet {
     protected void doPut(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        request.setCharacterEncoding("UTF-8");
         response.setHeader("Access-Control-Allow-Origin", "*");
-        if (request.getParameter("id") == null || request.getParameter("userId") == null){
-            response.setStatus(HttpServletResponse.SC_BAD_REQUEST);
-            return;
-        }
         boolean resp;
+        BufferedReader in = request.getReader();
+        String inputLine;
+        StringBuffer body = new StringBuffer();
+        while ((inputLine = in.readLine()) != null) {
+            body.append(inputLine);
+        }
+        Map<String, Object> map = new HashMap<String, Object>();
         try {
-            resp = IndividualContainer.getIndividualContainer().getIndividual().addPaidHouse(request.getParameter("id"));
+            map = new ObjectMapper().readValue(body.toString(), new TypeReference<Map<String, String>>() {});
+            if (map.get("id") == null || map.get("userId") == null){
+                response.setStatus(HttpServletResponse.SC_BAD_REQUEST);
+                return;
+            }
+            resp = IndividualContainer.getIndividualContainer().getIndividual().addPaidHouse(map.get("id").toString());
         } catch (HouseNotFindException e) {
             response.setStatus(HttpServletResponse.SC_NOT_FOUND);
+            return;
+        } catch (JsonGenerationException e) {
+            response.setStatus(HttpServletResponse.SC_BAD_REQUEST);
+            return;
+        } catch (JsonMappingException e) {
+            response.setStatus(HttpServletResponse.SC_BAD_REQUEST);
+            return;
+        } catch (IOException e) {
+            response.setStatus(HttpServletResponse.SC_BAD_REQUEST);
             return;
         }
         if (resp) {

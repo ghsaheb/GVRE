@@ -3,77 +3,44 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.UUID;
 
 import RealEstatePackage.*;
+import com.fasterxml.jackson.core.JsonGenerationException;
+import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 @WebServlet(name = "Houses", urlPatterns = "/houses")
 public class Houses extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        request.setCharacterEncoding("UTF-8");
         response.setHeader("Access-Control-Allow-Origin", "*");
-        long area;
-        int price;
-        String address;
-        String phone;
-        String description;
-        String id;
-        Boolean dealType;
-        String buildingType;
+        BufferedReader in = request.getReader();
+        String inputLine;
+        StringBuffer body = new StringBuffer();
+        while ((inputLine = in.readLine()) != null) {
+            body.append(inputLine);
+        }
+        House newHouse;
         try {
-            if (request.getParameter("price") == null
-                    || request.getParameter("area") == null
-                    || request.getParameter("address") == null
-                    || request.getParameter("phone") == null
-                    || request.getParameter("dealType") == null
-                    || request.getParameter("buildingType") == null) {
-                throw new InvalidHouseParameterException();
-            }
-
-            if (!(request.getParameter("buildingType").equals("آپارتمان") || request.getParameter("buildingType").equals("ویلایی"))){
-                throw new InvalidHouseParameterException();
-            }
-            if (!(request.getParameter("dealType").equals("true") || request.getParameter("dealType").equals("false"))){
-                throw new InvalidHouseParameterException();
-            }
-            if (request.getParameter("address").length() == 0){
-                throw new InvalidHouseParameterException();
-            }
-            if (request.getParameter("phone").length() < 4 || request.getParameter("phone").length() > 20
-                    || !(request.getParameter("phone").matches("[0-9]+"))){
-                throw new InvalidHouseParameterException();
-            }
-
-            price = Integer.parseInt(request.getParameter("price"));
-            area = Long.parseLong(request.getParameter("area"));
-            address = request.getParameter("address");
-            phone = request.getParameter("phone");
-            dealType = Boolean.parseBoolean(request.getParameter("dealType"));
-            buildingType = request.getParameter("buildingType");
-            description = request.getParameter("description");
-
-        } catch (InvalidHouseParameterException e) {
+            newHouse = new ObjectMapper().readValue(body.toString(), House.class);
+        } catch (JsonGenerationException e) {
             response.setStatus(HttpServletResponse.SC_BAD_REQUEST);
             return;
-        } catch (NumberFormatException e) {
+        } catch (JsonMappingException e) {
+            response.setStatus(HttpServletResponse.SC_BAD_REQUEST);
+            return;
+        } catch (IOException e) {
             response.setStatus(HttpServletResponse.SC_BAD_REQUEST);
             return;
         }
-
-        id = UUID.randomUUID().toString();
-
-        if(!dealType) {
-            House newHouse = new House(id, area, buildingType, address, dealType,
-                    new Price(0, 0, price), phone, description);
-            IndividualContainer.getIndividualContainer().getIndividual().addHouse(newHouse);
-        }
-        else {
-            House newHouse = new House(id, area, buildingType, address, dealType,
-                    new Price(0, price, 0), phone, description);
-            IndividualContainer.getIndividualContainer().getIndividual().addHouse(newHouse);
-        }
+        String id = UUID.randomUUID().toString();
+        newHouse.setId(id);
+        IndividualContainer.getIndividualContainer().getIndividual().addHouse(newHouse);
         response.setStatus(HttpServletResponse.SC_CREATED);
     }
 
