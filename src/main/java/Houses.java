@@ -64,7 +64,7 @@ public class Houses extends HttpServlet {
                 }
             }
             if (request.getParameter("dealType") != null) {
-                if (!(request.getParameter("dealType").equals("0") || request.getParameter("dealType").equals("1"))){
+                if (!(request.getParameter("dealType").equals("true") || request.getParameter("dealType").equals("false"))){
                     throw new InvalidHouseParameterException();
                 }
             }
