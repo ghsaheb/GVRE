@@ -58,13 +58,13 @@ public class Houses extends HttpServlet {
             if (request.getParameter("area") != null) {
                 minArea = Long.parseLong(request.getParameter("area"));
             }
-            if (request.getParameter("type") != null) {
-                if (!(request.getParameter("type").equals("آپارتمان") || request.getParameter("type").equals("ویلایی"))){
+            if (request.getParameter("buildingType") != null) {
+                if (!(request.getParameter("buildingType").equals("آپارتمان") || request.getParameter("buildingType").equals("ویلایی"))){
                     throw new InvalidHouseParameterException();
                 }
             }
-            if (request.getParameter("deal") != null) {
-                if (!(request.getParameter("deal").equals("0") || request.getParameter("deal").equals("1"))){
+            if (request.getParameter("dealType") != null) {
+                if (!(request.getParameter("dealType").equals("0") || request.getParameter("dealType").equals("1"))){
                     throw new InvalidHouseParameterException();
                 }
             }
@@ -75,8 +75,8 @@ public class Houses extends HttpServlet {
             response.setStatus(HttpServletResponse.SC_BAD_REQUEST);
             return;
         }
-        ArrayList<House> payload = House.getFiltered(minArea, request.getParameter("deal")
-                ,request.getParameter("type"), maxPrice);
+        ArrayList<House> payload = House.getFiltered(minArea, request.getParameter("dealType")
+                ,request.getParameter("buildingType"), maxPrice);
         String payloadString = new ObjectMapper().writerWithDefaultPrettyPrinter().writeValueAsString(payload);
         response.getWriter().write(payloadString);
     }
