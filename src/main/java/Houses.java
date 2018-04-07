@@ -51,21 +51,42 @@ public class Houses extends HttpServlet {
 
         int maxPrice = Integer.MAX_VALUE;
         long minArea = 0;
+        String buildingType = null;
+        String dealType = null;
         try {
             if (request.getParameter("price") != null) {
-                maxPrice = Integer.parseInt(request.getParameter("price"));
+                if (!request.getParameter("price").equals("")) {
+                    maxPrice = Integer.parseInt(request.getParameter("price"));
+                }
             }
             if (request.getParameter("area") != null) {
-                minArea = Long.parseLong(request.getParameter("area"));
+                if (!request.getParameter("area").equals("")) {
+                    minArea = Long.parseLong(request.getParameter("area"));
+                }
             }
             if (request.getParameter("buildingType") != null) {
-                if (!(request.getParameter("buildingType").equals("آپارتمان") || request.getParameter("buildingType").equals("ویلایی"))){
+                if (!(request.getParameter("buildingType").equals("آپارتمان") || request.getParameter("buildingType").equals("ویلایی")
+                        || request.getParameter("buildingType").equals(""))){
                     throw new InvalidHouseParameterException();
+                }
+                if (request.getParameter("buildingType").equals("")){
+                    buildingType = null;
+                }
+                else {
+                    buildingType = request.getParameter("buildingType");
                 }
             }
             if (request.getParameter("dealType") != null) {
-                if (!(request.getParameter("dealType").equals("true") || request.getParameter("dealType").equals("false"))){
+                if (!(request.getParameter("dealType").equals("true") || request.getParameter("dealType").equals("false")
+                        || request.getParameter("dealType").equals(""))){
                     throw new InvalidHouseParameterException();
+                }
+                if (request.getParameter("dealType").equals("")){
+                    System.out.println("ahjasdjhdja");
+                    dealType = null;
+                }
+                else {
+                    dealType = request.getParameter("dealType");
                 }
             }
         } catch (InvalidHouseParameterException e) {
@@ -75,8 +96,8 @@ public class Houses extends HttpServlet {
             response.setStatus(HttpServletResponse.SC_BAD_REQUEST);
             return;
         }
-        ArrayList<House> payload = House.getFiltered(minArea, request.getParameter("dealType")
-                ,request.getParameter("buildingType"), maxPrice);
+        ArrayList<House> payload = House.getFiltered(minArea, dealType
+                , buildingType, maxPrice);
         String payloadString = new ObjectMapper().writerWithDefaultPrettyPrinter().writeValueAsString(payload);
         response.getWriter().write(payloadString);
     }
