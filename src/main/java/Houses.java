@@ -82,7 +82,6 @@ public class Houses extends HttpServlet {
                     throw new InvalidHouseParameterException();
                 }
                 if (request.getParameter("dealType").equals("")){
-                    System.out.println("ahjasdjhdja");
                     dealType = null;
                 }
                 else {
