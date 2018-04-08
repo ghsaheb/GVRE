@@ -28,6 +28,25 @@ public class Houses extends HttpServlet {
         House newHouse;
         try {
             newHouse = new ObjectMapper().readValue(body.toString(), House.class);
+            if (newHouse.getBuildingType() == null
+                    || newHouse.getAddress() == null
+                    || newHouse.getPhone() == null
+                    || newHouse.getPrice() == null) {
+                throw new InvalidHouseParameterException();
+            }
+            if (!(newHouse.getBuildingType().equals("آپارتمان") || newHouse.getBuildingType().equals("ویلایی"))){
+                throw new InvalidHouseParameterException();
+            }
+            if (newHouse.getAddress().length() == 0){
+                throw new InvalidHouseParameterException();
+            }
+            if (newHouse.getPhone().length() < 4 || newHouse.getPhone().length() > 20
+                    || !(newHouse.getPhone().matches("[0-9]+"))){
+                throw new InvalidHouseParameterException();
+            }
+            if (newHouse.getArea() <= 0){
+                throw new InvalidHouseParameterException();
+            }
         } catch (JsonGenerationException e) {
             response.setStatus(HttpServletResponse.SC_BAD_REQUEST);
             return;
@@ -35,6 +54,9 @@ public class Houses extends HttpServlet {
             response.setStatus(HttpServletResponse.SC_BAD_REQUEST);
             return;
         } catch (IOException e) {
+            response.setStatus(HttpServletResponse.SC_BAD_REQUEST);
+            return;
+        } catch (InvalidHouseParameterException e) {
             response.setStatus(HttpServletResponse.SC_BAD_REQUEST);
             return;
         }
