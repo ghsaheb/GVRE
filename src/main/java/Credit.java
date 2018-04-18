@@ -57,7 +57,7 @@ public class Credit extends HttpServlet {
         response.setHeader("Access-Control-Allow-Origin", "*");
 
         Map<String, Object> payload = new HashMap<String, Object>();
-        payload.put("userId", IndividualContainer.getIndividualContainer().getIndividual().getId());
+        payload.put("userId", IndividualContainer.getIndividualContainer().getIndividual().getUsername());
         payload.put("credit", IndividualContainer.getIndividualContainer().getIndividual().getCredit());
         String payloadString = new ObjectMapper().writerWithDefaultPrettyPrinter().writeValueAsString(payload);
         response.getWriter().write(payloadString);

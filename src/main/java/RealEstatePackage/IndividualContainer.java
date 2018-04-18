@@ -8,7 +8,7 @@ public class IndividualContainer {
     
     private IndividualContainer(){
         individuals = new ArrayList<Individual>();
-        individuals.add(new Individual("بهنام همایون", 1, "09123456789", 0, "Bugs", "Bunny"));
+        individuals.add(new Individual("بهنام همایون", "09123456789", 0, "Bugs", "Bunny"));
     }
     
     public static IndividualContainer getIndividualContainer(){

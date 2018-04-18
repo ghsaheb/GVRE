@@ -13,7 +13,6 @@ import java.net.HttpURLConnection;
 import java.util.ArrayList;
 
 public class Individual extends User {
-    private int id;
     private String phone;
     private int credit;
     private String username;
@@ -22,22 +21,13 @@ public class Individual extends User {
     private static final String bankURL = "http://acm.ut.ac.ir/ieBank/pay";
     private static final String apiKey = "4e4d47e0-13c6-11e8-87b4-496f79ef1988";
 
-    Individual(String name, int id, String phone, int credit, String username, String password) {
+    Individual(String name, String phone, int credit, String username, String password) {
         super(name);
-        this.id = id;
         this.phone = phone;
         this.credit = credit;
         this.username = username;
         this.password = password;
         this.paidHouses = new ArrayList<House>();
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
     }
 
     public String getPhone() {
@@ -122,7 +112,7 @@ public class Individual extends User {
             con.setRequestProperty("Content-Type", "application/json");
 
             JSONObject data = new JSONObject();
-            data.put("userId", this.id);
+            data.put("userId", this.username);
             data.put("value", amount);
             OutputStreamWriter wr = new OutputStreamWriter(con.getOutputStream());
             wr.write(data.toString());
