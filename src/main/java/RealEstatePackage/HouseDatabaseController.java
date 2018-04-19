@@ -12,9 +12,7 @@ public class HouseDatabaseController {
         return ourInstance;
     }
 
-    private HouseDatabaseController() {}
-
-    public static void main(String[] args) { // OH MY GOD
+    private HouseDatabaseController() {
         Statement stmt = null;
         try {
             Class.forName("org.sqlite.JDBC");
@@ -41,12 +39,12 @@ public class HouseDatabaseController {
             stmt.executeUpdate(sql);
             stmt.close();
 //            c.close();
-        } catch ( Exception e ) {
-            System.err.println( e.getClass().getName() + ": " + e.getMessage() );
-            System.exit(0);
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        } catch (SQLException e) {
+            e.printStackTrace();
         }
-        System.out.println("INJA");
-        insert(new House("ghazaliii", 100, "آپارتمان", "ekbatan", false, new Price(0, 0, 100), "091228", "h"));
+//        insert(new House("ghazaliii", 100, "آپارتمان", "ekbatan", false, new Price(0, 0, 100), "091228", "h"));
     }
 
     public static void insert(House house) {
@@ -62,38 +60,9 @@ public class HouseDatabaseController {
             stmt.close();
 //            c.commit();
             c.close();
-        } catch ( Exception e ) {
-            System.err.println( e.getClass().getName() + ": " + e.getMessage() );
-            System.exit(0);
+        } catch (SQLException e) {
+            e.printStackTrace();
         }
     }
-
-//    public static ArrayList<RealEstate> select() {
-//        Statement stmt = null;
-//        try {
-//            c.setAutoCommit(false);
-//            System.out.println("Opened database successfully");
-//
-//            stmt = c.createStatement();
-//            ResultSet rs = stmt.executeQuery( "SELECT * FROM real_estate;" );
-//
-//            ArrayList<RealEstate> realEstates = new ArrayList<RealEstate>();
-//
-//            while ( rs.next() ) {
-//                String name = rs.getString("name");
-//                String url  = rs.getString("url");
-//                RealEstate realEstate = new RealEstate(name, url);
-//                realEstates.add(realEstate);
-//            }
-//            rs.close();
-//            stmt.close();
-////            c.close();
-//            return realEstates;
-//        } catch ( Exception e ) {
-//            e.printStackTrace();
-//        }
-//        System.out.println("Operation done successfully");
-//        return null;
-//    }
 
 }

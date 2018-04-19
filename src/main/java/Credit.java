@@ -1,4 +1,6 @@
-import RealEstatePackage.IndividualContainer;
+import RealEstatePackage.Individual;
+import RealEstatePackage.IndividualDatabaseController;
+import RealEstatePackage.IndividualNotFoundException;
 import com.fasterxml.jackson.core.JsonGenerationException;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.JsonMappingException;
@@ -20,7 +22,7 @@ public class Credit extends HttpServlet {
         request.setCharacterEncoding("UTF-8");
         response.setHeader("Access-Control-Allow-Origin", "*");
         int amount = 0;
-        int id = -1;
+        String id;
         BufferedReader in = request.getReader();
         String inputLine;
         StringBuffer body = new StringBuffer();
@@ -31,7 +33,7 @@ public class Credit extends HttpServlet {
         try {
             map = new ObjectMapper().readValue(body.toString(), new TypeReference<Map<String, String>>(){});
             amount = Integer.parseInt(map.get("amount").toString());
-            id = Integer.parseInt(map.get("userId").toString());
+            id = map.get("userId").toString();
         } catch (NumberFormatException e) {
             response.setStatus(HttpServletResponse.SC_BAD_REQUEST);
             return;
@@ -48,19 +50,27 @@ public class Credit extends HttpServlet {
             response.setStatus(HttpServletResponse.SC_BAD_REQUEST);
             return;
         }
-        response.setStatus(IndividualContainer.getIndividualContainer().getIndividual().addCredit(amount));
+        try {
+            response.setStatus(IndividualDatabaseController.getInstance().select("Bugs").addCredit(amount));
+        } catch (IndividualNotFoundException e) {
+            response.setStatus(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
+        }
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         response.setCharacterEncoding("UTF-8");
         response.setContentType("application/json");
         response.setHeader("Access-Control-Allow-Origin", "*");
-
-        Map<String, Object> payload = new HashMap<String, Object>();
-        payload.put("userId", IndividualContainer.getIndividualContainer().getIndividual().getUsername());
-        payload.put("credit", IndividualContainer.getIndividualContainer().getIndividual().getCredit());
-        String payloadString = new ObjectMapper().writerWithDefaultPrettyPrinter().writeValueAsString(payload);
-        response.getWriter().write(payloadString);
+        try {
+            Map<String, Object> payload = new HashMap<String, Object>();
+            Individual individual = IndividualDatabaseController.getInstance().select("Bugs");
+            payload.put("userId", individual.getUsername());
+            payload.put("credit", individual.getCredit());
+            String payloadString = new ObjectMapper().writerWithDefaultPrettyPrinter().writeValueAsString(payload);
+            response.getWriter().write(payloadString);
+        } catch (IndividualNotFoundException e) {
+            response.setStatus(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
+        }
     }
 
     protected void doOptions(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {

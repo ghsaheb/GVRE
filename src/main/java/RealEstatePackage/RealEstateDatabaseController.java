@@ -1,25 +1,19 @@
 package RealEstatePackage;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.ResultSet;
-import java.sql.Statement;
+import java.sql.*;
 import java.util.ArrayList;
 
 public class RealEstateDatabaseController {
 
-    static Connection c;
+    private static Connection c;
 
     private static RealEstateDatabaseController ourInstance = new RealEstateDatabaseController();
 
-    public static RealEstateDatabaseController getInstance() {
+    static RealEstateDatabaseController getInstance() {
         return ourInstance;
     }
 
     private RealEstateDatabaseController() {
-    }
-
-    public static void main(String[] args) { // OH MY GOD
         Statement stmt = null;
         try {
             Class.forName("org.sqlite.JDBC");
@@ -35,16 +29,15 @@ public class RealEstateDatabaseController {
             stmt.executeUpdate(sql);
             stmt.close();
 //            c.close();
-        } catch ( Exception e ) {
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        } catch (SQLException e) {
             e.printStackTrace();
         }
-        System.out.println("INJA");
         insert(new RealEstate("khaneBeDoosh", "http://acm.ut.ac.ir/khaneBeDoosh/house"));
-        ArrayList<RealEstate> re = select();
-        System.out.println(re.get(0).getURL());
     }
 
-    public static void insert(RealEstate realEstate) {
+    public void insert(RealEstate realEstate) {
         Statement stmt = null;
         try {
             stmt = c.createStatement();
@@ -56,22 +49,19 @@ public class RealEstateDatabaseController {
             stmt.close();
 //            c.commit();
 //            c.close();
-        } catch ( Exception e ) {
+        } catch (SQLException e) {
             e.printStackTrace();
         }
     }
 
-    public static ArrayList<RealEstate> select() {
+    public ArrayList<RealEstate> select() {
         Statement stmt = null;
+        ArrayList<RealEstate> realEstates = new ArrayList<RealEstate>();
         try {
             c.setAutoCommit(false);
             System.out.println("Opened database successfully");
-
             stmt = c.createStatement();
             ResultSet rs = stmt.executeQuery( "SELECT * FROM real_estate;" );
-
-            ArrayList<RealEstate> realEstates = new ArrayList<RealEstate>();
-
             while ( rs.next() ) {
                 String name = rs.getString("name");
                 String url  = rs.getString("url");
@@ -81,11 +71,10 @@ public class RealEstateDatabaseController {
             rs.close();
             stmt.close();
 //            c.close();
-            return realEstates;
-        } catch ( Exception e ) {
+        } catch (SQLException e) {
             e.printStackTrace();
         }
         System.out.println("Operation done successfully");
-        return null;
+        return realEstates;
     }
 }

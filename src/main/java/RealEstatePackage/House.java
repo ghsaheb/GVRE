@@ -114,22 +114,25 @@ public class House {
     }
 
     public static ArrayList<House> getFiltered(long area, String dealType, String buildingType, int maxPrice){
-        try {
-            RealEstateContainer.getRealEstateContainer().updateHouses();
-        } catch (ParseException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
+        ArrayList<RealEstate> realEstates = RealEstateDatabaseController.getInstance().select();
+        for (RealEstate realEstate: realEstates) {
+            realEstate.updateHouses();
         }
+        ///////////////////////////// FIX HERE
         ArrayList<House> filtered = new ArrayList<House>();
-        for (int i = 0; i < RealEstateContainer.getRealEstateContainer().getRealEstate().getOwnedHouses().size(); i++) {
-            House temp = RealEstateContainer.getRealEstateContainer().getRealEstate().getOwnedHouses().get(i);
+        for (int i = 0; i < realEstates.get(0).getOwnedHouses().size(); i++) {
+            House temp = realEstates.get(0).getOwnedHouses().get(i);
             applyFilter(area, dealType, buildingType, maxPrice, filtered, temp);
         }
-        for (int i = 0; i < IndividualContainer.getIndividualContainer().getIndividual().getOwnedHouses().size(); i++) {
-            House temp = IndividualContainer.getIndividualContainer().getIndividual().getOwnedHouses().get(i);
-            applyFilter(area, dealType, buildingType, maxPrice, filtered, temp);
+        try {
+            for (int i = 0; i < IndividualDatabaseController.getInstance().select("Bugs").getOwnedHouses().size(); i++) {
+                House temp = IndividualDatabaseController.getInstance().select("Bugs").getOwnedHouses().get(i);
+                applyFilter(area, dealType, buildingType, maxPrice, filtered, temp);
+            }
+        } catch (IndividualNotFoundException e) {
+            e.printStackTrace();
         }
+        /////////////////////////////
         return filtered;
     }
 
@@ -148,8 +151,16 @@ public class House {
 
     public static House findHouse(String id) throws HouseNotFindException {
         try {
-            House temp = RealEstateContainer.getRealEstateContainer().getRealEstate().findHouse(id);
-            if (temp == null) temp = IndividualContainer.getIndividualContainer().getIndividual().findHouse(id);
+            ArrayList<RealEstate> realEstates = RealEstateDatabaseController.getInstance().select();
+            for (RealEstate realEstate: realEstates) {
+                realEstate.updateHouses();
+            }
+            House temp = realEstates.get(0).findHouse(id);
+            try {
+                if (temp == null) temp = IndividualDatabaseController.getInstance().select("Bugs").findHouse(id);
+            } catch (IndividualNotFoundException e) {
+                e.printStackTrace();
+            }
             if (temp != null) return temp;
         } catch (ParseException e) {
             e.printStackTrace();

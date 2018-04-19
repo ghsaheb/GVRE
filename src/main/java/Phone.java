@@ -1,5 +1,6 @@
 import RealEstatePackage.HouseNotFindException;
-import RealEstatePackage.IndividualContainer;
+import RealEstatePackage.IndividualDatabaseController;
+import RealEstatePackage.IndividualNotFoundException;
 import com.fasterxml.jackson.core.JsonGenerationException;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.JsonMappingException;
@@ -34,7 +35,13 @@ public class Phone extends HttpServlet {
                 response.setStatus(HttpServletResponse.SC_BAD_REQUEST);
                 return;
             }
-            resp = IndividualContainer.getIndividualContainer().getIndividual().addPaidHouse(map.get("id").toString());
+            resp = IndividualDatabaseController.getInstance().select("Bugs").addPaidHouse(map.get("id").toString());
+            if (resp) {
+                response.setStatus(HttpServletResponse.SC_OK);
+            }
+            else {
+                response.setStatus(HttpServletResponse.SC_NOT_ACCEPTABLE);
+            }
         } catch (HouseNotFindException e) {
             response.setStatus(HttpServletResponse.SC_NOT_FOUND);
             return;
@@ -47,12 +54,8 @@ public class Phone extends HttpServlet {
         } catch (IOException e) {
             response.setStatus(HttpServletResponse.SC_BAD_REQUEST);
             return;
-        }
-        if (resp) {
-            response.setStatus(HttpServletResponse.SC_OK);
-        }
-        else {
-            response.setStatus(HttpServletResponse.SC_NOT_ACCEPTABLE);
+        } catch (IndividualNotFoundException e) {
+            response.setStatus(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
         }
     }
 
@@ -63,7 +66,7 @@ public class Phone extends HttpServlet {
             return;
         }
         try {
-            if (IndividualContainer.getIndividualContainer().getIndividual().searchForHouse(request.getParameter("id"))){
+            if (IndividualDatabaseController.getInstance().select("Bugs").searchForHouse(request.getParameter("id"))){
                 response.setStatus(HttpServletResponse.SC_OK);
             }
             else {
@@ -71,6 +74,8 @@ public class Phone extends HttpServlet {
             }
         } catch (HouseNotFindException e) {
             response.setStatus(HttpServletResponse.SC_NOT_FOUND);
+        } catch (IndividualNotFoundException e) {
+            response.setStatus(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
         }
     }
 
@@ -79,6 +84,6 @@ public class Phone extends HttpServlet {
         resp.addHeader("Access-Control-Allow-Origin", "*");
         resp.addHeader("Access-Control-Allow-Methods", "PUT, GET, OPTIONS, HEAD");
         resp.addHeader("Access-Control-Allow-Headers", "X-PINGOTHER, Origin, X-Requested-With, Content-Type, Accept");
-        resp.addHeader("Access-Control-Max-Age", "1728000");;
+        resp.addHeader("Access-Control-Max-Age", "1727000");;
     }
 }

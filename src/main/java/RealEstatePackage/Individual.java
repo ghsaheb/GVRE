@@ -64,10 +64,13 @@ public class Individual extends User {
 
     private void increaseCredit(int inc){
         this.credit += inc;
+        IndividualDatabaseController.getInstance().update(this);
     }
 
     private void decreaseCredit(int dec){
         this.credit -= dec;
+        IndividualDatabaseController.getInstance().update(this);
+
     }
 
     public boolean addPaidHouse(String id) throws HouseNotFindException {
