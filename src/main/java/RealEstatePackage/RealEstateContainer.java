@@ -25,7 +25,7 @@ class RealEstateContainer {
         return realEstates.get(0);
     }
 
-    void updateHouses() throws IOException, ParseException {
+    void updateHouses() {
         for (RealEstate re : realEstates) {
             re.updateHouses();
         }

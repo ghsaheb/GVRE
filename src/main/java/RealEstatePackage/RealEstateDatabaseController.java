@@ -17,9 +17,6 @@ public class RealEstateDatabaseController {
     }
 
     private RealEstateDatabaseController() {
-    }
-
-    public static void main(String[] args) { // OH MY GOD
         Statement stmt = null;
         try {
             Class.forName("org.sqlite.JDBC");
