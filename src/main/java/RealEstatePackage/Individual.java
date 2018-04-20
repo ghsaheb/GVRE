@@ -64,10 +64,13 @@ public class Individual extends User {
 
     private void increaseCredit(int inc){
         this.credit += inc;
+        IndividualDatabaseController.getInstance().update(this);
     }
 
     private void decreaseCredit(int dec){
         this.credit -= dec;
+        IndividualDatabaseController.getInstance().update(this);
+
     }
 
     public boolean addPaidHouse(String id) throws HouseNotFindException {
@@ -94,11 +97,11 @@ public class Individual extends User {
     }
 
     public House findHouse(String id) throws IOException, ParseException {
-        for (House ownedHouse : ownedHouses) {
-            if (ownedHouse.getId().equals(id)) {
-                return ownedHouse;
-            }
-        }
+//        for (House ownedHouse : ownedHouses) {
+//            if (ownedHouse.getId().equals(id)) {
+//                return ownedHouse;
+//            }
+//        }
         return null;
     }
 
@@ -133,5 +136,9 @@ public class Individual extends User {
         } catch (IOException e) {
             return HttpServletResponse.SC_INTERNAL_SERVER_ERROR;
         }
+    }
+
+    public void addHouseToDatabase(House house) {
+        HouseDatabaseController.getInstance().insert(house, this);
     }
 }

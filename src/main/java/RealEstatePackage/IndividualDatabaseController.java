@@ -1,13 +1,9 @@
 package RealEstatePackage;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.ResultSet;
-import java.sql.Statement;
-import java.util.ArrayList;
+import java.sql.*;
 
 public class IndividualDatabaseController {
-    static Connection c = null;
+    private static Connection c = null;
 
     private static IndividualDatabaseController ourInstance = new IndividualDatabaseController();
 
@@ -16,9 +12,6 @@ public class IndividualDatabaseController {
     }
 
     private IndividualDatabaseController() {
-    }
-
-    public static void main(String[] args) { // OH MY GOD
         Statement stmt = null;
         try {
             Class.forName("org.sqlite.JDBC");
@@ -35,21 +28,19 @@ public class IndividualDatabaseController {
                     ");";
             stmt.executeUpdate(sql);
             stmt.close();
-//            c.close();
-        } catch ( Exception e ) {
+            c.close();
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        } catch (SQLException e) {
             e.printStackTrace();
         }
-        System.out.println("INJA");
-        Individual individual = new Individual("بهنام همایون", "09123456789", 0, "Bugs", "Bunny");
-        insert(individual);
-        individual.addCredit(100000);
-        update(individual);
-        System.out.println(select("Bugs").getUsername());
+        insert(new Individual("بهنام همایون", "09123456789", 0, "Bugs", "Bunny"));
     }
 
-    public static void insert(Individual individual) {
+    public void insert(Individual individual) {
         Statement stmt = null;
         try {
+            c = DriverManager.getConnection("jdbc:sqlite:gvre.db");
             stmt = c.createStatement();
             String sql = "INSERT INTO individual (username,credit,password,phone,name) " +
                     "VALUES ('"+ individual.getUsername() + "','" +  individual.getCredit() + "','" + individual.getPassword() + "','" + individual.getPhone() + "','" + individual.getName() + "');";
@@ -57,15 +48,16 @@ public class IndividualDatabaseController {
             stmt.executeUpdate(sql);
             stmt.close();
 //            c.commit();
-//            c.close();
-        } catch ( Exception e ) {
+            c.close();
+        } catch (SQLException e) {
             e.printStackTrace();
         }
     }
 
-    public static void update(Individual individual) {
+    public void update(Individual individual) {
         Statement stmt = null;
         try {
+            c = DriverManager.getConnection("jdbc:sqlite:gvre.db");
             c.setAutoCommit(false);
             System.out.println("Opened database successfully");
 
@@ -75,17 +67,17 @@ public class IndividualDatabaseController {
             stmt.executeUpdate(sql);
             c.commit();
             stmt.close();
-//            c.close();
-        } catch ( Exception e ) {
-            System.err.println( e.getClass().getName() + ": " + e.getMessage() );
-            System.exit(0);
+            c.close();
+        } catch (SQLException e) {
+            e.printStackTrace();
         }
         System.out.println("Operation done successfully");
     }
 
-    public static Individual select(String username) {
+    public Individual select(String username) throws IndividualNotFoundException {
         Statement stmt = null;
         try {
+            c = DriverManager.getConnection("jdbc:sqlite:gvre.db");
             c.setAutoCommit(false);
             System.out.println("Opened database successfully");
 
@@ -102,9 +94,9 @@ public class IndividualDatabaseController {
             }
             rs.close();
             stmt.close();
-//            c.close();
+            c.close();
             return individual;
-        } catch ( Exception e ) {
+        } catch (SQLException e) {
             e.printStackTrace();
         }
         System.out.println("Operation done successfully");

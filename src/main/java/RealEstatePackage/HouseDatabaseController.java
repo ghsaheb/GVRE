@@ -12,9 +12,7 @@ public class HouseDatabaseController {
         return ourInstance;
     }
 
-    private HouseDatabaseController() {}
-
-    public static void main(String[] args) { // OH MY GOD
+    private HouseDatabaseController() {
         Statement stmt = null;
         try {
             Class.forName("org.sqlite.JDBC");
@@ -25,12 +23,12 @@ public class HouseDatabaseController {
             String sql = "CREATE TABLE `house` (\n" +
                     "\t`id`\tchar NOT NULL,\n" +
                     "\t`area`\tinteger ( 128 ) NOT NULL,\n" +
-                    "\t`buildingType`\tchar ( 128 ) NOT NULL,\n" +
-                    "\t`imageURL`\tchar ( 128 ),\n" +
-                    "\t`dealType`\tchar ( 128 ) NOT NULL,\n" +
-                    "\t`expireTime`\tinteger ( 128 ) NOT NULL,\n" +
-                    "\t`basePrice`\tchar ( 128 ) NOT NULL,\n" +
-                    "\t`rentPrice`\tchar ( 128 ),\n" +
+                    "\t`building_type`\tchar ( 128 ) NOT NULL,\n" +
+                    "\t`image_URL`\tchar ( 128 ),\n" +
+                    "\t`deal_type`\tchar ( 128 ) NOT NULL,\n" +
+                    "\t`expire_time`\tinteger ( 128 ),\n" +
+                    "\t`base_price`\tINTEGER ( 128 ),\n" +
+                    "\t`rent_sell_price`\tINTEGER ( 128 )NOT NULL,\n" +
                     "\t`iid`\tchar ( 128 ),\n" +
                     "\t`reid`\tchar ( 128 ),\n" +
                     "\tPRIMARY KEY(`id`)\n" +
@@ -40,60 +38,113 @@ public class HouseDatabaseController {
             System.out.println("sql statement:"+sql);
             stmt.executeUpdate(sql);
             stmt.close();
-//            c.close();
-        } catch ( Exception e ) {
-            System.err.println( e.getClass().getName() + ": " + e.getMessage() );
-            System.exit(0);
+            c.close();
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        } catch (SQLException e) {
+            e.printStackTrace();
         }
-        System.out.println("INJA");
-        insert(new House("ghazaliii", 100, "آپارتمان", "ekbatan", false, new Price(0, 0, 100), "091228", "h"));
     }
 
-    public static void insert(House house) {
+    public void insert(House house, RealEstate realEstate) {
         Statement stmt = null;
         try {
+            c = DriverManager.getConnection("jdbc:sqlite:gvre.db");
             stmt = c.createStatement();
-            String sql = "INSERT INTO house (id,area,buildingType,imageURL,dealType,expireTime,basePrice,rentPrice,iid, reid) " +
-                    "VALUES ('"+ house.getId() + "',"
-                    + house.getArea() + ",'" +  house.getBuildingType() + "','" + "ghazali.com" + "','" + String.valueOf(house.isDealType()) + "'," + 123 + "," +
-                    house.getPrice().getSellPrice() + "," + "null" + "," + "'asghar'" + "," + "null" + ");";
+            String sql ;
+            if (!house.isDealType()){
+                sql = "INSERT INTO house (id,area,building_type,image_URL,deal_type,expire_time,base_price,rent_sell_price,iid, reid) " +
+                        "VALUES ('"+ house.getId() + "',"
+                        + house.getArea() + ",'" +  house.getBuildingType() + "','" + house.getImageURL() + "','" + String.valueOf(house.isDealType()) + "'," + house.getExpireTime() + "," +
+                         "null" + "," +house.getPrice().getSellPrice() + "," + "null" + ",'" + realEstate.getURL() + "');";
+            }
+            else {
+                sql = "INSERT INTO house (id,area,building_type,image_URL,deal_type,expire_time,base_price,rent_sell_price,iid, reid) " +
+                        "VALUES ('"+ house.getId() + "',"
+                        + house.getArea() + ",'" +  house.getBuildingType() + "','" + house.getImageURL() + "','" + String.valueOf(house.isDealType()) + "'," + house.getExpireTime() + "," +
+                        house.getPrice().getBasePrice() + "," + house.getPrice().getRentPrice() + "," + "null" + ",'" + realEstate.getURL() + "');";
+            }
             System.out.println(sql);
             stmt.executeUpdate(sql);
             stmt.close();
-//            c.commit();
+///            c.commit();
             c.close();
-        } catch ( Exception e ) {
-            System.err.println( e.getClass().getName() + ": " + e.getMessage() );
-            System.exit(0);
+        } catch (SQLException e) {
+            e.printStackTrace();
         }
     }
 
-//    public static ArrayList<RealEstate> select() {
-//        Statement stmt = null;
-//        try {
-//            c.setAutoCommit(false);
-//            System.out.println("Opened database successfully");
-//
-//            stmt = c.createStatement();
-//            ResultSet rs = stmt.executeQuery( "SELECT * FROM real_estate;" );
-//
-//            ArrayList<RealEstate> realEstates = new ArrayList<RealEstate>();
-//
-//            while ( rs.next() ) {
-//                String name = rs.getString("name");
-//                String url  = rs.getString("url");
-//                RealEstate realEstate = new RealEstate(name, url);
-//                realEstates.add(realEstate);
-//            }
-//            rs.close();
-//            stmt.close();
-////            c.close();
-//            return realEstates;
-//        } catch ( Exception e ) {
-//            e.printStackTrace();
-//        }
-//        System.out.println("Operation done successfully");
-//        return null;
-//    }
+    public void insert(House house, Individual individual) {
+        Statement stmt = null;
+        try {
+            c = DriverManager.getConnection("jdbc:sqlite:gvre.db");
+            stmt = c.createStatement();
+            String sql ;
+            if (!house.isDealType()){
+                sql = "INSERT INTO house (id,area,building_type,image_URL,deal_type,expire_time,base_price,rent_sell_price,iid, reid) " +
+                        "VALUES ('"+ house.getId() + "',"
+                        + house.getArea() + ",'" +  house.getBuildingType() + "','" + house.getImageURL() + "','" + String.valueOf(house.isDealType()) + "'," + house.getExpireTime() + "," +
+                        house.getPrice().getSellPrice() + "," + "null" + ",'" + individual.getUsername() + "'," + "null" + ");";
+            }
+            else {
+                sql = "INSERT INTO house (id,area,building_type,image_URL,deal_type,expire_time,base_price,rent_sell_price,iid, reid) " +
+                        "VALUES ('"+ house.getId() + "',"
+                        + house.getArea() + ",'" +  house.getBuildingType() + "','" + house.getImageURL() + "','" + String.valueOf(house.isDealType()) + "'," + house.getExpireTime() + "," +
+                        house.getPrice().getBasePrice() + "," + house.getPrice().getRentPrice() + "," + "null" + ",'" + individual.getUsername() + "'," + "null" + ");";
+            }
+            System.out.println(sql);
+            stmt.executeUpdate(sql);
+            stmt.close();
+///            c.commit();
+            c.close();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public ArrayList<House> select(long area, String dealType, String buildingType, int maxPrice){
+        Statement stmt = null;
+        ArrayList<House> houses = new ArrayList<House>();
+        try {
+            c = DriverManager.getConnection("jdbc:sqlite:gvre.db");
+            c.setAutoCommit(false);
+            System.out.println("Opened database successfully");
+
+            stmt = c.createStatement();
+            ResultSet rs;
+            if (dealType == null && buildingType == null){
+                rs = stmt.executeQuery( "SELECT * FROM house H WHERE H.area >= " + area + " AND H.rent_sell_price <= " + maxPrice + ";");
+            }
+            else if (dealType == null && buildingType != null){
+                rs = stmt.executeQuery( "SELECT * FROM house H WHERE H.area >= " + area + " AND H.rent_sell_price <= " + maxPrice + " AND H.building_type = '" + buildingType + "';");
+            }
+            else if (dealType != null && buildingType == null){
+                rs = stmt.executeQuery( "SELECT * FROM house H WHERE H.area >= " + area + " AND H.rent_sell_price <= " + maxPrice + " AND H.deal_type = '" + dealType + "';");
+            }
+            else {
+                rs = stmt.executeQuery( "SELECT * FROM house H WHERE H.area >=" + area + " AND H.rent_sell_price <=" + maxPrice + " AND H.deal_type = '" + dealType + "' AND H.building_type = '" + buildingType + "';");
+            }
+            while (rs.next()) {
+                House s;
+                System.out.println("get Boolean:"+Boolean.parseBoolean(rs.getString("deal_type")));
+                if (!Boolean.parseBoolean(rs.getString("deal_type"))) {
+                    s = new House(rs.getString("id"), rs.getLong("area"), rs.getString("building_type"),
+                            null, Boolean.parseBoolean(rs.getString("deal_type")), new Price(0, 0, rs.getInt("rent_sell_price")), null, null);
+                }
+                else {
+                    s = new House(rs.getString("id"), rs.getLong("area"), rs.getString("building_type"),
+                            null, Boolean.parseBoolean(rs.getString("deal_type")),  new Price(rs.getInt("base_price"), rs.getInt("rent_sell_price"), 0), null, null);
+                }
+                houses.add(s);
+            }
+            rs.close();
+            stmt.close();
+            c.close();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        System.out.println("Operation done successfully");
+        return houses;
+    }
 
 }

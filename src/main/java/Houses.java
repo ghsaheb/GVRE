@@ -62,7 +62,11 @@ public class Houses extends HttpServlet {
         }
         String id = UUID.randomUUID().toString();
         newHouse.setId(id);
-        IndividualContainer.getIndividualContainer().getIndividual().addHouse(newHouse);
+        try {
+            IndividualDatabaseController.getInstance().select("Bugs").addHouseToDatabase(newHouse);
+        } catch (IndividualNotFoundException e) {
+            response.setStatus(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
+        }
         response.setStatus(HttpServletResponse.SC_CREATED);
     }
 

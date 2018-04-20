@@ -33,7 +33,7 @@ public class RealEstate extends User {
             HttpURLConnection con = getHttpURLConnection(this.URL);
             StringBuffer response = getStringBuffer(con);
             JSONArray housesData = getJsonArray(response);
-            addHousesToContainer(housesData);
+            addHousesToDatabase(housesData);
         } catch (ParseException e) {
             e.printStackTrace();
         } catch (IOException e) {
@@ -41,12 +41,11 @@ public class RealEstate extends User {
         }
     }
 
-    private void addHousesToContainer(JSONArray housesData) throws IOException {
-        ownedHouses.clear();
+    private void addHousesToDatabase(JSONArray housesData) throws IOException {
         for (Object aHousesData : housesData) {
             JSONObject temp = (JSONObject) aHousesData;
             House s = readJsonWithObjectMapper(temp.toString());
-            this.addHouse(s);
+            HouseDatabaseController.getInstance().insert(s,this);
         }
     }
 
@@ -92,21 +91,21 @@ public class RealEstate extends User {
     }
 
     public House findHouse(String id) {
-        try {
-            for (House ownedHouse : ownedHouses) {
-                if (ownedHouse.getId().equals(id)) {
-                    String URL = this.URL + "/" + ownedHouse.getId();
-                    HttpURLConnection con = getHttpURLConnection(URL);
-                    StringBuffer response = getStringBuffer(con);
-                    JSONObject temp = getJsonObject(response);
-                    return readJsonWithObjectMapper(temp.toString());
-                }
-            }
-        } catch (ParseException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+//        try {
+//            for (House ownedHouse : ownedHouses) {
+//                if (ownedHouse.getId().equals(id)) {
+//                    String URL = this.URL + "/" + ownedHouse.getId();
+//                    HttpURLConnection con = getHttpURLConnection(URL);
+//                    StringBuffer response = getStringBuffer(con);
+//                    JSONObject temp = getJsonObject(response);
+//                    return readJsonWithObjectMapper(temp.toString());
+//                }
+//            }
+//        } catch (ParseException e) {
+//            e.printStackTrace();
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
         return null;
     }
 }
