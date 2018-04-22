@@ -114,10 +114,13 @@ public class House {
     }
 
     public static ArrayList<House> getFiltered(long area, String dealType, String buildingType, int maxPrice){
-        ArrayList<RealEstate> realEstates = RealEstateDatabaseController.getInstance().select();
-        for (RealEstate realEstate: realEstates) {
-            realEstate.updateHouses();
-        }
+//        ArrayList<RealEstate> realEstates = RealEstateDatabaseController.getInstance().select();
+//        for (RealEstate realEstate: realEstates) {
+//            realEstate.updateHouses();
+//        }
+        System.out.println("here 1");
+        RealEstateDatabaseController.getInstance();
+        System.out.println("there 1");
         return HouseDatabaseController.getInstance().select(area, dealType, buildingType, maxPrice);
     }
 

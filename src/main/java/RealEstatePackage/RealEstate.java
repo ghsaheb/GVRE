@@ -14,10 +14,33 @@ import java.net.URL;
 
 public class RealEstate extends User {
     private String URL;
+    private Thread realEstateThread;
 
-    RealEstate(String name, String URL) {
+    private class RealEstateThread implements Runnable {
+        public void run(){
+            System.err.println("thread started");
+            while (true) {
+                long expireTime = updateHouses();
+                System.err.println("ghazaliii: "+ (expireTime-System.currentTimeMillis()));
+                try {
+                    Thread.sleep(expireTime - System.currentTimeMillis());
+//                    Thread.sleep(5000);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+    }
+
+    RealEstate(String name, String URL, boolean isThreadNeeded) {
         super(name);
         this.URL = URL;
+        if (isThreadNeeded) {
+            System.out.println("inside constructor");
+            realEstateThread = new Thread(new RealEstateThread());
+            realEstateThread.start();
+            System.out.println("after constructor");
+        }
     }
 
     public String getURL() {
@@ -28,23 +51,29 @@ public class RealEstate extends User {
         this.URL = URL;
     }
 
-    void updateHouses() {
+    long updateHouses() {
         try {
+            HouseDatabaseController.getInstance().delete(this);
             HttpURLConnection con = getHttpURLConnection(this.URL);
             StringBuffer response = getStringBuffer(con);
+            long expireTime = getExpireTime(response);
+            System.out.println("expire time: "+expireTime);
             JSONArray housesData = getJsonArray(response);
             addHousesToDatabase(housesData);
+            return expireTime;
         } catch (ParseException e) {
             e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
         }
+        return 0;
     }
 
     private void addHousesToDatabase(JSONArray housesData) throws IOException {
-        for (Object aHousesData : housesData) {
-            JSONObject temp = (JSONObject) aHousesData;
+        for (Object HousesData : housesData) {
+            JSONObject temp = (JSONObject) HousesData;
             House s = readJsonWithObjectMapper(temp.toString());
+
             HouseDatabaseController.getInstance().insert(s,this);
         }
     }
@@ -77,6 +106,13 @@ public class RealEstate extends User {
         JSONParser parser = new JSONParser();
         JSONObject jsonObject = (JSONObject) parser.parse(response.toString());
         return (JSONArray) jsonObject.get("data");
+    }
+
+    private long getExpireTime(StringBuffer response) throws ParseException {
+        JSONParser parser = new JSONParser();
+        JSONObject jsonObject = (JSONObject) parser.parse(response.toString());
+        System.out.println("json object : "+jsonObject.toString());
+        return (Long) jsonObject.get("expireTime");
     }
 
     private JSONObject getJsonObject(StringBuffer response) throws ParseException {

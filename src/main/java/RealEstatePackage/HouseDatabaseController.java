@@ -64,7 +64,7 @@ public class HouseDatabaseController {
                         + house.getArea() + ",'" +  house.getBuildingType() + "','" + house.getImageURL() + "','" + String.valueOf(house.isDealType()) + "'," + house.getExpireTime() + "," +
                         house.getPrice().getBasePrice() + "," + house.getPrice().getRentPrice() + "," + "null" + ",'" + realEstate.getURL() + "');";
             }
-            System.out.println(sql);
+//            System.out.println(sql);
             stmt.executeUpdate(sql);
             stmt.close();
 ///            c.commit();
@@ -92,7 +92,7 @@ public class HouseDatabaseController {
                         + house.getArea() + ",'" +  house.getBuildingType() + "','" + house.getImageURL() + "','" + String.valueOf(house.isDealType()) + "'," + house.getExpireTime() + "," +
                         house.getPrice().getBasePrice() + "," + house.getPrice().getRentPrice() + "," + "null" + ",'" + individual.getUsername() + "'," + "null" + ");";
             }
-            System.out.println(sql);
+//            System.out.println(sql);
             stmt.executeUpdate(sql);
             stmt.close();
 ///            c.commit();
@@ -103,11 +103,12 @@ public class HouseDatabaseController {
     }
 
     public ArrayList<House> select(long area, String dealType, String buildingType, int maxPrice){
+        System.out.println("here inside select");
         Statement stmt = null;
         ArrayList<House> houses = new ArrayList<House>();
         try {
             c = DriverManager.getConnection("jdbc:sqlite:gvre.db");
-            c.setAutoCommit(false);
+//            c.setAutoCommit(false);
             System.out.println("Opened database successfully");
 
             stmt = c.createStatement();
@@ -126,7 +127,6 @@ public class HouseDatabaseController {
             }
             while (rs.next()) {
                 House s;
-                System.out.println("get Boolean:"+Boolean.parseBoolean(rs.getString("deal_type")));
                 if (!Boolean.parseBoolean(rs.getString("deal_type"))) {
                     s = new House(rs.getString("id"), rs.getLong("area"), rs.getString("building_type"),
                             null, Boolean.parseBoolean(rs.getString("deal_type")), new Price(0, 0, rs.getInt("rent_sell_price")), null, null);
@@ -145,6 +145,26 @@ public class HouseDatabaseController {
         }
         System.out.println("Operation done successfully");
         return houses;
+    }
+
+    public void delete(RealEstate realEstate){
+        Statement stmt = null;
+
+        try {
+            c = DriverManager.getConnection("jdbc:sqlite:gvre.db");
+//            c.setAutoCommit(false);
+            System.out.println("Opened database successfully");
+            stmt = c.createStatement();
+            String sql = "DELETE from house WHERE reid='"+ realEstate.getURL() + "';";
+            System.out.println("checking delete sql :"+sql);
+            stmt.executeUpdate(sql);
+//            c.commit();
+            stmt.close();
+            c.close();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        System.out.println("Delete done successfully");
     }
 
 }

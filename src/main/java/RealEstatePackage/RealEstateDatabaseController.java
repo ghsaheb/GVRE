@@ -34,7 +34,7 @@ public class RealEstateDatabaseController {
         } catch (SQLException e) {
             e.printStackTrace();
         }
-        insert(new RealEstate("khaneBeDoosh", "http://acm.ut.ac.ir/khaneBeDoosh/house"));
+        insert(new RealEstate("khaneBeDoosh", "http://139.59.151.5:6664/khaneBeDoosh/v2/house", true));
     }
 
     public void insert(RealEstate realEstate) {
@@ -67,7 +67,7 @@ public class RealEstateDatabaseController {
             while ( rs.next() ) {
                 String name = rs.getString("name");
                 String url  = rs.getString("url");
-                RealEstate realEstate = new RealEstate(name, url);
+                RealEstate realEstate = new RealEstate(name, url, false);
                 realEstates.add(realEstate);
             }
             rs.close();
