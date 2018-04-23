@@ -17,8 +17,7 @@ public class Individual extends User {
     private int credit;
     private String username;
     private String password;
-    private ArrayList<House> paidHouses;
-    private static final String bankURL = "http://acm.ut.ac.ir/ieBank/pay";
+    private static final String bankURL = "http://139.59.151.5:6664/bank/pay";
     private static final String apiKey = "4e4d47e0-13c6-11e8-87b4-496f79ef1988";
 
     Individual(String name, String phone, int credit, String username, String password) {
@@ -27,7 +26,6 @@ public class Individual extends User {
         this.credit = credit;
         this.username = username;
         this.password = password;
-        this.paidHouses = new ArrayList<House>();
     }
 
     public String getPhone() {
@@ -74,26 +72,33 @@ public class Individual extends User {
     }
 
     public boolean addPaidHouse(String id) throws HouseNotFindException {
-        House house = House.findHouse(id);
-        for (House paidHouse : paidHouses) {
-            if (paidHouse.getId().equals(house.getId()))
+//        House house = House.findHouse(id);
+//        for (House paidHouse : paidHouses) {
+//            if (paidHouse.getId().equals(house.getId()))
+//                return true;
+//        }
+        try {
+            if (PhoneDatabaseController.getInstance().select("Bugs", id)) {
                 return true;
+            }
+        } catch (IndividualNotFoundException e) {
+            return false;
         }
         if (this.credit >= 1000){
             this.decreaseCredit(1000);
-            this.paidHouses.add(house);
+            PhoneDatabaseController.getInstance().insert(this, id);
             return true;
         }
         return false;
     }
 
     public boolean searchForHouse(String id) throws HouseNotFindException {
-        House house = House.findHouse(id);
-        for (House paidHouse : paidHouses) {
-            if (paidHouse.getId().equals(id))
-                return true;
+//        House house = House.findHouse(id);
+        try {
+            return PhoneDatabaseController.getInstance().select("Bugs", id);
+        } catch (IndividualNotFoundException e) {
+            return false;
         }
-        return false;
     }
 
     public House findHouse(String id) throws IOException, ParseException {

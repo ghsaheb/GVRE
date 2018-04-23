@@ -20,7 +20,7 @@ public class HouseDatabaseController {
             System.out.println("Opened database successfully");
 
             stmt = c.createStatement();
-            String sql = "CREATE TABLE `house` (\n" +
+            String sql = "CREATE TABLE IF NOT EXISTS `house` (\n" +
                     "\t`id`\tchar NOT NULL,\n" +
                     "\t`area`\tinteger ( 128 ) NOT NULL,\n" +
                     "\t`building_type`\tchar ( 128 ) NOT NULL,\n" +
