@@ -18,13 +18,14 @@ public class RealEstate extends User {
 
     private class RealEstateThread implements Runnable {
         public void run(){
-            System.err.println("thread started");
+            System.out.println("thread started");
             while (true) {
                 long expireTime = updateHouses();
-                System.err.println("ghazaliii: "+ (expireTime-System.currentTimeMillis()));
+                System.out.println("Updated:  "+ (expireTime-System.currentTimeMillis()));
                 try {
-                    Thread.sleep(expireTime - System.currentTimeMillis());
-//                    Thread.sleep(5000);
+                    if (expireTime - System.currentTimeMillis() > 0) {
+                        Thread.sleep(expireTime - System.currentTimeMillis());
+                    }
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
@@ -36,10 +37,8 @@ public class RealEstate extends User {
         super(name);
         this.URL = URL;
         if (isThreadNeeded) {
-            System.out.println("inside constructor");
             realEstateThread = new Thread(new RealEstateThread());
             realEstateThread.start();
-            System.out.println("after constructor");
         }
     }
 
@@ -72,9 +71,8 @@ public class RealEstate extends User {
     private void addHousesToDatabase(JSONArray housesData) throws IOException {
         for (Object HousesData : housesData) {
             JSONObject temp = (JSONObject) HousesData;
-            House s = readJsonWithObjectMapper(temp.toString());
-
-            HouseDatabaseController.getInstance().insert(s,this);
+            House house = readJsonWithObjectMapper(temp.toString());
+            HouseDatabaseController.getInstance().insert(house,this);
         }
     }
 
@@ -127,21 +125,17 @@ public class RealEstate extends User {
     }
 
     public House findHouse(String id) {
-//        try {
-//            for (House ownedHouse : ownedHouses) {
-//                if (ownedHouse.getId().equals(id)) {
-//                    String URL = this.URL + "/" + ownedHouse.getId();
-//                    HttpURLConnection con = getHttpURLConnection(URL);
-//                    StringBuffer response = getStringBuffer(con);
-//                    JSONObject temp = getJsonObject(response);
-//                    return readJsonWithObjectMapper(temp.toString());
-//                }
-//            }
-//        } catch (ParseException e) {
-//            e.printStackTrace();
-//        } catch (IOException e) {
-//            e.printStackTrace();
-//        }
+        try {
+            String URL = this.URL + "/" + id;
+            HttpURLConnection con = getHttpURLConnection(URL);
+            StringBuffer response = getStringBuffer(con);
+            JSONObject temp = getJsonObject(response);
+            return readJsonWithObjectMapper(temp.toString());
+        } catch (ParseException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         return null;
     }
 }

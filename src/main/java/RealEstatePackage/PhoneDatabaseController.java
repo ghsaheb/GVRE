@@ -3,8 +3,8 @@ package RealEstatePackage;
 import java.sql.*;
 
 public class PhoneDatabaseController {
-
     Connection c = null;
+
     private static PhoneDatabaseController ourInstance = new PhoneDatabaseController();
 
     public static PhoneDatabaseController getInstance() {
@@ -48,14 +48,14 @@ public class PhoneDatabaseController {
             System.out.println(sql);
             stmt.executeUpdate(sql);
             stmt.close();
-///            c.commit();
+//            c.commit();
             c.close();
         } catch (SQLException e) {
             e.printStackTrace();
         }
     }
 
-    public boolean select(String username, String id) throws IndividualNotFoundException {
+    public boolean select(Individual individual, String id) throws IndividualNotFoundException {
         Statement stmt = null;
         try {
             c = DriverManager.getConnection("jdbc:sqlite:gvre.db");
@@ -63,7 +63,7 @@ public class PhoneDatabaseController {
             System.out.println("Opened database successfully");
 
             stmt = c.createStatement();
-            ResultSet rs = stmt.executeQuery( "SELECT * FROM paid P WHERE P.iid='"+username+"' AND P.hid='"+ id +"';");
+            ResultSet rs = stmt.executeQuery( "SELECT * FROM paid P WHERE P.iid='"+individual.getUsername()+"' AND P.hid='"+ id +"';");
             boolean result = false;
             if (rs.next() ) {
                 result = true;

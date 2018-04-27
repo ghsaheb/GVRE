@@ -76,6 +76,7 @@ public class IndividualDatabaseController {
 
     public Individual select(String username) throws IndividualNotFoundException {
         Statement stmt = null;
+        Individual individual = null;
         try {
             c = DriverManager.getConnection("jdbc:sqlite:gvre.db");
             c.setAutoCommit(false);
@@ -83,7 +84,6 @@ public class IndividualDatabaseController {
 
             stmt = c.createStatement();
             ResultSet rs = stmt.executeQuery( "SELECT * FROM individual I WHERE I.username='"+username+"';");
-            Individual individual = null;
             while ( rs.next() ) {
                 String uname = rs.getString("username");
                 String password  = rs.getString("password");
@@ -95,11 +95,13 @@ public class IndividualDatabaseController {
             rs.close();
             stmt.close();
             c.close();
-            return individual;
         } catch (SQLException e) {
             e.printStackTrace();
         }
         System.out.println("Operation done successfully");
-        return null;
+        if (individual == null) {
+            throw new IndividualNotFoundException();
+        }
+        return individual;
     }
 }

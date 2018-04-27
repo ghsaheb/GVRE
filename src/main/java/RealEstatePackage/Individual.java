@@ -72,13 +72,8 @@ public class Individual extends User {
     }
 
     public boolean addPaidHouse(String id) throws HouseNotFindException {
-//        House house = House.findHouse(id);
-//        for (House paidHouse : paidHouses) {
-//            if (paidHouse.getId().equals(house.getId()))
-//                return true;
-//        }
         try {
-            if (PhoneDatabaseController.getInstance().select("Bugs", id)) {
+            if (PhoneDatabaseController.getInstance().select(this, id)) {
                 return true;
             }
         } catch (IndividualNotFoundException e) {
@@ -93,9 +88,8 @@ public class Individual extends User {
     }
 
     public boolean searchForHouse(String id) throws HouseNotFindException {
-//        House house = House.findHouse(id);
         try {
-            return PhoneDatabaseController.getInstance().select("Bugs", id);
+            return PhoneDatabaseController.getInstance().select(this, id);
         } catch (IndividualNotFoundException e) {
             return false;
         }

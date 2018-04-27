@@ -114,47 +114,35 @@ public class House {
     }
 
     public static ArrayList<House> getFiltered(long area, String dealType, String buildingType, int maxPrice){
-//        ArrayList<RealEstate> realEstates = RealEstateDatabaseController.getInstance().select();
-//        for (RealEstate realEstate: realEstates) {
-//            realEstate.updateHouses();
-//        }
-        System.out.println("here 1");
         RealEstateDatabaseController.getInstance();
-        System.out.println("there 1");
         return HouseDatabaseController.getInstance().select(area, dealType, buildingType, maxPrice);
     }
 
-    private static void applyFilter(long area, String dealType, String buildingType, int maxPrice, ArrayList<House> filtered, House temp) {
-        if (temp.getArea() < area) return;
-        if (buildingType != null){
-            if (!(temp.getBuildingType().equals(buildingType))) return;
-        }
-        if (dealType != null){
-            if (temp.isDealType() != Boolean.parseBoolean(dealType)) return;
-        }
-        if (temp.isDealType() && temp.getPrice().getRentPrice() > maxPrice) return;
-        if (!temp.isDealType() && temp.getPrice().getSellPrice() > maxPrice) return;
-        filtered.add(temp);
-    }
-
     public static House findHouse(String id) throws HouseNotFindException {
-        try {
-            ArrayList<RealEstate> realEstates = RealEstateDatabaseController.getInstance().select();
-            for (RealEstate realEstate: realEstates) {
-                realEstate.updateHouses();
+//        try {
+            RealEstate realEstate = HouseDatabaseController.getInstance().selectRealEstate(id);
+            if (realEstate != null){
+                House house = realEstate.findHouse(id);
+                return house;
             }
-            House temp = realEstates.get(0).findHouse(id);
-            try {
-                if (temp == null) temp = IndividualDatabaseController.getInstance().select("Bugs").findHouse(id);
-            } catch (IndividualNotFoundException e) {
-                e.printStackTrace();
+            House house = HouseDatabaseController.getInstance().selectWithIndividualPhone(id);
+            if (house != null){
+                return house;
             }
-            if (temp != null) return temp;
-        } catch (ParseException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        throw new HouseNotFindException();
+            throw new HouseNotFindException();
+
+//            try {
+//                house = IndividualDatabaseController.getInstance().select("Bugs").findHouse(id);
+//            } catch (IndividualNotFoundException e) {
+//                e.printStackTrace();
+//            }
+//            if (house != null) return house;
+//        } catch (ParseException e) {
+//            e.printStackTrace();
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
+//        }
+//        throw new HouseNotFindException();
     }
 }
