@@ -7,16 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cd6febd8-616b-4b46-b954-be47c2a30054" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dataSources/8fd9c77a-553d-4e1e-9441-2592783e2b9a.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/RealEstatePackage/House.java" afterPath="$PROJECT_DIR$/src/main/java/RealEstatePackage/House.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/RealEstatePackage/HouseDatabaseController.java" afterPath="$PROJECT_DIR$/src/main/java/RealEstatePackage/HouseDatabaseController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/RealEstatePackage/Individual.java" afterPath="$PROJECT_DIR$/src/main/java/RealEstatePackage/Individual.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/RealEstatePackage/IndividualDatabaseController.java" afterPath="$PROJECT_DIR$/src/main/java/RealEstatePackage/IndividualDatabaseController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/RealEstatePackage/PhoneDatabaseController.java" afterPath="$PROJECT_DIR$/src/main/java/RealEstatePackage/PhoneDatabaseController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/RealEstatePackage/RealEstate.java" afterPath="$PROJECT_DIR$/src/main/java/RealEstatePackage/RealEstate.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -50,127 +41,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="IndividualDatabaseController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/RealEstatePackage/IndividualDatabaseController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="591">
-              <caret line="104" column="26" lean-forward="false" selection-start-line="104" selection-start-column="26" selection-end-line="104" selection-end-column="26" />
-              <folding>
-                <marker date="1524851167840" expanded="true" signature="665:1041" ph="CREATE TABLE... IF" />
-                <marker date="1524851167840" expanded="true" signature="1604:1864" ph="INSERT INTO individual... " />
-                <marker date="1524851167840" expanded="true" signature="2430:2541" ph="UPDATE indiv... " />
-                <marker date="1524851167840" expanded="true" signature="3258:3316" ph="SELECT * FRO... individual" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HouseDatabaseController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/RealEstatePackage/HouseDatabaseController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="906">
-              <caret line="236" column="65" lean-forward="false" selection-start-line="236" selection-start-column="65" selection-end-line="236" selection-end-column="65" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#6276#6283#0" expanded="true" />
-                <marker date="1524851167892" expanded="true" signature="660:1567" ph="CREATE TABLE... IF" />
-                <marker date="1524851167892" expanded="true" signature="2623:2946" ph="INSERT INTO house... " />
-                <marker date="1524851167892" expanded="true" signature="2623:3120" ph="INSERT INTO house... " />
-                <marker date="1524851167892" expanded="true" signature="3180:3636" ph="INSERT INTO house... " />
-                <marker date="1524851167892" expanded="true" signature="3180:3702" ph="INSERT INTO house... " />
-                <marker date="1524851167892" expanded="true" signature="4705:5028" ph="INSERT INTO house... " />
-                <marker date="1524851167892" expanded="true" signature="4705:5029" ph="INSERT INTO house... " />
-                <marker date="1524851167892" expanded="true" signature="4705:5056" ph="INSERT INTO house... " />
-                <marker date="1524851167892" expanded="true" signature="4705:5061" ph="INSERT INTO house... " />
-                <marker date="1524851167892" expanded="true" signature="4705:5207" ph="INSERT INTO house... " />
-                <marker date="1524851167892" expanded="true" signature="5267:5591" ph="INSERT INTO house... " />
-                <marker date="1524851167892" expanded="true" signature="5267:5655" ph="INSERT INTO house... " />
-                <marker date="1524851167892" expanded="true" signature="5267:5696" ph="INSERT INTO house... " />
-                <marker date="1524851167892" expanded="true" signature="5267:5724" ph="INSERT INTO house... " />
-                <marker date="1524851167892" expanded="true" signature="5267:5795" ph="INSERT INTO house... " />
-                <marker date="1524851167892" expanded="true" signature="5267:5796" ph="INSERT INTO house... " />
-                <marker date="1524851167892" expanded="true" signature="6638:6714" ph="SELECT * FRO... house" />
-                <marker date="1524851167892" expanded="true" signature="6854:6991" ph="SELECT * FRO... house" />
-                <marker date="1524851167892" expanded="true" signature="7115:7244" ph="SELECT * FRO... house" />
-                <marker date="1524851167892" expanded="true" signature="7323:7495" ph="SELECT * FRO... house" />
-                <marker date="1524851167892" expanded="true" signature="8919:8976" ph="DELETE from " />
-                <marker date="1524851167892" expanded="true" signature="9684:9834" ph="SELECT * \nF... real_estate" />
-                <marker date="1524851167892" expanded="true" signature="9690:9834" ph="SELECT * \nF... table2" />
-                <marker date="1524851167892" expanded="true" signature="9783:9823" ph="SELECT h.rei... house" />
-                <marker date="1524851167892" expanded="true" signature="9783:9831" ph="SELECT h.rei... house" />
-                <marker date="1524851167892" expanded="true" signature="9783:9833" ph="SELECT h.rei... house" />
-                <marker date="1524851167892" expanded="true" signature="9833:9834" ph="SELECT real_... house" />
-                <marker date="1524851167892" expanded="true" signature="10680:10870" ph="SELECT *\nFR... house" />
-                <marker date="1524851167892" expanded="true" signature="10686:10829" ph="select *\nfr... house" />
-                <marker date="1524851167892" expanded="true" signature="10686:10870" ph="SELECT * \nF... real_estate" />
-                <marker date="1524851167892" expanded="true" signature="10730:10774" ph="SELECT i.use... individual" />
-                <marker date="1524851167892" expanded="true" signature="10736:10773" ph="select u.use... username" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Phone.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Phone.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="68" column="82" lean-forward="true" selection-start-line="68" selection-start-column="82" selection-end-line="68" selection-end-column="82" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Price.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/RealEstatePackage/Price.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="35" lean-forward="false" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HouseDetails.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/HouseDetails.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="House.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/RealEstatePackage/House.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="123" column="35" lean-forward="false" selection-start-line="123" selection-start-column="35" selection-end-line="123" selection-end-column="35" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RealEstate.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/RealEstatePackage/RealEstate.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="23" column="83" lean-forward="false" selection-start-line="23" selection-start-column="83" selection-end-line="23" selection-end-column="83" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PhoneDatabaseController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/RealEstatePackage/PhoneDatabaseController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+            <state relative-caret-position="330">
+              <caret line="22" column="25" lean-forward="false" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
               <folding>
-                <marker date="1524836660972" expanded="true" signature="625:988" ph="CREATE TABLE... IF" />
-                <marker date="1524836660972" expanded="true" signature="1551:1659" ph="INSERT INTO paid... " />
-                <marker date="1524836660972" expanded="true" signature="2295:2329" ph="SELECT * FRO... paid" />
-                <marker date="1524836660972" expanded="true" signature="2295:2379" ph="SELECT * FRO... paid" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#1322#1338#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="346">
+              <caret line="70" column="21" lean-forward="false" selection-start-line="70" selection-start-column="21" selection-end-line="70" selection-end-column="21" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -225,6 +114,11 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="8f694b3553fd6ddc8b6cbba2ca92305de736be53" />
+      </map>
+    </option>
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
@@ -248,7 +142,6 @@
         <option value="$PROJECT_DIR$/web/AddPropertyForm.jsp" />
         <option value="$PROJECT_DIR$/web/ServletTest.java" />
         <option value="$PROJECT_DIR$/web/ServletAlaki.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/deploy.sh" />
         <option value="$PROJECT_DIR$/shutdown.sh" />
@@ -285,6 +178,7 @@
         <option value="$PROJECT_DIR$/src/main/java/RealEstatePackage/House.java" />
         <option value="$PROJECT_DIR$/src/main/java/RealEstatePackage/HouseDatabaseController.java" />
         <option value="$PROJECT_DIR$/src/main/java/RealEstatePackage/IndividualDatabaseController.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -368,6 +262,10 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -405,10 +303,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -666,18 +560,47 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="240306000" />
+    <option name="totallyTimeSpent" value="240373000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="67" y="25" width="1299" height="743" extended-state="6" />
+    <frame x="0" y="23" width="1440" height="832" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Tool Output" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="14" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19957082" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960895" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="ANTLR Preview" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24980047" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34150326" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32889965" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32428765" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22389127" sideWeight="0.6485944" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22389127" sideWeight="0.35140562" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Tool Output" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31801692" sideWeight="0.5028612" order="14" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19952115" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16360734" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="ANTLR Preview" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -691,20 +614,16 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.46895424" sideWeight="0.49713877" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32406288" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32889965" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22505985" sideWeight="0.6388889" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2074392" sideWeight="0.3611111" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32769045" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32889965" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32769045" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -759,24 +678,10 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/Credit.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="825">
-          <caret line="71" column="38" lean-forward="false" selection-start-line="71" selection-start-column="38" selection-end-line="71" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/RealEstatePackage/PhoneDatabaseController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding>
-            <marker date="1524836660972" expanded="true" signature="625:988" ph="CREATE TABLE... IF" />
-            <marker date="1524836660972" expanded="true" signature="1551:1659" ph="INSERT INTO paid... " />
-            <marker date="1524836660972" expanded="true" signature="2295:2329" ph="SELECT * FRO... paid" />
-            <marker date="1524836660972" expanded="true" signature="2295:2379" ph="SELECT * FRO... paid" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -823,14 +728,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/fbd62e8d-a28e-4129-b48c-7b722ca3292e/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/fbd62e8d-a28e-4129-b48c-7b722ca3292e/console.sql" />
     <entry file="file://$PROJECT_DIR$/src/main/java/RealEstatePackage/House.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
@@ -839,273 +737,54 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://table:/6e016f28/fbd62e8d-a28e-4129-b48c-7b722ca3292e/main.house">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/6e016f28/fbd62e8d-a28e-4129-b48c-7b722ca3292e/main.house">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/6e016f28/fbd62e8d-a28e-4129-b48c-7b722ca3292e/main.house">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/6e016f28/fbd62e8d-a28e-4129-b48c-7b722ca3292e/main.house">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/6e016f28/fbd62e8d-a28e-4129-b48c-7b722ca3292e/main.house">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/6e016f28/fbd62e8d-a28e-4129-b48c-7b722ca3292e/main.house">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/6e016f28/fbd62e8d-a28e-4129-b48c-7b722ca3292e/main.house">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/6e016f28/fbd62e8d-a28e-4129-b48c-7b722ca3292e/main.house">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/6e016f28/fbd62e8d-a28e-4129-b48c-7b722ca3292e/main.house">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/6e016f28/fbd62e8d-a28e-4129-b48c-7b722ca3292e/main.house">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/6e016f28/fbd62e8d-a28e-4129-b48c-7b722ca3292e/main.house">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/6e016f28/fbd62e8d-a28e-4129-b48c-7b722ca3292e/main.house">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/6e016f28/fbd62e8d-a28e-4129-b48c-7b722ca3292e/main.house">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/6e016f28/fbd62e8d-a28e-4129-b48c-7b722ca3292e/main.house">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/6e016f28/fbd62e8d-a28e-4129-b48c-7b722ca3292e/main.house">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/6e016f28/fbd62e8d-a28e-4129-b48c-7b722ca3292e/main.house">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/6e016f28/fbd62e8d-a28e-4129-b48c-7b722ca3292e/main.house">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/6e016f28/fbd62e8d-a28e-4129-b48c-7b722ca3292e/main.house">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/6e016f28/fbd62e8d-a28e-4129-b48c-7b722ca3292e/main.house">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/6e016f28/fbd62e8d-a28e-4129-b48c-7b722ca3292e/main.house">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/6e016f28/fbd62e8d-a28e-4129-b48c-7b722ca3292e/main.house">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/6e016f28/fbd62e8d-a28e-4129-b48c-7b722ca3292e/main.house">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/6e016f28/fbd62e8d-a28e-4129-b48c-7b722ca3292e/main.house">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/6e016f28/fbd62e8d-a28e-4129-b48c-7b722ca3292e/main.house">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/6e016f28/fbd62e8d-a28e-4129-b48c-7b722ca3292e/main.house">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/6e016f28/fbd62e8d-a28e-4129-b48c-7b722ca3292e/main.house">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/6e016f28/fbd62e8d-a28e-4129-b48c-7b722ca3292e/main.house">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/6e016f28/fbd62e8d-a28e-4129-b48c-7b722ca3292e/main.house">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="das://table:/6e016f28/fbd62e8d-a28e-4129-b48c-7b722ca3292e/main.house" />
+    <entry file="das://table:/6e016f28/fbd62e8d-a28e-4129-b48c-7b722ca3292e/main.house" />
+    <entry file="das://table:/6e016f28/fbd62e8d-a28e-4129-b48c-7b722ca3292e/main.house" />
+    <entry file="das://table:/6e016f28/fbd62e8d-a28e-4129-b48c-7b722ca3292e/main.house" />
+    <entry file="das://table:/6e016f28/fbd62e8d-a28e-4129-b48c-7b722ca3292e/main.house" />
+    <entry file="das://table:/6e016f28/fbd62e8d-a28e-4129-b48c-7b722ca3292e/main.house" />
+    <entry file="das://table:/6e016f28/fbd62e8d-a28e-4129-b48c-7b722ca3292e/main.house" />
+    <entry file="das://table:/6e016f28/fbd62e8d-a28e-4129-b48c-7b722ca3292e/main.house" />
+    <entry file="das://table:/6e016f28/fbd62e8d-a28e-4129-b48c-7b722ca3292e/main.house" />
+    <entry file="das://table:/6e016f28/fbd62e8d-a28e-4129-b48c-7b722ca3292e/main.house" />
+    <entry file="das://table:/6e016f28/fbd62e8d-a28e-4129-b48c-7b722ca3292e/main.house" />
+    <entry file="das://table:/6e016f28/fbd62e8d-a28e-4129-b48c-7b722ca3292e/main.house" />
+    <entry file="das://table:/6e016f28/fbd62e8d-a28e-4129-b48c-7b722ca3292e/main.house" />
+    <entry file="das://table:/6e016f28/fbd62e8d-a28e-4129-b48c-7b722ca3292e/main.house" />
+    <entry file="das://table:/6e016f28/fbd62e8d-a28e-4129-b48c-7b722ca3292e/main.house" />
+    <entry file="das://table:/6e016f28/fbd62e8d-a28e-4129-b48c-7b722ca3292e/main.house" />
+    <entry file="das://table:/6e016f28/fbd62e8d-a28e-4129-b48c-7b722ca3292e/main.house" />
+    <entry file="das://table:/6e016f28/fbd62e8d-a28e-4129-b48c-7b722ca3292e/main.house" />
+    <entry file="das://table:/6e016f28/fbd62e8d-a28e-4129-b48c-7b722ca3292e/main.house" />
+    <entry file="das://table:/6e016f28/fbd62e8d-a28e-4129-b48c-7b722ca3292e/main.house" />
+    <entry file="das://table:/6e016f28/fbd62e8d-a28e-4129-b48c-7b722ca3292e/main.house" />
+    <entry file="das://table:/6e016f28/fbd62e8d-a28e-4129-b48c-7b722ca3292e/main.house" />
+    <entry file="das://table:/6e016f28/fbd62e8d-a28e-4129-b48c-7b722ca3292e/main.house" />
+    <entry file="das://table:/6e016f28/fbd62e8d-a28e-4129-b48c-7b722ca3292e/main.house" />
+    <entry file="das://table:/6e016f28/fbd62e8d-a28e-4129-b48c-7b722ca3292e/main.house" />
+    <entry file="das://table:/6e016f28/fbd62e8d-a28e-4129-b48c-7b722ca3292e/main.house" />
+    <entry file="das://table:/6e016f28/fbd62e8d-a28e-4129-b48c-7b722ca3292e/main.house" />
+    <entry file="das://table:/6e016f28/fbd62e8d-a28e-4129-b48c-7b722ca3292e/main.house" />
     <entry file="file://$PROJECT_DIR$/src/main/java/Phone.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="68" column="82" lean-forward="true" selection-start-line="68" selection-start-column="82" selection-end-line="68" selection-end-column="82" />
-          <folding />
+        <state relative-caret-position="330">
+          <caret line="22" column="25" lean-forward="false" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1322#1338#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="das://table:/6e016f28/fbd62e8d-a28e-4129-b48c-7b722ca3292e/main.house">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/6e016f28/fbd62e8d-a28e-4129-b48c-7b722ca3292e/main.house">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/6e016f28/fbd62e8d-a28e-4129-b48c-7b722ca3292e/main.house">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/6e016f28/fbd62e8d-a28e-4129-b48c-7b722ca3292e/main.house">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/6e016f28/fbd62e8d-a28e-4129-b48c-7b722ca3292e/main.house">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/6e016f28/fbd62e8d-a28e-4129-b48c-7b722ca3292e/main.house">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/6e016f28/fbd62e8d-a28e-4129-b48c-7b722ca3292e/main.house">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/6e016f28/fbd62e8d-a28e-4129-b48c-7b722ca3292e/main.house">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/6e016f28/fbd62e8d-a28e-4129-b48c-7b722ca3292e/main.house">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="das://table:/6e016f28/fbd62e8d-a28e-4129-b48c-7b722ca3292e/main.house" />
+    <entry file="das://table:/6e016f28/fbd62e8d-a28e-4129-b48c-7b722ca3292e/main.house" />
+    <entry file="das://table:/6e016f28/fbd62e8d-a28e-4129-b48c-7b722ca3292e/main.house" />
+    <entry file="das://table:/6e016f28/fbd62e8d-a28e-4129-b48c-7b722ca3292e/main.house" />
+    <entry file="das://table:/6e016f28/fbd62e8d-a28e-4129-b48c-7b722ca3292e/main.house" />
+    <entry file="das://table:/6e016f28/fbd62e8d-a28e-4129-b48c-7b722ca3292e/main.house" />
+    <entry file="das://table:/6e016f28/fbd62e8d-a28e-4129-b48c-7b722ca3292e/main.house" />
+    <entry file="das://table:/6e016f28/fbd62e8d-a28e-4129-b48c-7b722ca3292e/main.house" />
+    <entry file="das://table:/6e016f28/fbd62e8d-a28e-4129-b48c-7b722ca3292e/main.house" />
     <entry file="file://$PROJECT_DIR$/src/main/java/RealEstatePackage/RealEstate.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -1118,11 +797,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="201">
           <caret line="65" column="53" lean-forward="false" selection-start-line="65" selection-start-column="53" selection-end-line="65" selection-end-column="53" />
-          <folding>
-            <marker date="1524836829201" expanded="true" signature="680:858" ph="CREATE TABLE... IF" />
-            <marker date="1524836829201" expanded="true" signature="1479:1627" ph="INSERT INTO real_estate... " />
-            <marker date="1524836829201" expanded="true" signature="2282:2307" ph="SELECT * FRO... real_estate" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1130,42 +804,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="906">
           <caret line="236" column="65" lean-forward="false" selection-start-line="236" selection-start-column="65" selection-end-line="236" selection-end-column="65" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#6276#6283#0" expanded="true" />
-            <marker date="1524851167892" expanded="true" signature="660:1567" ph="CREATE TABLE... IF" />
-            <marker date="1524851167892" expanded="true" signature="2623:2946" ph="INSERT INTO house... " />
-            <marker date="1524851167892" expanded="true" signature="2623:3120" ph="INSERT INTO house... " />
-            <marker date="1524851167892" expanded="true" signature="3180:3636" ph="INSERT INTO house... " />
-            <marker date="1524851167892" expanded="true" signature="3180:3702" ph="INSERT INTO house... " />
-            <marker date="1524851167892" expanded="true" signature="4705:5028" ph="INSERT INTO house... " />
-            <marker date="1524851167892" expanded="true" signature="4705:5029" ph="INSERT INTO house... " />
-            <marker date="1524851167892" expanded="true" signature="4705:5056" ph="INSERT INTO house... " />
-            <marker date="1524851167892" expanded="true" signature="4705:5061" ph="INSERT INTO house... " />
-            <marker date="1524851167892" expanded="true" signature="4705:5207" ph="INSERT INTO house... " />
-            <marker date="1524851167892" expanded="true" signature="5267:5591" ph="INSERT INTO house... " />
-            <marker date="1524851167892" expanded="true" signature="5267:5655" ph="INSERT INTO house... " />
-            <marker date="1524851167892" expanded="true" signature="5267:5696" ph="INSERT INTO house... " />
-            <marker date="1524851167892" expanded="true" signature="5267:5724" ph="INSERT INTO house... " />
-            <marker date="1524851167892" expanded="true" signature="5267:5795" ph="INSERT INTO house... " />
-            <marker date="1524851167892" expanded="true" signature="5267:5796" ph="INSERT INTO house... " />
-            <marker date="1524851167892" expanded="true" signature="6638:6714" ph="SELECT * FRO... house" />
-            <marker date="1524851167892" expanded="true" signature="6854:6991" ph="SELECT * FRO... house" />
-            <marker date="1524851167892" expanded="true" signature="7115:7244" ph="SELECT * FRO... house" />
-            <marker date="1524851167892" expanded="true" signature="7323:7495" ph="SELECT * FRO... house" />
-            <marker date="1524851167892" expanded="true" signature="8919:8976" ph="DELETE from " />
-            <marker date="1524851167892" expanded="true" signature="9684:9834" ph="SELECT * \nF... real_estate" />
-            <marker date="1524851167892" expanded="true" signature="9690:9834" ph="SELECT * \nF... table2" />
-            <marker date="1524851167892" expanded="true" signature="9783:9823" ph="SELECT h.rei... house" />
-            <marker date="1524851167892" expanded="true" signature="9783:9831" ph="SELECT h.rei... house" />
-            <marker date="1524851167892" expanded="true" signature="9783:9833" ph="SELECT h.rei... house" />
-            <marker date="1524851167892" expanded="true" signature="9833:9834" ph="SELECT real_... house" />
-            <marker date="1524851167892" expanded="true" signature="10680:10870" ph="SELECT *\nFR... house" />
-            <marker date="1524851167892" expanded="true" signature="10686:10829" ph="select *\nfr... house" />
-            <marker date="1524851167892" expanded="true" signature="10686:10870" ph="SELECT * \nF... real_estate" />
-            <marker date="1524851167892" expanded="true" signature="10730:10774" ph="SELECT i.use... individual" />
-            <marker date="1524851167892" expanded="true" signature="10736:10773" ph="select u.use... username" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1173,12 +811,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="591">
           <caret line="104" column="26" lean-forward="false" selection-start-line="104" selection-start-column="26" selection-end-line="104" selection-end-column="26" />
-          <folding>
-            <marker date="1524851167840" expanded="true" signature="665:1041" ph="CREATE TABLE... IF" />
-            <marker date="1524851167840" expanded="true" signature="1604:1864" ph="INSERT INTO individual... " />
-            <marker date="1524851167840" expanded="true" signature="2430:2541" ph="UPDATE indiv... " />
-            <marker date="1524851167840" expanded="true" signature="3258:3316" ph="SELECT * FRO... individual" />
-          </folding>
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="346">
+          <caret line="70" column="21" lean-forward="false" selection-start-line="70" selection-start-column="21" selection-end-line="70" selection-end-column="21" />
+          <folding />
         </state>
       </provider>
     </entry>
