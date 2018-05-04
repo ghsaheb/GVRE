@@ -7,7 +7,7 @@ import java.util.Date;
 
 public class JWTHandler {
     //Sample method to construct a JWT
-    private static String createJWT(String issuer, String subject) {
+    public static String createJWT(String subject) {
 
         //The JWT signature algorithm we will be using to sign the token
         SignatureAlgorithm signatureAlgorithm = SignatureAlgorithm.HS256;
@@ -21,17 +21,19 @@ public class JWTHandler {
             builder = Jwts.builder()
                     .setIssuedAt(now)
                     .setSubject(subject)
-                    .setIssuer(issuer)
+                    .setIssuer("GVRE")
                     .signWith(signatureAlgorithm, "mozi-amoo".getBytes("UTF-8"));
         } catch (UnsupportedEncodingException e) {
             e.printStackTrace();
         }
 
+        System.out.println("jwt:"+builder.compact());
+
         //Builds the JWT and serializes it to a compact, URL-safe string
         return builder.compact();
     }
 
-    private static void parseJWT(String jwt) throws UnsupportedEncodingException {
+    public static void parseJWT(String jwt) throws UnsupportedEncodingException {
 
         //This line will throw an exception if it is not a signed JWS (as expected)
         Claims claims = Jwts.parser()
@@ -41,13 +43,4 @@ public class JWTHandler {
         System.out.println("Issuer: " + claims.getIssuer());
     }
 
-    public static void main(String[] args) {
-        String jwt = createJWT("GVRE","ghaz");
-        System.out.println("jwt:"+jwt);
-        try {
-            parseJWT(jwt);
-        } catch (UnsupportedEncodingException e) {
-            e.printStackTrace();
-        }
-    }
 }

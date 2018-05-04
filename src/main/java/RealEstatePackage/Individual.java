@@ -27,7 +27,7 @@ public class Individual extends User {
         this.username = username;
         this.password = password;
     }
-
+    public Individual(){}
     public String getPhone() {
         return phone;
     }
