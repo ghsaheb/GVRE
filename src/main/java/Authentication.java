@@ -41,8 +41,9 @@ public class Authentication extends HttpServlet {
             Individual dbIndiv = IndividualDatabaseController.getInstance().select(newIndiv.getUsername());
             if(dbIndiv.getPassword().equals(newIndiv.getPassword())){
                 System.out.println(dbIndiv.getPassword()+"ba in :"+newIndiv.getPassword());
-                JWTHandler.createJWT(dbIndiv.getUsername());
+                String jwt = JWTHandler.createJWT(dbIndiv.getUsername());
                 response.setStatus(HttpServletResponse.SC_OK);
+                response.setHeader("Authorization",jwt);
             }
             else {
                 response.setStatus(HttpServletResponse.SC_FORBIDDEN);
