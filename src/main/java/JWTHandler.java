@@ -31,9 +31,23 @@ public class JWTHandler {
         return builder.compact();
     }
 
+    private static void parseJWT(String jwt) throws UnsupportedEncodingException {
+
+        //This line will throw an exception if it is not a signed JWS (as expected)
+        Claims claims = Jwts.parser()
+                .setSigningKey("mozi-amoo".getBytes("UTF-8"))
+                .parseClaimsJws(jwt).getBody();
+        System.out.println("Subject: " + claims.getSubject());
+        System.out.println("Issuer: " + claims.getIssuer());
+    }
+
     public static void main(String[] args) {
         String jwt = createJWT("GVRE","ghaz");
         System.out.println("jwt:"+jwt);
-
+        try {
+            parseJWT(jwt);
+        } catch (UnsupportedEncodingException e) {
+            e.printStackTrace();
+        }
     }
 }
