@@ -43,7 +43,7 @@ public class Authentication extends HttpServlet {
                 System.out.println(dbIndiv.getPassword()+"ba in :"+newIndiv.getPassword());
                 String jwt = JWTHandler.createJWT(dbIndiv.getUsername());
                 response.setStatus(HttpServletResponse.SC_OK);
-                response.setHeader("Authorization",jwt);
+                response.setHeader("Authentication",jwt);
             }
             else {
                 response.setStatus(HttpServletResponse.SC_FORBIDDEN);
@@ -51,6 +51,7 @@ public class Authentication extends HttpServlet {
         } catch (IndividualNotFoundException e) {
             response.setStatus(HttpServletResponse.SC_FORBIDDEN);
         }
+        response.addHeader("Access-Control-Expose-Headers", "Authentication");
     }
 
 
@@ -58,7 +59,8 @@ public class Authentication extends HttpServlet {
         super.doOptions(req, resp);
         resp.addHeader("Access-Control-Allow-Origin", "*");
         resp.addHeader("Access-Control-Allow-Methods", "PUT, GET, OPTIONS, HEAD");
-        resp.addHeader("Access-Control-Allow-Headers", "X-PINGOTHER, Origin, X-Requested-With, Content-Type, Accept");
-        resp.addHeader("Access-Control-Max-Age", "1728000");;
+        resp.addHeader("Access-Control-Allow-Headers", "X-PINGOTHER, Origin, X-Requested-With, Content-Type, Accept, Authentication");
+        resp.addHeader("Access-Control-Expose-Headers", "Authentication");
+        resp.addHeader("Access-Control-Max-Age", "1728002");;
     }
 }
