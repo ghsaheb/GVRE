@@ -71,6 +71,7 @@ public class Houses extends HttpServlet {
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        System.out.println("this is the answer"+request.getHeader("Authentication"));
         response.setCharacterEncoding("UTF-8");
         response.setContentType("application/json");
         response.setHeader("Access-Control-Allow-Origin", "*");

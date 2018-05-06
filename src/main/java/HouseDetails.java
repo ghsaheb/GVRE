@@ -38,6 +38,7 @@ public class HouseDetails extends HttpServlet {
     protected void doOptions(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         super.doOptions(req, resp);
         resp.addHeader("Access-Control-Allow-Origin", "*");
+        resp.addHeader("withCredentials", "true");
         resp.addHeader("Access-Control-Allow-Methods", "PUT, GET, OPTIONS, HEAD, POST");
         resp.addHeader("Access-Control-Allow-Headers", "X-PINGOTHER, Origin, X-Requested-With, Content-Type, Accept, Authentication");
         resp.addHeader("Access-Control-Expose-Headers", "Authentication");

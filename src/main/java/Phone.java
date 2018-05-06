@@ -60,6 +60,7 @@ public class Phone extends HttpServlet {
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        System.out.println("in doGet Phone");
         response.setHeader("Access-Control-Allow-Origin", "*");
         if (request.getParameter("id") == null || request.getParameter("userId") == null){
             response.setStatus(HttpServletResponse.SC_BAD_REQUEST);
