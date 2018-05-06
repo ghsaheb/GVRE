@@ -18,7 +18,7 @@ public class Individual extends User {
     private String username;
     private String password;
     private static final String bankURL = "http://139.59.151.5:6664/bank/pay";
-    private static final String apiKey = "4e4d47e0-13c6-11e8-87b4-496f79ef1988";
+    private static final String apiKey = "6688c560-50f1-11e8-8a5f-7d010a8baae7";
 
     Individual(String name, String phone, int credit, String username, String password) {
         super(name);

@@ -69,15 +69,17 @@ public class Credit extends HttpServlet {
             String payloadString = new ObjectMapper().writerWithDefaultPrettyPrinter().writeValueAsString(payload);
             response.getWriter().write(payloadString);
         } catch (IndividualNotFoundException e) {
-            response.setStatus(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
+            response.setStatus(HttpServletResponse.SC_CONFLICT);
         }
     }
 
+    @Override
     protected void doOptions(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         super.doOptions(req, resp);
         resp.addHeader("Access-Control-Allow-Origin", "*");
-        resp.addHeader("Access-Control-Allow-Methods", "PUT, GET, OPTIONS, HEAD");
-        resp.addHeader("Access-Control-Allow-Headers", "X-PINGOTHER, Origin, X-Requested-With, Content-Type, Accept");
-        resp.addHeader("Access-Control-Max-Age", "1728000");;
+        resp.addHeader("Access-Control-Allow-Methods", "PUT, GET, OPTIONS, HEAD, POST");
+        resp.addHeader("Access-Control-Allow-Headers", "X-PINGOTHER, Origin, X-Requested-With, Content-Type, Accept, Authentication");
+        resp.addHeader("Access-Control-Expose-Headers", "Authentication");
+        resp.addHeader("Access-Control-Max-Age", "1728002");;
     }
 }
