@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="gvre.db" uuid="fbd62e8d-a28e-4129-b48c-7b722ca3292e">
+    <data-source source="LOCAL" name="gvre.db" uuid="3112abbd-d3fc-4470-abd7-06e9d3020e02">
       <driver-ref>sqlite.xerial</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
-      <jdbc-url>jdbc:sqlite:$USER_HOME$/Apache Tomcat/apache-tomcat-9.0.4/bin/gvre.db</jdbc-url>
+      <jdbc-url>jdbc:sqlite:/Library/apache-tomcat-9.0.4/bin/gvre.db</jdbc-url>
       <driver-properties>
         <property name="enable_load_extension" value="true" />
       </driver-properties>

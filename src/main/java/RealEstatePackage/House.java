@@ -130,19 +130,5 @@ public class House {
                 return house;
             }
             throw new HouseNotFindException();
-
-//            try {
-//                house = IndividualDatabaseController.getInstance().select("Bugs").findHouse(id);
-//            } catch (IndividualNotFoundException e) {
-//                e.printStackTrace();
-//            }
-//            if (house != null) return house;
-//        } catch (ParseException e) {
-//            e.printStackTrace();
-//        } catch (IOException e) {
-//            e.printStackTrace();
-//        }
-//        }
-//        throw new HouseNotFindException();
     }
 }

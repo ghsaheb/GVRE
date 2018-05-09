@@ -15,11 +15,13 @@ import java.sql.SQLException;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.UUID;
+import java.util.function.Supplier;
 
 @WebServlet(name = "Authentication", urlPatterns = "/auth")
 public class Authentication extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         request.setCharacterEncoding("UTF-8");
+        response.setCharacterEncoding("UTF-8");
         response.setHeader("Access-Control-Allow-Origin", "*");
         BufferedReader in = request.getReader();
         String inputLine;
@@ -44,6 +46,7 @@ public class Authentication extends HttpServlet {
                 String jwt = JWTHandler.createJWT(dbIndiv.getUsername());
                 response.setStatus(HttpServletResponse.SC_OK);
                 response.setHeader("Authentication",jwt);
+                response.getWriter().write(dbIndiv.getName());
             }
             else {
                 response.setStatus(HttpServletResponse.SC_FORBIDDEN);

@@ -31,11 +31,11 @@ public class Phone extends HttpServlet {
         Map<String, Object> map = new HashMap<String, Object>();
         try {
             map = new ObjectMapper().readValue(body.toString(), new TypeReference<Map<String, String>>() {});
-            if (map.get("id") == null || map.get("userId") == null){
+            if (map.get("id") == null){
                 response.setStatus(HttpServletResponse.SC_BAD_REQUEST);
                 return;
             }
-            resp = IndividualDatabaseController.getInstance().select("Bugs").addPaidHouse(map.get("id").toString());
+            resp = IndividualDatabaseController.getInstance().select(JWTHandler.parseJWT(request.getHeader("Authentication"))).addPaidHouse(map.get("id").toString());
             if (resp) {
                 response.setStatus(HttpServletResponse.SC_OK);
             }
@@ -62,12 +62,12 @@ public class Phone extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         System.out.println("in doGet Phone");
         response.setHeader("Access-Control-Allow-Origin", "*");
-        if (request.getParameter("id") == null || request.getParameter("userId") == null){
+        if (request.getParameter("id") == null){
             response.setStatus(HttpServletResponse.SC_BAD_REQUEST);
             return;
         }
         try {
-            if (IndividualDatabaseController.getInstance().select("Bugs").searchForHouse(request.getParameter("id"))){
+            if (IndividualDatabaseController.getInstance().select(JWTHandler.parseJWT(request.getHeader("Authentication"))).searchForHouse(request.getParameter("id"))){
                 response.setStatus(HttpServletResponse.SC_OK);
             }
             else {

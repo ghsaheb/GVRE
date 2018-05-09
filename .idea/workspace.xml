@@ -7,11 +7,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cd6febd8-616b-4b46-b954-be47c2a30054" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/PaidHouses.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/fbd62e8d-a28e-4129-b48c-7b722ca3292e.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/fbd62e8d-a28e-4129-b48c-7b722ca3292e.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Authentication.java" afterPath="$PROJECT_DIR$/src/main/java/Authentication.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/AuthenticationFilter.java" afterPath="$PROJECT_DIR$/src/main/java/AuthenticationFilter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/HouseDetails.java" afterPath="$PROJECT_DIR$/src/main/java/HouseDetails.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Credit.java" afterPath="$PROJECT_DIR$/src/main/java/Credit.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Houses.java" afterPath="$PROJECT_DIR$/src/main/java/Houses.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/JWTHandler.java" afterPath="$PROJECT_DIR$/src/main/java/JWTHandler.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Phone.java" afterPath="$PROJECT_DIR$/src/main/java/Phone.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/RealEstatePackage/House.java" afterPath="$PROJECT_DIR$/src/main/java/RealEstatePackage/House.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/RealEstatePackage/Individual.java" afterPath="$PROJECT_DIR$/src/main/java/RealEstatePackage/Individual.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/RealEstatePackage/IndividualDatabaseController.java" afterPath="$PROJECT_DIR$/src/main/java/RealEstatePackage/IndividualDatabaseController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/RealEstatePackage/PhoneDatabaseController.java" afterPath="$PROJECT_DIR$/src/main/java/RealEstatePackage/PhoneDatabaseController.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -45,44 +55,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Phone.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Phone.java">
+      <file leaf-file-name="Houses.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Houses.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="155">
-              <caret line="69" column="93" lean-forward="true" selection-start-line="69" selection-start-column="93" selection-end-line="69" selection-end-column="93" />
+            <state relative-caret-position="386">
+              <caret line="132" column="37" lean-forward="true" selection-start-line="132" selection-start-column="0" selection-end-line="133" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PaidHouses.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/PaidHouses.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="30" column="24" lean-forward="true" selection-start-line="30" selection-start-column="24" selection-end-line="30" selection-end-column="24" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#1295#1311#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HouseDetails.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/HouseDetails.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-42">
-              <caret line="21" column="29" lean-forward="true" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="JWTHandler.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/JWTHandler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="35" column="23" lean-forward="false" selection-start-line="35" selection-start-column="23" selection-end-line="35" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Credit.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Credit.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="82" column="39" lean-forward="false" selection-start-line="82" selection-start-column="39" selection-end-line="82" selection-end-column="39" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -90,9 +80,47 @@
       <file leaf-file-name="AuthenticationFilter.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/AuthenticationFilter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="94">
-              <caret line="21" column="49" lean-forward="true" selection-start-line="21" selection-start-column="49" selection-end-line="21" selection-end-column="49" />
+            <state relative-caret-position="45">
+              <caret line="8" column="42" lean-forward="true" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="42" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PhoneDatabaseController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/RealEstatePackage/PhoneDatabaseController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="88">
+              <caret line="81" column="27" lean-forward="false" selection-start-line="81" selection-start-column="27" selection-end-line="81" selection-end-column="27" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2907#2915#0" expanded="true" />
+                <marker date="1525763749772" expanded="true" signature="653:1016" ph="CREATE TABLE... IF" />
+                <marker date="1525763749772" expanded="true" signature="1579:1687" ph="INSERT INTO paid... " />
+                <marker date="1525763749772" expanded="true" signature="2323:2407" ph="SELECT * FRO... paid" />
+                <marker date="1525763749772" expanded="true" signature="3189:3263" ph="SELECT * FRO... house" />
+                <marker date="1525763749772" expanded="true" signature="3190:3231" ph="SELECT p.hid... paid" />
+                <marker date="1525763749772" expanded="true" signature="3190:3263" ph="SELECT p.hid... paid" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="console.sql" pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/3112abbd-d3fc-4470-abd7-06e9d3020e02/console.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="house" pinned="false" current-in-tab="false">
+        <entry file="das://table:/dcc8f549/3112abbd-d3fc-4470-abd7-06e9d3020e02/main.house">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
             </state>
           </provider>
         </entry>
@@ -100,19 +128,46 @@
       <file leaf-file-name="Authentication.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Authentication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="585">
-              <caret line="55" column="0" lean-forward="true" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+            <state relative-caret-position="-68">
+              <caret line="23" column="16" lean-forward="false" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Houses.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Houses.java">
+      <file leaf-file-name="paid" pinned="false" current-in-tab="false">
+        <entry file="das://table:/dcc8f549/3112abbd-d3fc-4470-abd7-06e9d3020e02/main.paid">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IndividualDatabaseController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/RealEstatePackage/IndividualDatabaseController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="37" column="38" lean-forward="true" selection-start-line="37" selection-start-column="38" selection-end-line="37" selection-end-column="38" />
-              <folding />
+            <state relative-caret-position="298">
+              <caret line="97" column="33" lean-forward="true" selection-start-line="97" selection-start-column="33" selection-end-line="97" selection-end-column="33" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#5187#5199#0" expanded="true" />
+                <marker date="1525865474907" expanded="true" signature="693:1041" ph="CREATE TABLE... IF" />
+                <marker date="1525865474907" expanded="true" signature="693:1080" ph="CREATE TABLE... IF" />
+                <marker date="1525865474907" expanded="true" signature="693:1129" ph="CREATE TABLE... IF" />
+                <marker date="1525865474907" expanded="true" signature="693:1130" ph="CREATE TABLE... IF" />
+                <marker date="1525865474907" expanded="true" signature="1768:1837" ph="INSERT INTO individual... " />
+                <marker date="1525865474907" expanded="true" signature="1768:1857" ph="INSERT INTO individual... " />
+                <marker date="1525865474907" expanded="true" signature="2232:2503" ph="INSERT INTO individual... " />
+                <marker date="1525865474907" expanded="true" signature="2232:2533" ph="INSERT INTO individual... " />
+                <marker date="1525865474907" expanded="true" signature="3079:3127" ph="UPDATE indiv... " />
+                <marker date="1525865474907" expanded="true" signature="3079:3129" ph="UPDATE indiv... " />
+                <marker date="1525865474907" expanded="true" signature="3163:3274" ph="UPDATE indiv... " />
+                <marker date="1525865474907" expanded="true" signature="4059:4103" ph="SELECT * FRO... individual" />
+                <marker date="1525865474907" expanded="true" signature="4059:4105" ph="SELECT * FRO... individual" />
+                <marker date="1525865474907" expanded="true" signature="4158:4216" ph="SELECT * FRO... individual" />
+                <marker date="1525865474907" expanded="true" signature="5473:5497" ph="SELECT * FRO... individual" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -130,8 +185,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>ownedHouses</find>
-      <find>getFiltered</find>
       <find>addNewHouse</find>
       <find>readJsonWithObjectMapper</find>
       <find>HouseContainer</find>
@@ -160,6 +213,8 @@
       <find>byte[]</find>
       <find>api</find>
       <find>getc</find>
+      <find>conflict</find>
+      <find>Bugs</find>
     </findStrings>
     <replaceStrings>
       <replace>Individual</replace>
@@ -181,9 +236,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/RealEstate/UserContainer.java" />
-        <option value="$PROJECT_DIR$/web/AddCreditForm.jsp" />
-        <option value="$PROJECT_DIR$/web/SearchForm.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/RealEstate/InvalidHouseParameterException.java" />
         <option value="$PROJECT_DIR$/web/UserNameCredit.jsp" />
         <option value="$PROJECT_DIR$/web/AddCredit.jsp" />
@@ -215,23 +267,26 @@
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/526c539b-aa84-4226-bc3f-3695eb5e20ad/console.sql" />
         <option value="$PROJECT_DIR$/src/main/java/RealEstatePackage/ExpireTimeHandler.java" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/8fd9c77a-553d-4e1e-9441-2592783e2b9a/console.sql" />
-        <option value="$PROJECT_DIR$/src/main/java/RealEstatePackage/PhoneDatabaseController.java" />
         <option value="$PROJECT_DIR$/src/main/java/RealEstatePackage/RealEstateDatabaseController.java" />
         <option value="$PROJECT_DIR$/src/main/java/RealEstatePackage/RealEstate.java" />
-        <option value="$PROJECT_DIR$/src/main/java/RealEstatePackage/House.java" />
         <option value="$PROJECT_DIR$/src/main/java/RealEstatePackage/HouseDatabaseController.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/RealEstatePackage/InvalidIndividualParameterException.java" />
-        <option value="$PROJECT_DIR$/src/main/java/RealEstatePackage/IndividualDatabaseController.java" />
         <option value="$PROJECT_DIR$/src/main/java/RealEstatePackage/User.java" />
+        <option value="$PROJECT_DIR$/src/main/java/HouseDetails.java" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/fbd62e8d-a28e-4129-b48c-7b722ca3292e/console.sql" />
         <option value="$PROJECT_DIR$/src/main/java/JWTHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/RealEstatePackage/Individual.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Authentication.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Credit.java" />
-        <option value="$PROJECT_DIR$/src/main/java/HouseDetails.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Houses.java" />
-        <option value="$PROJECT_DIR$/src/main/java/AuthenticationFilter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/RealEstatePackage/House.java" />
         <option value="$PROJECT_DIR$/src/main/java/Phone.java" />
+        <option value="$PROJECT_DIR$/src/main/java/AuthenticationFilter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Credit.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Houses.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Authentication.java" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/3112abbd-d3fc-4470-abd7-06e9d3020e02/console.sql" />
+        <option value="$PROJECT_DIR$/src/main/java/RealEstatePackage/PhoneDatabaseController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/PaidHouses.java" />
+        <option value="$PROJECT_DIR$/src/main/java/RealEstatePackage/IndividualDatabaseController.java" />
       </list>
     </option>
   </component>
@@ -276,10 +331,10 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" fullScreen="true">
     <option name="y" value="23" />
     <option name="width" value="1440" />
-    <option name="height" value="803" />
+    <option name="height" value="822" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -317,8 +372,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -352,15 +405,12 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="RealEstatePackage" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="GVRE" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GVRE" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -631,15 +681,17 @@
       <workItem from="1524156092066" duration="6892000" />
       <workItem from="1524212288583" duration="33965000" />
       <workItem from="1524846371358" duration="4275000" />
-      <workItem from="1525539496869" duration="15020000" />
+      <workItem from="1525539496869" duration="15669000" />
+      <workItem from="1525688284547" duration="14406000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="270562000" />
+    <option name="totallyTimeSpent" value="285617000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="822" extended-state="6" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Tool Output" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -648,23 +700,24 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1988555" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16309012" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16309012" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="ANTLR Preview" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24964234" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32627118" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32527205" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35350758" sideWeight="0.49713877" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3095526" sideWeight="0.49713877" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32344633" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19098713" sideWeight="0.6388889" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2074392" sideWeight="0.3611111" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3232462" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32889965" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19384836" sideWeight="0.63047284" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19384836" sideWeight="0.36952713" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32769045" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
@@ -673,7 +726,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32889965" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -753,30 +805,11 @@
     <entry file="das://table:/6e016f28/fbd62e8d-a28e-4129-b48c-7b722ca3292e/main.house" />
     <entry file="das://table:/6e016f28/fbd62e8d-a28e-4129-b48c-7b722ca3292e/main.house" />
     <entry file="das://table:/6e016f28/fbd62e8d-a28e-4129-b48c-7b722ca3292e/main.house" />
-    <entry file="das://table:/6e016f28/fbd62e8d-a28e-4129-b48c-7b722ca3292e/main.house" />
-    <entry file="das://table:/6e016f28/fbd62e8d-a28e-4129-b48c-7b722ca3292e/main.house" />
-    <entry file="das://table:/6e016f28/fbd62e8d-a28e-4129-b48c-7b722ca3292e/main.house" />
-    <entry file="das://table:/6e016f28/fbd62e8d-a28e-4129-b48c-7b722ca3292e/main.house" />
-    <entry file="das://table:/6e016f28/fbd62e8d-a28e-4129-b48c-7b722ca3292e/main.house" />
-    <entry file="das://table:/6e016f28/fbd62e8d-a28e-4129-b48c-7b722ca3292e/main.house" />
-    <entry file="das://table:/6e016f28/fbd62e8d-a28e-4129-b48c-7b722ca3292e/main.house" />
-    <entry file="das://table:/6e016f28/fbd62e8d-a28e-4129-b48c-7b722ca3292e/main.house" />
     <entry file="file://$PROJECT_DIR$/src/main/java/RealEstatePackage/RealEstate.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="23" column="83" lean-forward="false" selection-start-line="23" selection-start-column="83" selection-end-line="23" selection-end-column="83" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/RealEstatePackage/HouseDatabaseController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="906">
-          <caret line="236" column="65" lean-forward="false" selection-start-line="236" selection-start-column="65" selection-end-line="236" selection-end-column="65" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#6276#6283#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -819,10 +852,33 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home/src.zip!/java/lang/IllegalArgumentException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="35" column="6" lean-forward="false" selection-start-line="35" selection-start-column="6" selection-end-line="35" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/HouseDetails.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="21" column="29" lean-forward="false" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/fbd62e8d-a28e-4129-b48c-7b722ca3292e/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="43" lean-forward="false" selection-start-line="0" selection-start-column="43" selection-end-line="0" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/RealEstatePackage/RealEstateDatabaseController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="29" column="25" lean-forward="true" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="25" />
+        <state relative-caret-position="120">
+          <caret line="9" column="33" lean-forward="false" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
           <folding>
             <marker date="1525445418087" expanded="true" signature="680:858" ph="CREATE TABLE... IF" />
             <marker date="1525445418087" expanded="true" signature="1479:1627" ph="INSERT INTO real_estate... " />
@@ -831,89 +887,178 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/RealEstatePackage/Individual.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/JWTHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1038">
-          <caret line="34" column="29" lean-forward="false" selection-start-line="34" selection-start-column="29" selection-end-line="34" selection-end-column="29" />
+        <state relative-caret-position="389">
+          <caret line="43" column="35" lean-forward="false" selection-start-line="43" selection-start-column="35" selection-end-line="43" selection-end-column="35" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/RealEstatePackage/IndividualDatabaseController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/RealEstatePackage/HouseDatabaseController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="91" column="47" lean-forward="false" selection-start-line="91" selection-start-column="47" selection-end-line="91" selection-end-column="47" />
+        <state relative-caret-position="245">
+          <caret line="209" column="90" lean-forward="false" selection-start-line="207" selection-start-column="46" selection-end-line="209" selection-end-column="90" />
           <folding>
-            <marker date="1525445418084" expanded="true" signature="665:1041" ph="CREATE TABLE... IF" />
-            <marker date="1525445418084" expanded="true" signature="1604:1864" ph="INSERT INTO individual... " />
-            <marker date="1525445418084" expanded="true" signature="2430:2541" ph="UPDATE indiv... " />
-            <marker date="1525445418084" expanded="true" signature="3258:3316" ph="SELECT * FRO... individual" />
+            <marker date="1525445418083" expanded="true" signature="660:1567" ph="CREATE TABLE... IF" />
+            <marker date="1525445418083" expanded="true" signature="2623:3120" ph="INSERT INTO house... " />
+            <marker date="1525445418083" expanded="true" signature="3180:3702" ph="INSERT INTO house... " />
+            <marker date="1525445418083" expanded="true" signature="4705:5207" ph="INSERT INTO house... " />
+            <marker date="1525445418083" expanded="true" signature="5267:5795" ph="INSERT INTO house... " />
+            <marker date="1525445418083" expanded="true" signature="6638:6714" ph="SELECT * FRO... house" />
+            <marker date="1525445418083" expanded="true" signature="6854:6991" ph="SELECT * FRO... house" />
+            <marker date="1525445418083" expanded="true" signature="7115:7244" ph="SELECT * FRO... house" />
+            <marker date="1525445418083" expanded="true" signature="7323:7495" ph="SELECT * FRO... house" />
+            <marker date="1525445418083" expanded="true" signature="8919:8976" ph="DELETE from " />
+            <marker date="1525445418083" expanded="true" signature="9684:9834" ph="SELECT * \nF... real_estate" />
+            <marker date="1525445418083" expanded="true" signature="9783:9833" ph="SELECT h.rei... house" />
+            <marker date="1525445418083" expanded="true" signature="10680:10870" ph="SELECT *\nFR... house" />
+            <marker date="1525445418083" expanded="true" signature="10730:10774" ph="SELECT i.use... individual" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home/src.zip!/java/lang/IllegalArgumentException.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/RealEstatePackage/Individual.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="35" column="6" lean-forward="false" selection-start-line="35" selection-start-column="6" selection-end-line="35" selection-end-column="6" />
-          <folding />
+        <state relative-caret-position="185">
+          <caret line="91" column="25" lean-forward="true" selection-start-line="91" selection-start-column="25" selection-end-line="91" selection-end-column="25" />
+          <folding>
+            <element signature="e#1135#1136#0" expanded="true" />
+            <element signature="e#1169#1170#0" expanded="true" />
+            <element signature="e#1930#1931#0" expanded="true" />
+            <element signature="e#1960#1961#0" expanded="true" />
+            <element signature="e#2003#2004#0" expanded="true" />
+            <element signature="e#2034#2035#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Authentication.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/RealEstatePackage/House.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="55" column="0" lean-forward="true" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Credit.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="82" column="39" lean-forward="false" selection-start-line="82" selection-start-column="39" selection-end-line="82" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Houses.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="37" column="38" lean-forward="true" selection-start-line="37" selection-start-column="38" selection-end-line="37" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/HouseDetails.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-42">
-          <caret line="21" column="29" lean-forward="true" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/JWTHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="35" column="23" lean-forward="false" selection-start-line="35" selection-start-column="23" selection-end-line="35" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/AuthenticationFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="94">
-          <caret line="21" column="49" lean-forward="true" selection-start-line="21" selection-start-column="49" selection-end-line="21" selection-end-column="49" />
+        <state relative-caret-position="389">
+          <caret line="131" column="46" lean-forward="false" selection-start-line="131" selection-start-column="46" selection-end-line="131" selection-end-column="46" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Phone.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="69" column="93" lean-forward="true" selection-start-line="69" selection-start-column="93" selection-end-line="69" selection-end-column="93" />
+        <state relative-caret-position="124">
+          <caret line="69" column="123" lean-forward="false" selection-start-line="69" selection-start-column="123" selection-end-line="69" selection-end-column="123" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Credit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="65" column="142" lean-forward="false" selection-start-line="65" selection-start-column="142" selection-end-line="65" selection-end-column="142" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/AuthenticationFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="8" column="42" lean-forward="true" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Houses.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="386">
+          <caret line="132" column="37" lean-forward="true" selection-start-line="132" selection-start-column="0" selection-end-line="133" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/dcc8f549/3112abbd-d3fc-4470-abd7-06e9d3020e02/main.house">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/dcc8f549/3112abbd-d3fc-4470-abd7-06e9d3020e02/main.paid">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/3112abbd-d3fc-4470-abd7-06e9d3020e02/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/RealEstatePackage/PhoneDatabaseController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="81" column="27" lean-forward="false" selection-start-line="81" selection-start-column="27" selection-end-line="81" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#2907#2915#0" expanded="true" />
+            <marker date="1525763749772" expanded="true" signature="653:1016" ph="CREATE TABLE... IF" />
+            <marker date="1525763749772" expanded="true" signature="1579:1687" ph="INSERT INTO paid... " />
+            <marker date="1525763749772" expanded="true" signature="2323:2407" ph="SELECT * FRO... paid" />
+            <marker date="1525763749772" expanded="true" signature="3189:3263" ph="SELECT * FRO... house" />
+            <marker date="1525763749772" expanded="true" signature="3190:3231" ph="SELECT p.hid... paid" />
+            <marker date="1525763749772" expanded="true" signature="3190:3263" ph="SELECT p.hid... paid" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Authentication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-68">
+          <caret line="23" column="16" lean-forward="false" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/PaidHouses.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="30" column="24" lean-forward="true" selection-start-line="30" selection-start-column="24" selection-end-line="30" selection-end-column="24" />
+          <folding>
+            <element signature="e#1295#1311#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/dcc8f549/3112abbd-d3fc-4470-abd7-06e9d3020e02/main.individual">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/RealEstatePackage/IndividualDatabaseController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="97" column="33" lean-forward="true" selection-start-line="97" selection-start-column="33" selection-end-line="97" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#5187#5199#0" expanded="true" />
+            <marker date="1525865474907" expanded="true" signature="693:1041" ph="CREATE TABLE... IF" />
+            <marker date="1525865474907" expanded="true" signature="693:1080" ph="CREATE TABLE... IF" />
+            <marker date="1525865474907" expanded="true" signature="693:1129" ph="CREATE TABLE... IF" />
+            <marker date="1525865474907" expanded="true" signature="693:1130" ph="CREATE TABLE... IF" />
+            <marker date="1525865474907" expanded="true" signature="1768:1837" ph="INSERT INTO individual... " />
+            <marker date="1525865474907" expanded="true" signature="1768:1857" ph="INSERT INTO individual... " />
+            <marker date="1525865474907" expanded="true" signature="2232:2503" ph="INSERT INTO individual... " />
+            <marker date="1525865474907" expanded="true" signature="2232:2533" ph="INSERT INTO individual... " />
+            <marker date="1525865474907" expanded="true" signature="3079:3127" ph="UPDATE indiv... " />
+            <marker date="1525865474907" expanded="true" signature="3079:3129" ph="UPDATE indiv... " />
+            <marker date="1525865474907" expanded="true" signature="3163:3274" ph="UPDATE indiv... " />
+            <marker date="1525865474907" expanded="true" signature="4059:4103" ph="SELECT * FRO... individual" />
+            <marker date="1525865474907" expanded="true" signature="4059:4105" ph="SELECT * FRO... individual" />
+            <marker date="1525865474907" expanded="true" signature="4158:4216" ph="SELECT * FRO... individual" />
+            <marker date="1525865474907" expanded="true" signature="5473:5497" ph="SELECT * FRO... individual" />
           </folding>
         </state>
       </provider>

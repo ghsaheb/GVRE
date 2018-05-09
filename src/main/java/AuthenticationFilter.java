@@ -5,7 +5,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 
-@WebFilter(filterName = "AuthenticationFilter", servletNames = {"HouseDetails", "Phone"})
+@WebFilter(filterName = "AuthenticationFilter", servletNames = {"HouseDetails", "Phone", "PaidHouses", "Credit"})
 public class AuthenticationFilter implements Filter {
     private ServletContext context;
     FilterConfig fConfig;

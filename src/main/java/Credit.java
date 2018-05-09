@@ -51,7 +51,7 @@ public class Credit extends HttpServlet {
             return;
         }
         try {
-            response.setStatus(IndividualDatabaseController.getInstance().select("Bugs").addCredit(amount));
+            response.setStatus(IndividualDatabaseController.getInstance().select(JWTHandler.parseJWT(request.getHeader("Authentication"))).addCredit(amount));
         } catch (IndividualNotFoundException e) {
             response.setStatus(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
         }
@@ -63,13 +63,13 @@ public class Credit extends HttpServlet {
         response.setHeader("Access-Control-Allow-Origin", "*");
         try {
             Map<String, Object> payload = new HashMap<String, Object>();
-            Individual individual = IndividualDatabaseController.getInstance().select("Bugs");
+            Individual individual = IndividualDatabaseController.getInstance().select(JWTHandler.parseJWT(request.getHeader("Authentication")));
             payload.put("userId", individual.getUsername());
             payload.put("credit", individual.getCredit());
             String payloadString = new ObjectMapper().writerWithDefaultPrettyPrinter().writeValueAsString(payload);
             response.getWriter().write(payloadString);
         } catch (IndividualNotFoundException e) {
-            response.setStatus(HttpServletResponse.SC_CONFLICT);
+            response.setStatus(HttpServletResponse.SC_NOT_FOUND);
         }
     }
 

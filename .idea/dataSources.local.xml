@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="dataSourceStorageLocal">
-    <data-source name="gvre.db" uuid="fbd62e8d-a28e-4129-b48c-7b722ca3292e">
+    <data-source name="gvre.db" uuid="3112abbd-d3fc-4470-abd7-06e9d3020e02">
       <database-info product="SQLite" version="3.20.1" jdbc-version="2.1" driver-name="SQLite JDBC" driver-version="3.20.1.1" />
       <case-sensitivity plain-identifiers="mixed" quoted-identifiers="mixed" />
       <secret-storage>master_key</secret-storage>

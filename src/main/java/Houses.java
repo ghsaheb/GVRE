@@ -63,9 +63,14 @@ public class Houses extends HttpServlet {
         String id = UUID.randomUUID().toString();
         newHouse.setId(id);
         try {
-            IndividualDatabaseController.getInstance().select("Bugs").addHouseToDatabase(newHouse);
+            if (request.getHeader("Authentication") == null){
+                throw new NullPointerException();
+            }
+            IndividualDatabaseController.getInstance().select(JWTHandler.parseJWT(request.getHeader("Authentication"))).addHouseToDatabase(newHouse);
         } catch (IndividualNotFoundException e) {
-            response.setStatus(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
+            response.setStatus(HttpServletResponse.SC_NOT_FOUND);
+        } catch (NullPointerException e) {
+            response.setStatus(HttpServletResponse.SC_FORBIDDEN);
         }
         response.setStatus(HttpServletResponse.SC_CREATED);
     }

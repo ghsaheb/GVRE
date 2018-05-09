@@ -19,15 +19,19 @@ public class Individual extends User {
     private String password;
     private static final String bankURL = "http://139.59.151.5:6664/bank/pay";
     private static final String apiKey = "6688c560-50f1-11e8-8a5f-7d010a8baae7";
+    private boolean isAdmin;
 
-    Individual(String name, String phone, int credit, String username, String password) {
+    Individual(String name, String phone, int credit, String username, String password, boolean isAdmin) {
         super(name);
         this.phone = phone;
         this.credit = credit;
         this.username = username;
         this.password = password;
+        this.isAdmin = isAdmin;
     }
+
     public Individual(){}
+
     public String getPhone() {
         return phone;
     }
@@ -69,6 +73,14 @@ public class Individual extends User {
         this.credit -= dec;
         IndividualDatabaseController.getInstance().update(this);
 
+    }
+
+    public boolean isAdmin() {
+        return isAdmin;
+    }
+
+    public void setAdmin(boolean admin) {
+        isAdmin = admin;
     }
 
     public boolean addPaidHouse(String id) throws HouseNotFindException {

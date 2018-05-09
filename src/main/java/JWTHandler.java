@@ -33,7 +33,7 @@ public class JWTHandler {
         return builder.compact();
     }
 
-    public static void parseJWT(String jwt) throws UnsupportedEncodingException {
+    public static String parseJWT(String jwt) throws UnsupportedEncodingException {
 
         //This line will throw an exception if it is not a signed JWS (as expected)
         Claims claims = Jwts.parser()
@@ -41,6 +41,7 @@ public class JWTHandler {
                 .parseClaimsJws(jwt).getBody();
         System.out.println("Subject: " + claims.getSubject());
         System.out.println("Issuer: " + claims.getIssuer());
+        return claims.getSubject();
     }
 
 
