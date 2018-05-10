@@ -38,15 +38,17 @@ public class RealEstateDatabaseController {
     }
 
     public void insert(RealEstate realEstate) {
-        Statement stmt = null;
+        PreparedStatement stmt = null;
         try {
             c = DriverManager.getConnection("jdbc:sqlite:gvre.db");
-            stmt = c.createStatement();
-            String sql = "INSERT INTO real_estate (url,name) " +
-                    "VALUES ('"+ realEstate.getURL() + "','"
-                    + realEstate.getName() + "');";
-            System.out.println(sql);
-            stmt.executeUpdate(sql);
+            stmt = c.prepareStatement("INSERT INTO real_estate (url,name) VALUES (?,?);");
+            stmt.setString(1, realEstate.getURL());
+            stmt.setString(2, realEstate.getName());
+//            String sql = "INSERT INTO real_estate (url,name) " +
+//                    "VALUES ('"+ realEstate.getURL() + "','"
+//                    + realEstate.getName() + "');";
+//            System.out.println(sql);
+            stmt.executeUpdate();
             stmt.close();
 //            c.commit();
             c.close();
