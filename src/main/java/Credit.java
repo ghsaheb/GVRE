@@ -1,7 +1,7 @@
 import RealEstatePackage.Individual;
 import RealEstatePackage.IndividualDatabaseController;
 import RealEstatePackage.IndividualNotFoundException;
-import RealEstatePackage.JWTHandler;
+import UtilsPackage.JWTHandler;
 import com.fasterxml.jackson.core.JsonGenerationException;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.JsonMappingException;
@@ -34,7 +34,6 @@ public class Credit extends HttpServlet {
         try {
             map = new ObjectMapper().readValue(body.toString(), new TypeReference<Map<String, String>>(){});
             amount = Integer.parseInt(map.get("amount").toString());
-            id = map.get("userId").toString();
         } catch (NumberFormatException e) {
             response.setStatus(HttpServletResponse.SC_BAD_REQUEST);
             return;

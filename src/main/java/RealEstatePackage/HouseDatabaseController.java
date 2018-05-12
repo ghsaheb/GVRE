@@ -51,27 +51,12 @@ public class HouseDatabaseController {
         PreparedStatement stmt = null;
         try {
             c = DriverManager.getConnection("jdbc:sqlite:gvre.db");
-            String description;
-            if (house.getDescription() == null){
-                description = "null";
-            }
-            else {
-                description = "'" + house.getDescription() + "'";
-            }
-            String imageURL;
-            if (house.getImageURL() == null){
-                imageURL = "null";
-            }
-            else {
-                imageURL = "'" + house.getImageURL() + "'";
-            }
-            String sql ;
             if (!house.isDealType()){
                 stmt = c.prepareStatement("INSERT INTO house (id,area,building_type,image_URL,deal_type,base_price,rent_sell_price,address,description,iid,reid) VALUES (?,?,?,?,?,?,?,?,?,?,?);");
                 stmt.setString(1,house.getId());
                 stmt.setLong(2,house.getArea());
                 stmt.setString(3,house.getBuildingType());
-                stmt.setString(4,imageURL);
+                stmt.setString(4,house.getImageURL());
                 stmt.setString(5, String.valueOf(house.isDealType()));
                 stmt.setString(6,null);
                 stmt.setInt(7,house.getPrice().getSellPrice());
@@ -90,7 +75,7 @@ public class HouseDatabaseController {
                 stmt.setString(1,house.getId());
                 stmt.setLong(2,house.getArea());
                 stmt.setString(3,house.getBuildingType());
-                stmt.setString(4,imageURL);
+                stmt.setString(4,house.getImageURL());
                 stmt.setString(5, String.valueOf(house.isDealType()));
                 stmt.setInt(6,house.getPrice().getBasePrice());
                 stmt.setInt(7,house.getPrice().getRentPrice());

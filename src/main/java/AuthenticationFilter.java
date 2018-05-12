@@ -1,4 +1,4 @@
-import RealEstatePackage.JWTHandler;
+import UtilsPackage.JWTHandler;
 
 import javax.servlet.*;
 import javax.servlet.annotation.WebFilter;

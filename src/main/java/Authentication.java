@@ -1,4 +1,5 @@
 import RealEstatePackage.*;
+import UtilsPackage.JWTHandler;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import javax.servlet.ServletException;

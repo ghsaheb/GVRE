@@ -1,7 +1,7 @@
 import RealEstatePackage.HouseNotFindException;
 import RealEstatePackage.IndividualDatabaseController;
 import RealEstatePackage.IndividualNotFoundException;
-import RealEstatePackage.JWTHandler;
+import UtilsPackage.JWTHandler;
 import com.fasterxml.jackson.core.JsonGenerationException;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.JsonMappingException;

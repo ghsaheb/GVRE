@@ -5,10 +5,14 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.PrintWriter;
+import java.io.StringWriter;
 import java.util.ArrayList;
 import java.util.UUID;
 
 import RealEstatePackage.*;
+import UtilsPackage.EscapeUtils;
+import UtilsPackage.JWTHandler;
 import com.fasterxml.jackson.core.JsonGenerationException;
 import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -46,6 +50,21 @@ public class Houses extends HttpServlet {
             if (newHouse.getArea() <= 0){
                 throw new InvalidHouseParameterException();
             }
+            if (newHouse.getDescription() != null){
+                if (newHouse.getDescription().length() != 0){
+                    StringWriter writer = new StringWriter((int) (newHouse.getDescription().length() * 1.5));
+                    EscapeUtils.escape(writer, newHouse.getDescription());
+                    newHouse.setDescription(writer.toString());
+                }
+            }
+            if (newHouse.getAddress() != null){
+                if (newHouse.getAddress().length() != 0){
+                    StringWriter writer = new StringWriter((int) (newHouse.getAddress().length() * 1.5));
+                    EscapeUtils.escape(writer, newHouse.getAddress());
+                    newHouse.setAddress(writer.toString());
+                }
+            }
+
         } catch (JsonGenerationException e) {
             response.setStatus(HttpServletResponse.SC_BAD_REQUEST);
             return;

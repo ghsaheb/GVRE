@@ -1,4 +1,5 @@
 import RealEstatePackage.*;
+import UtilsPackage.JWTHandler;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import javax.servlet.ServletException;
@@ -9,7 +10,6 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 @WebServlet(name = "PaidHouses", urlPatterns = "/paid")
